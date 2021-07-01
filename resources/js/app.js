@@ -1,10 +1,10 @@
 require('./bootstrap');
 
 import { createApp } from 'vue';
-import HelloWorld from './components/HelloWorld'
+import PageDay from './Templates/PageDay/Index'
 
 createApp({
     components:{
-        HelloWorld
+        PageDay
     }
 }).mount('#app')
