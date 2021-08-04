@@ -1,10 +1,10 @@
 require('./bootstrap');
 
 import { createApp } from 'vue';
-import PageDay from './Templates/PageDay/Index'
+import Index from './Index'
 
 createApp({
     components:{
-        PageDay
+        Index
     }
 }).mount('#app')

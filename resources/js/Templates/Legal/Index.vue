@@ -1,38 +1,24 @@
 <template>
   <div>
-      <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top ">
-    <div class="container d-flex">
-      <div class="contact-info mr-auto">
-        <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">contact@example.com</a>
-        <i class="icofont-phone"></i> +1 5589 55488 55
-      </div>
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
-        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="#" class="skype"><i class="icofont-skype"></i></a>
-        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
-      </div>
-    </div>
-  </div>
+    <contact :component="getComponentId('contact')" ></contact>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="index.html">Day</a></h1>
+      <h1 class="logo mr-auto"><a href="index.html">Sindicato Art. 123</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
+          <li class="active"><a href="index.html">Inicio</a></li>
+          <li><a href="#about">Nosotros</a></li>
+          <!-- <li><a href="#services">Servicios</a></li>
+          <li><a href="#portfolio">Portafolio</a></li>
+          <li><a href="#pricing">Pricing</a></li> -->
+          <li><a href="#team">Equipo</a></li>
+          <!-- <li class="drop-down"><a href="">Estados</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="drop-down"><a href="#">Deep Drop Down</a>
@@ -48,8 +34,8 @@
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
             </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+          </li> -->
+          <li><a href="#contact">Contacto</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
@@ -60,9 +46,10 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
-      <h1>Welcome to Day</h1>
-      <h2>We are team of talented designers making websites with Bootstrap</h2>
-      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+      <img src="/templates/legal/img/circular.png" style="width:150px" />
+      <h1>Sindicato Artículo 123</h1>
+      <!-- <h2>We are team of talented designers making websites with Bootstrap</h2>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a> -->
     </div>
   </section><!-- End Hero -->
 
@@ -74,23 +61,20 @@
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="/templates/legal/img/about.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <h3>Organización Civil.</h3>
             <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              Somos una organización:
             </p>
             <ul>
-              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              <li><i class="icofont-check-circled"></i> Revolucionaria.</li>
+              <li><i class="icofont-check-circled"></i> Nacionalista.</li>
+              <li><i class="icofont-check-circled"></i> Mayoritaria de trabajadores y clases proletarias.</li>
             </ul>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
+              Que está en permanente lucha para el cambio de la sociedad, con la firme determinación de eliminar la explotación y la inequidad en el repoarto de la riqueza.
             </p>
           </div>
         </div>
@@ -106,25 +90,25 @@
 
           <div class="col-lg-4" data-aos="fade-up">
             <div class="box">
-              <span>01</span>
-              <h4>Lorem Ipsum</h4>
-              <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+              <span>Misión</span>
+              <!-- <h4>Lorem Ipsum</h4> -->
+              <p>Retomar el verdadero cumplimiento de la función social para la cual los sindicatos han sido creados, buscando a través de las normas de trabajo, el equilibrio y la justicia social en las relaciones obrero patronales, el impulso de defensa de los derechos laborales, así como la calidad de vida de nuestros agremiados</p>
             </div>
           </div>
 
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="150">
             <div class="box">
-              <span>02</span>
-              <h4>Repellat Nihil</h4>
-              <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
+              <span>Visión</span>
+              <!-- <h4>Repellat Nihil</h4> -->
+              <p>Ser un sindicato de vanguardia cumpliendo con las exigencias de la modernidad social, así como ser reconocidos como una organización sindical consolidada en el ámbito nacional que luche por la mejora y defensa de los intereses laborales, económicos, profesionales y sociales de los agremiados.</p>
             </div>
           </div>
 
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
             <div class="box">
-              <span>03</span>
-              <h4> Ad ad velit qui</h4>
-              <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
+              <span>Estatutos</span>
+              <!-- <h4> Ad ad velit qui</h4> -->
+              <p><a id="statutes" href="/estatutos" target="_blank">Ver Estatutos</a></p>
             </div>
           </div>
 
@@ -134,48 +118,49 @@
     </section><!-- End Why Us Section -->
 
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
+    <!-- <section id="clients" class="clients">
       <div class="container" data-aos="zoom-in">
 
         <div class="row d-flex align-items-center">
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+            <img src="/templates/legal/img/clients/client-1.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+            <img src="/templates/legal/img/clients/client-2.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+            <img src="/templates/legal/img/clients/client-3.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+            <img src="/templates/legal/img/clients/client-4.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+            <img src="/templates/legal/img/clients/client-5.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+            <img src="/templates/legal/img/clients/client-6.png" class="img-fluid" alt="">
           </div>
 
         </div>
 
       </div>
-    </section><!-- End Clients Section -->
+    </section> -->
+    <!-- End Clients Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+    <!-- <section id="services" class="services">
       <div class="container">
 
         <div class="section-title">
-          <span>Services</span>
-          <h2>Services</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+          <span>Servicios</span>
+          <h2>Servicios</h2>
+          <p>“Dale al cliente siempre más de lo que espera”.&nbsp;&nbsp;&nbsp; Nelson Boswell.</p>
         </div>
 
         <div class="row">
@@ -230,10 +215,11 @@
         </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </section> -->
+    <!-- End Services Section -->
 
     <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
+    <!-- <section id="cta" class="cta">
       <div class="container" data-aos="zoom-in">
 
         <div class="text-center">
@@ -243,10 +229,11 @@
         </div>
 
       </div>
-    </section><!-- End Cta Section -->
+    </section> -->
+    <!-- End Cta Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
+    <!-- <section id="portfolio" class="portfolio">
       <div class="container">
 
         <div class="section-title">
@@ -361,10 +348,11 @@
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section> -->
+    <!-- End Portfolio Section -->
 
     <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
+    <!-- <section id="pricing" class="pricing">
       <div class="container">
 
         <div class="section-title">
@@ -429,27 +417,28 @@
         </div>
 
       </div>
-    </section><!-- End Pricing Section -->
+    </section> -->
+    <!-- End Pricing Section -->
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
       <div class="container">
 
         <div class="section-title">
-          <span>Team</span>
-          <h2>Team</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+          <span>Equipo</span>
+          <h2>Equipo</h2>
+          <p>Ninguno de nosotros es tan bueno como todos nosotros juntos. Ray Kroc.</p>
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
             <div class="member">
               <img src="assets/img/team/team-1.jpg" alt="">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <p>
+              <h4>Fernando Agular Robles</h4>
+              <span>Secretario General</span>
+              <!-- <p>
                 Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
-              </p>
+              </p> -->
               <div class="social">
                 <a href=""><i class="icofont-twitter"></i></a>
                 <a href=""><i class="icofont-facebook"></i></a>
@@ -459,14 +448,14 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
             <div class="member">
               <img src="assets/img/team/team-2.jpg" alt="">
-              <h4>Sarah Jhinson</h4>
-              <span>Product Manager</span>
-              <p>
+              <h4>Jorge Daniel Martínez Urbina</h4>
+              <span>Secretario de Actas y Conflictos</span>
+              <!-- <p>
                 Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
-              </p>
+              </p> -->
               <div class="social">
                 <a href=""><i class="icofont-twitter"></i></a>
                 <a href=""><i class="icofont-facebook"></i></a>
@@ -476,14 +465,48 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
             <div class="member">
               <img src="assets/img/team/team-3.jpg" alt="">
-              <h4>William Anderson</h4>
-              <span>CTO</span>
-              <p>
+              <h4>Julio Miguel Rubinos Ricárdez</h4>
+              <span>Secretarío de Organización</span>
+              <!-- <p>
                 Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-              </p>
+              </p> -->
+              <div class="social">
+                <a href=""><i class="icofont-twitter"></i></a>
+                <a href=""><i class="icofont-facebook"></i></a>
+                <a href=""><i class="icofont-instagram"></i></a>
+                <a href=""><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+            <div class="member">
+              <img src="assets/img/team/team-3.jpg" alt="">
+              <h4>Gustavo de Jesús Caballero Hernández</h4>
+              <span>Secretarío de Trabajo</span>
+              <!-- <p>
+                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
+              </p> -->
+              <div class="social">
+                <a href=""><i class="icofont-twitter"></i></a>
+                <a href=""><i class="icofont-facebook"></i></a>
+                <a href=""><i class="icofont-instagram"></i></a>
+                <a href=""><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+            <div class="member">
+              <img src="assets/img/team/team-3.jpg" alt="">
+              <h4>Fernando José Martínez Urbina</h4>
+              <span>Secretarío Tesorero</span>
+              <!-- <p>
+                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
+              </p> -->
               <div class="social">
                 <a href=""><i class="icofont-twitter"></i></a>
                 <a href=""><i class="icofont-facebook"></i></a>
@@ -503,33 +526,36 @@
       <div class="container">
 
         <div class="section-title">
-          <span>Contact</span>
-          <h2>Contact</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+          <span>Contacto</span>
+          <h2>Contacto</h2>
+          <!-- <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p> -->
         </div>
 
         <div class="row" data-aos="fade-up">
           <div class="col-lg-6">
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
-              <h3>Our Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <h3>Nuestra Dirección</h3>
+              <p id="address">CALLE PRIVADA DE MONTE ALBÁN, NÚMERO EXTERIOR 3, INTERIOR 2. COLONIA REFORMA, OAXACA DE JUÁREZ, OAXACA</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="info-box  mb-4">
               <i class="bx bx-envelope"></i>
-              <h3>Email Us</h3>
-              <p>contact@example.com</p>
+              <h3>Correos</h3>
+              <p class="sub-email">adm1nsindicato.dm@gmail.com</p>
+              <p class="sub-email">adm1nsindicato.fa@gmail.com</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="info-box  mb-4">
               <i class="bx bx-phone-call"></i>
-              <h3>Call Us</h3>
-              <p>+1 5589 55488 55</p>
+              <h3>Teléfonos</h3>
+              <p class="sub-phone">951 672 28 55</p>
+              <p class="sub-phone">951 672 28 36</p>
+              <p class="sub-phone">951 178 50 92</p>
             </div>
           </div>
 
@@ -538,35 +564,36 @@
         <div class="row" data-aos="fade-up">
 
           <div class="col-lg-6 ">
-            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+            <!-- <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe> -->
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d953.459759062526!2d-96.71915167082706!3d17.080524381219178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c72226472648a7%3A0xb7c77e75fb58627b!2sPrivada%20de%20Monte%20de%20Alb%C3%A1n%2C%20Reforma%2C%2068050%20Oaxaca%20de%20Ju%C3%A1rez%2C%20Oax.!5e0!3m2!1ses-419!2smx!4v1628052454730!5m2!1ses-419!2smx" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen="" loading="lazy"></iframe>
           </div>
 
           <div class="col-lg-6">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Correo" data-rule="email" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensage"></textarea>
                 <div class="validate"></div>
               </div>
               <div class="mb-3">
-                <div class="loading">Loading</div>
+                <div class="loading">Cargando</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message">Su mensage ha sido enviado. Gracias!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Enviar Correo.</button></div>
             </form>
           </div>
 
@@ -579,7 +606,7 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="footer-top">
+    <!-- <div class="footer-top">
       <div class="container">
         <div class="row">
 
@@ -635,33 +662,61 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Day</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Sindicato Art. 123</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/day-multipurpose-html-template-for-free/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Desarrollado por <a href="http://impulzo.com.mx/" target="_blank">Impulzo S.A.S</a>
       </div>
     </div>
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-  <div id="preloader"></div>
+  <!-- <div id="preloader"></div> -->
   </div>
 </template>
 
 <script>
+import Contact from './Components/Contact.vue'
 export default {
-
+  components: { Contact },
+  name: 'Index Legal Template',
+  props: ['template'],
+  methods:{
+    getComponentId:function(name){
+      let item = this.template.components.filter(item =>  item.name === name )[0];
+      return item;
+    }
+  },
+  components:{
+    Contact
+  }
 }
 </script>
 
 <style>
-
+  p{
+    text-align: justify;
+  }
+  #statutes:hover{
+    color:#fff;
+  }
+  #address{
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    text-align: justify;
+  }
+  .sub-email{
+    text-align: center;
+  }
+  .sub-phone{
+    text-align: center;
+  }
 </style>
