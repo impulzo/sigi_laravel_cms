@@ -37,8 +37,6 @@ export default {
             .then(response => {
                  if(response.data.status === 200)
                     this.items = response.data.data.component.items;
-
-                console.log(this.items);
             })
             .catch()
         }

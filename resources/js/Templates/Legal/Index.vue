@@ -105,10 +105,11 @@
           </div>
 
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="box">
+            <div class="box" style="height:300px;">
               <span>Estatutos</span>
               <!-- <h4> Ad ad velit qui</h4> -->
-              <p><a id="statutes" href="/estatutos" target="_blank">Ver Estatutos</a></p>
+              <br>
+              <p ><a id="statutes" href="/estatutos" target="_blank">Ver Estatutos</a></p>
             </div>
           </div>
 
@@ -469,7 +470,7 @@
             <div class="member">
               <img src="assets/img/team/team-3.jpg" alt="">
               <h4>Julio Miguel Rubinos Ricárdez</h4>
-              <span>Secretarío de Organización</span>
+              <span>Secretario de Organización</span>
               <!-- <p>
                 Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
               </p> -->
@@ -486,7 +487,7 @@
             <div class="member">
               <img src="assets/img/team/team-3.jpg" alt="">
               <h4>Gustavo de Jesús Caballero Hernández</h4>
-              <span>Secretarío de Trabajo</span>
+              <span>Secretario de Trabajo</span>
               <!-- <p>
                 Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
               </p> -->
@@ -503,7 +504,7 @@
             <div class="member">
               <img src="assets/img/team/team-3.jpg" alt="">
               <h4>Fernando José Martínez Urbina</h4>
-              <span>Secretarío Tesorero</span>
+              <span>Secretario Tesorero</span>
               <!-- <p>
                 Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
               </p> -->
@@ -532,7 +533,7 @@
         </div>
 
         <div class="row" data-aos="fade-up">
-          <div class="col-lg-6">
+          <div class="col-lg-4">
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
               <h3>Nuestra Dirección</h3>
@@ -540,7 +541,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="info-box  mb-4">
               <i class="bx bx-envelope"></i>
               <h3>Correos</h3>
@@ -549,7 +550,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="info-box  mb-4">
               <i class="bx bx-phone-call"></i>
               <h3>Teléfonos</h3>
@@ -568,34 +569,7 @@
             <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d953.459759062526!2d-96.71915167082706!3d17.080524381219178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c72226472648a7%3A0xb7c77e75fb58627b!2sPrivada%20de%20Monte%20de%20Alb%C3%A1n%2C%20Reforma%2C%2068050%20Oaxaca%20de%20Ju%C3%A1rez%2C%20Oax.!5e0!3m2!1ses-419!2smx!4v1628052454730!5m2!1ses-419!2smx" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen="" loading="lazy"></iframe>
           </div>
 
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Correo" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensage"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Cargando</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Su mensage ha sido enviado. Gracias!</div>
-              </div>
-              <div class="text-center"><button type="submit">Enviar Correo.</button></div>
-            </form>
-          </div>
+          <send-request></send-request>
 
         </div>
 
@@ -685,6 +659,7 @@
 
 <script>
 import Contact from './Components/Contact.vue'
+import SendRequest from './Components/SendRequest.vue'
 export default {
   components: { Contact },
   name: 'Index Legal Template',
@@ -711,7 +686,8 @@ export default {
     }
   },
   components:{
-    Contact
+    Contact,
+    SendRequest
   }
 }
 </script>
@@ -720,7 +696,11 @@ export default {
   p{
     text-align: justify;
   }
-  #statutes:hover{
+  #statutes{
+    text-decoration: none;
+    color: grey;
+  }
+  .box:hover  #statutes{
     color:#fff;
   }
   #address{
@@ -736,5 +716,8 @@ export default {
   }
   .member{
     width: 100% !important;
+  }
+  .info-box{
+    height: 220px;
   }
 </style>
