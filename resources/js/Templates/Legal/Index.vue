@@ -74,7 +74,7 @@
               <li><i class="icofont-check-circled"></i> Mayoritaria de trabajadores y clases proletarias.</li>
             </ul>
             <p>
-              Que está en permanente lucha para el cambio de la incluyente, con la firme determinación de eliminar la explotación y la inequidad.
+              Que está en permanente lucha para el cambio de una sociedad incluyente, con la firme determinación de eliminar la explotación y la inequidad.
             </p>
           </div>
         </div>
