@@ -63,7 +63,7 @@ export default {
                 this.div.submit = false;
                 this.div.loading = true;
                 setTimeout(()=>{
-                    axios.post(BASE_URL+'/api/request/',this.request)
+                    axios.post(BASE_URL+'/api/request',this.request)
                     .then(response => {
                         if(response.data.status === 200){
                             this.div.loading = false;
