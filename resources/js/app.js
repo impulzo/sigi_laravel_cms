@@ -1,7 +1,10 @@
 require('./bootstrap');
 
-import { createApp } from 'vue';
+import { createApp } from 'vue'
 import Index from './Index'
+
+
+
 
 createApp({
     components:{

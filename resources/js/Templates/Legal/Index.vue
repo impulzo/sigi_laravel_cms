@@ -6,18 +6,18 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="index.html">Sindicato Art. 123</a></h1>
+      <h1 class="logo mr-auto"><a href="javascript:void(0);" @click="goto('index')">Sindicato Art. 123</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Inicio</a></li>
-          <li><a href="#about">Nosotros</a></li>
+          <li :class="activeLink('index')"><a href="javascript:void(0);" @click="goto('index')">Inicio</a></li>
+          <li :class="activeLink('about')"><a href="javascript:void(0);" @click="goto('about')">Nosotros</a></li>
           <!-- <li><a href="#services">Servicios</a></li>
           <li><a href="#portfolio">Portafolio</a></li>
           <li><a href="#pricing">Pricing</a></li> -->
-          <li><a href="#team">Equipo</a></li>
+          <li :class="activeLink('team')"><a href="javascript:void(0);" @click="goto('team')">Equipo</a></li>
           <!-- <li class="drop-down"><a href="">Estados</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -35,7 +35,7 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
-          <li><a href="#contact">Contacto</a></li>
+          <li :class="activeLink('contact')"><a href="javascript:void(0);" @click="goto('contact')">Contacto</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
@@ -44,7 +44,7 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  <section id="hero" class="d-flex align-items-center" ref="index">
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
       <img src="/templates/legal/img/circular.png" style="width:150px" />
       <h1>Sindicato Artículo 123</h1>
@@ -56,7 +56,7 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about" ref="about">
       <div class="container">
 
         <div class="row">
@@ -69,12 +69,12 @@
               Somos una organización:
             </p>
             <ul>
-              <li><i class="icofont-check-circled"></i> Revolucionaria.</li>
+              <li><i class="icofont-check-circled"></i> Vanguardista.</li>
               <li><i class="icofont-check-circled"></i> Nacionalista.</li>
               <li><i class="icofont-check-circled"></i> Mayoritaria de trabajadores y clases proletarias.</li>
             </ul>
             <p>
-              Que está en permanente lucha para el cambio de la sociedad, con la firme determinación de eliminar la explotación y la inequidad en el repoarto de la riqueza.
+              Que está en permanente lucha para el cambio de la incluyente, con la firme determinación de eliminar la explotación y la inequidad.
             </p>
           </div>
         </div>
@@ -421,7 +421,7 @@
     <!-- End Pricing Section -->
 
     <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
+    <section id="team" class="team" ref="team">
       <div class="container">
 
         <div class="section-title">
@@ -522,7 +522,7 @@
     </section><!-- End Team Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" ref="contact">
       <div class="container">
 
         <div class="section-title">
@@ -536,7 +536,7 @@
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
               <h3>Nuestra Dirección</h3>
-              <p id="address">CALLE PRIVADA DE MONTE ALBÁN, NÚMERO EXTERIOR 3, INTERIOR 2. COLONIA REFORMA, OAXACA DE JUÁREZ, OAXACA</p>
+              <p id="address">CALLE PRIVADA DE MONTE ALBÁN, NÚMERO EXTERIOR 3, INTERIOR 2. COLONIA REFORMA, OAXACA DE JUÁREZ, OAXACA. CP 68050.</p>
             </div>
           </div>
 
@@ -689,10 +689,25 @@ export default {
   components: { Contact },
   name: 'Index Legal Template',
   props: ['template'],
+  data:function(){
+    return {
+      ref: 'index',
+    }
+  },
   methods:{
     getComponentId:function(name){
       let item = this.template.components.filter(item =>  item.name === name )[0];
       return item;
+    },
+    goto: function(refName){
+    	let element = this.$refs[refName];
+      this.ref = refName;
+      element.scrollIntoView({ behavior: 'smooth' });
+    },
+    activeLink:function(link){
+      if(link === this.ref){
+        return 'active'
+      }
     }
   },
   components:{
@@ -718,5 +733,8 @@ export default {
   }
   .sub-phone{
     text-align: center;
+  }
+  .member{
+    width: 100% !important;
   }
 </style>

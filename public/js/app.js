@@ -17652,12 +17652,29 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   },
   name: 'Index Legal Template',
   props: ['template'],
+  data: function data() {
+    return {
+      ref: 'index'
+    };
+  },
   methods: {
     getComponentId: function getComponentId(name) {
       var item = this.template.components.filter(function (item) {
         return item.name === name;
       })[0];
       return item;
+    },
+    "goto": function goto(refName) {
+      var element = this.$refs[refName];
+      this.ref = refName;
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
+    },
+    activeLink: function activeLink(link) {
+      if (link === this.ref) {
+        return 'active';
+      }
     }
   }
 }, "components", {
@@ -17765,13 +17782,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<header id=\"header\" class=\"fixed-top \"><div class=\"container d-flex align-items-center\"><h1 class=\"logo mr-auto\"><a href=\"index.html\">Sindicato Art. 123</a></h1><!-- Uncomment below if you prefer to use an image logo --><!-- &lt;a href=&quot;index.html&quot; class=&quot;logo mr-auto&quot;&gt;&lt;img src=&quot;assets/img/logo.png&quot; alt=&quot;&quot; class=&quot;img-fluid&quot;&gt;&lt;/a&gt;--><nav class=\"nav-menu d-none d-lg-block\"><ul><li class=\"active\"><a href=\"index.html\">Inicio</a></li><li><a href=\"#about\">Nosotros</a></li><!-- &lt;li&gt;&lt;a href=&quot;#services&quot;&gt;Servicios&lt;/a&gt;&lt;/li&gt;\n          &lt;li&gt;&lt;a href=&quot;#portfolio&quot;&gt;Portafolio&lt;/a&gt;&lt;/li&gt;\n          &lt;li&gt;&lt;a href=&quot;#pricing&quot;&gt;Pricing&lt;/a&gt;&lt;/li&gt; --><li><a href=\"#team\">Equipo</a></li><!-- &lt;li class=&quot;drop-down&quot;&gt;&lt;a href=&quot;&quot;&gt;Estados&lt;/a&gt;\n            &lt;ul&gt;\n              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Drop Down 1&lt;/a&gt;&lt;/li&gt;\n              &lt;li class=&quot;drop-down&quot;&gt;&lt;a href=&quot;#&quot;&gt;Deep Drop Down&lt;/a&gt;\n                &lt;ul&gt;\n                  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Deep Drop Down 1&lt;/a&gt;&lt;/li&gt;\n                  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Deep Drop Down 2&lt;/a&gt;&lt;/li&gt;\n                  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Deep Drop Down 3&lt;/a&gt;&lt;/li&gt;\n                  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Deep Drop Down 4&lt;/a&gt;&lt;/li&gt;\n                  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Deep Drop Down 5&lt;/a&gt;&lt;/li&gt;\n                &lt;/ul&gt;\n              &lt;/li&gt;\n              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Drop Down 2&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Drop Down 3&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Drop Down 4&lt;/a&gt;&lt;/li&gt;\n            &lt;/ul&gt;\n          &lt;/li&gt; --><li><a href=\"#contact\">Contacto</a></li></ul></nav><!-- .nav-menu --></div></header>", 1);
-
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
+var _hoisted_1 = {
+  id: "header",
+  "class": "fixed-top "
+};
+var _hoisted_2 = {
+  "class": "container d-flex align-items-center"
+};
+var _hoisted_3 = {
+  "class": "logo mr-auto"
+};
+var _hoisted_4 = {
+  "class": "nav-menu d-none d-lg-block"
+};
+var _hoisted_5 = {
   id: "hero",
-  "class": "d-flex align-items-center"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "d-flex align-items-center",
+  ref: "index"
+};
+
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "container position-relative",
   "data-aos": "fade-up",
   "data-aos-delay": "500"
@@ -17780,208 +17810,38 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
   style: {
     "width": "150px"
   }
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, "Sindicato Artículo 123"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <h2>We are team of talented designers making websites with Bootstrap</h2>\n      <a href=\"#about\" class=\"btn-get-started scrollto\">Get Started</a> ")])], -1
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, "Sindicato Artículo 123"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <h2>We are team of talented designers making websites with Bootstrap</h2>\n      <a href=\"#about\" class=\"btn-get-started scrollto\">Get Started</a> ")], -1
 /* HOISTED */
 );
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("main", {
+var _hoisted_7 = {
   id: "main"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= About Section ======= "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
+};
+var _hoisted_8 = {
   id: "about",
-  "class": "about"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "container"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "row"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "col-lg-6 order-1 order-lg-2",
-  "data-aos": "fade-left"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-  src: "/templates/legal/img/about.jpg",
-  "class": "img-fluid",
-  alt: ""
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content",
-  "data-aos": "fade-right"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, "Organización Civil."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
-  "class": "font-italic"
-}, " Somos una organización: "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "icofont-check-circled"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Revolucionaria.")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "icofont-check-circled"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Nacionalista.")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "icofont-check-circled"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Mayoritaria de trabajadores y clases proletarias.")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Que está en permanente lucha para el cambio de la sociedad, con la firme determinación de eliminar la explotación y la inequidad en el repoarto de la riqueza. ")])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End About Section "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Why Us Section ======= "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
-  id: "why-us",
-  "class": "why-us"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "container"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "row"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "col-lg-4",
-  "data-aos": "fade-up"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "box"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "Misión"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <h4>Lorem Ipsum</h4> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "Retomar el verdadero cumplimiento de la función social para la cual los sindicatos han sido creados, buscando a través de las normas de trabajo, el equilibrio y la justicia social en las relaciones obrero patronales, el impulso de defensa de los derechos laborales, así como la calidad de vida de nuestros agremiados")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "col-lg-4 mt-4 mt-lg-0",
-  "data-aos": "fade-up",
-  "data-aos-delay": "150"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "box"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "Visión"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <h4>Repellat Nihil</h4> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "Ser un sindicato de vanguardia cumpliendo con las exigencias de la modernidad social, así como ser reconocidos como una organización sindical consolidada en el ámbito nacional que luche por la mejora y defensa de los intereses laborales, económicos, profesionales y sociales de los agremiados.")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "col-lg-4 mt-4 mt-lg-0",
-  "data-aos": "fade-up",
-  "data-aos-delay": "300"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "box"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "Estatutos"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <h4> Ad ad velit qui</h4> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  id: "statutes",
-  href: "/estatutos",
-  target: "_blank"
-}, "Ver Estatutos")])])])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Why Us Section "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Clients Section ======= "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section id=\"clients\" class=\"clients\">\n      <div class=\"container\" data-aos=\"zoom-in\">\n\n        <div class=\"row d-flex align-items-center\">\n\n          <div class=\"col-lg-2 col-md-4 col-6\">\n            <img src=\"/templates/legal/img/clients/client-1.png\" class=\"img-fluid\" alt=\"\">\n          </div>\n\n          <div class=\"col-lg-2 col-md-4 col-6\">\n            <img src=\"/templates/legal/img/clients/client-2.png\" class=\"img-fluid\" alt=\"\">\n          </div>\n\n          <div class=\"col-lg-2 col-md-4 col-6\">\n            <img src=\"/templates/legal/img/clients/client-3.png\" class=\"img-fluid\" alt=\"\">\n          </div>\n\n          <div class=\"col-lg-2 col-md-4 col-6\">\n            <img src=\"/templates/legal/img/clients/client-4.png\" class=\"img-fluid\" alt=\"\">\n          </div>\n\n          <div class=\"col-lg-2 col-md-4 col-6\">\n            <img src=\"/templates/legal/img/clients/client-5.png\" class=\"img-fluid\" alt=\"\">\n          </div>\n\n          <div class=\"col-lg-2 col-md-4 col-6\">\n            <img src=\"/templates/legal/img/clients/client-6.png\" class=\"img-fluid\" alt=\"\">\n          </div>\n\n        </div>\n\n      </div>\n    </section> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Clients Section "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Services Section ======= "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section id=\"services\" class=\"services\">\n      <div class=\"container\">\n\n        <div class=\"section-title\">\n          <span>Servicios</span>\n          <h2>Servicios</h2>\n          <p>“Dale al cliente siempre más de lo que espera”.&nbsp;&nbsp;&nbsp; Nelson Boswell.</p>\n        </div>\n\n        <div class=\"row\">\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch\" data-aos=\"fade-up\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bxl-dribbble\"></i></div>\n              <h4><a href=\"\">Lorem Ipsum</a></h4>\n              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0\" data-aos=\"fade-up\" data-aos-delay=\"150\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bx-file\"></i></div>\n              <h4><a href=\"\">Sed ut perspiciatis</a></h4>\n              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0\" data-aos=\"fade-up\" data-aos-delay=\"300\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bx-tachometer\"></i></div>\n              <h4><a href=\"\">Magni Dolores</a></h4>\n              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4\" data-aos=\"fade-up\" data-aos-delay=\"450\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bx-world\"></i></div>\n              <h4><a href=\"\">Nemo Enim</a></h4>\n              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4\" data-aos=\"fade-up\" data-aos-delay=\"600\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bx-slideshow\"></i></div>\n              <h4><a href=\"\">Dele cardo</a></h4>\n              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4\" data-aos=\"fade-up\" data-aos-delay=\"750\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bx-arch\"></i></div>\n              <h4><a href=\"\">Divera don</a></h4>\n              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>\n            </div>\n          </div>\n\n        </div>\n\n      </div>\n    </section> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Services Section "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Cta Section ======= "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section id=\"cta\" class=\"cta\">\n      <div class=\"container\" data-aos=\"zoom-in\">\n\n        <div class=\"text-center\">\n          <h3>Call To Action</h3>\n          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n          <a class=\"cta-btn\" href=\"#\">Call To Action</a>\n        </div>\n\n      </div>\n    </section> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Cta Section "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Portfolio Section ======= "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section id=\"portfolio\" class=\"portfolio\">\n      <div class=\"container\">\n\n        <div class=\"section-title\">\n          <span>Portfolio</span>\n          <h2>Portfolio</h2>\n          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>\n        </div>\n\n        <div class=\"row\" data-aos=\"fade-up\">\n          <div class=\"col-lg-12 d-flex justify-content-center\">\n            <ul id=\"portfolio-flters\">\n              <li data-filter=\"*\" class=\"filter-active\">All</li>\n              <li data-filter=\".filter-app\">App</li>\n              <li data-filter=\".filter-card\">Card</li>\n              <li data-filter=\".filter-web\">Web</li>\n            </ul>\n          </div>\n        </div>\n\n        <div class=\"row portfolio-container\" data-aos=\"fade-up\" data-aos-delay=\"150\">\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-app\">\n            <img src=\"assets/img/portfolio/portfolio-1.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>App 1</h4>\n              <p>App</p>\n              <a href=\"assets/img/portfolio/portfolio-1.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"App 1\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-web\">\n            <img src=\"assets/img/portfolio/portfolio-2.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Web 3</h4>\n              <p>Web</p>\n              <a href=\"assets/img/portfolio/portfolio-2.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Web 3\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-app\">\n            <img src=\"assets/img/portfolio/portfolio-3.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>App 2</h4>\n              <p>App</p>\n              <a href=\"assets/img/portfolio/portfolio-3.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"App 2\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-card\">\n            <img src=\"assets/img/portfolio/portfolio-4.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Card 2</h4>\n              <p>Card</p>\n              <a href=\"assets/img/portfolio/portfolio-4.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Card 2\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-web\">\n            <img src=\"assets/img/portfolio/portfolio-5.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Web 2</h4>\n              <p>Web</p>\n              <a href=\"assets/img/portfolio/portfolio-5.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Web 2\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-app\">\n            <img src=\"assets/img/portfolio/portfolio-6.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>App 3</h4>\n              <p>App</p>\n              <a href=\"assets/img/portfolio/portfolio-6.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"App 3\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-card\">\n            <img src=\"assets/img/portfolio/portfolio-7.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Card 1</h4>\n              <p>Card</p>\n              <a href=\"assets/img/portfolio/portfolio-7.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Card 1\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-card\">\n            <img src=\"assets/img/portfolio/portfolio-8.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Card 3</h4>\n              <p>Card</p>\n              <a href=\"assets/img/portfolio/portfolio-8.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Card 3\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-web\">\n            <img src=\"assets/img/portfolio/portfolio-9.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Web 3</h4>\n              <p>Web</p>\n              <a href=\"assets/img/portfolio/portfolio-9.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Web 3\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n        </div>\n\n      </div>\n    </section> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Portfolio Section "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Pricing Section ======= "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section id=\"pricing\" class=\"pricing\">\n      <div class=\"container\">\n\n        <div class=\"section-title\">\n          <span>Pricing</span>\n          <h2>Pricing</h2>\n          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>\n        </div>\n\n        <div class=\"row\">\n\n          <div class=\"col-lg-4 col-md-6\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\n            <div class=\"box\">\n              <h3>Free</h3>\n              <h4><sup>$</sup>0<span> / month</span></h4>\n              <ul>\n                <li>Aida dere</li>\n                <li>Nec feugiat nisl</li>\n                <li>Nulla at volutpat dola</li>\n                <li class=\"na\">Pharetra massa</li>\n                <li class=\"na\">Massa ultricies mi</li>\n              </ul>\n              <div class=\"btn-wrap\">\n                <a href=\"#\" class=\"btn-buy\">Buy Now</a>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 mt-4 mt-md-0\" data-aos=\"zoom-in\">\n            <div class=\"box featured\">\n              <h3>Business</h3>\n              <h4><sup>$</sup>19<span> / month</span></h4>\n              <ul>\n                <li>Aida dere</li>\n                <li>Nec feugiat nisl</li>\n                <li>Nulla at volutpat dola</li>\n                <li>Pharetra massa</li>\n                <li class=\"na\">Massa ultricies mi</li>\n              </ul>\n              <div class=\"btn-wrap\">\n                <a href=\"#\" class=\"btn-buy\">Buy Now</a>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 mt-4 mt-lg-0\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\n            <div class=\"box\">\n              <h3>Developer</h3>\n              <h4><sup>$</sup>29<span> / month</span></h4>\n              <ul>\n                <li>Aida dere</li>\n                <li>Nec feugiat nisl</li>\n                <li>Nulla at volutpat dola</li>\n                <li>Pharetra massa</li>\n                <li>Massa ultricies mi</li>\n              </ul>\n              <div class=\"btn-wrap\">\n                <a href=\"#\" class=\"btn-buy\">Buy Now</a>\n              </div>\n            </div>\n          </div>\n\n        </div>\n\n      </div>\n    </section> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Pricing Section "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Team Section ======= "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
+  "class": "about",
+  ref: "about"
+};
+
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"row\"><div class=\"col-lg-6 order-1 order-lg-2\" data-aos=\"fade-left\"><img src=\"/templates/legal/img/about.jpg\" class=\"img-fluid\" alt=\"\"></div><div class=\"col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content\" data-aos=\"fade-right\"><h3>Organización Civil.</h3><p class=\"font-italic\"> Somos una organización: </p><ul><li><i class=\"icofont-check-circled\"></i> Vanguardista.</li><li><i class=\"icofont-check-circled\"></i> Nacionalista.</li><li><i class=\"icofont-check-circled\"></i> Mayoritaria de trabajadores y clases proletarias.</li></ul><p> Que está en permanente lucha para el cambio de la incluyente, con la firme determinación de eliminar la explotación y la inequidad. </p></div></div></div>", 1);
+
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"why-us\" class=\"why-us\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\" data-aos=\"fade-up\"><div class=\"box\"><span>Misión</span><!-- &lt;h4&gt;Lorem Ipsum&lt;/h4&gt; --><p>Retomar el verdadero cumplimiento de la función social para la cual los sindicatos han sido creados, buscando a través de las normas de trabajo, el equilibrio y la justicia social en las relaciones obrero patronales, el impulso de defensa de los derechos laborales, así como la calidad de vida de nuestros agremiados</p></div></div><div class=\"col-lg-4 mt-4 mt-lg-0\" data-aos=\"fade-up\" data-aos-delay=\"150\"><div class=\"box\"><span>Visión</span><!-- &lt;h4&gt;Repellat Nihil&lt;/h4&gt; --><p>Ser un sindicato de vanguardia cumpliendo con las exigencias de la modernidad social, así como ser reconocidos como una organización sindical consolidada en el ámbito nacional que luche por la mejora y defensa de los intereses laborales, económicos, profesionales y sociales de los agremiados.</p></div></div><div class=\"col-lg-4 mt-4 mt-lg-0\" data-aos=\"fade-up\" data-aos-delay=\"300\"><div class=\"box\"><span>Estatutos</span><!-- &lt;h4&gt; Ad ad velit qui&lt;/h4&gt; --><p><a id=\"statutes\" href=\"/estatutos\" target=\"_blank\">Ver Estatutos</a></p></div></div></div></div></section>", 1);
+
+var _hoisted_11 = {
   id: "team",
-  "class": "team"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "container"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "section-title"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "Equipo"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "Equipo"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "Ninguno de nosotros es tan bueno como todos nosotros juntos. Ray Kroc.")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "row"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "col-lg-3 col-md-6 d-flex align-items-stretch",
-  "data-aos": "zoom-in"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "member"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-  src: "assets/img/team/team-1.jpg",
-  alt: ""
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h4", null, "Fernando Agular Robles"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "Secretario General"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <p>\n                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut\n              </p> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "social"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "icofont-twitter"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "icofont-facebook"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "icofont-instagram"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "icofont-linkedin"
-})])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "col-lg-3 col-md-6 d-flex align-items-stretch",
-  "data-aos": "zoom-in"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "member"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-  src: "assets/img/team/team-2.jpg",
-  alt: ""
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h4", null, "Jorge Daniel Martínez Urbina"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "Secretario de Actas y Conflictos"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <p>\n                Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus\n              </p> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "social"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "icofont-twitter"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "icofont-facebook"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "icofont-instagram"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "icofont-linkedin"
-})])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "col-lg-3 col-md-6 d-flex align-items-stretch",
-  "data-aos": "zoom-in"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "member"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-  src: "assets/img/team/team-3.jpg",
-  alt: ""
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h4", null, "Julio Miguel Rubinos Ricárdez"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "Secretarío de Organización"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <p>\n                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara\n              </p> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "social"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "icofont-twitter"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "icofont-facebook"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "icofont-instagram"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "icofont-linkedin"
-})])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "col-lg-3 col-md-6 d-flex align-items-stretch",
-  "data-aos": "zoom-in"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "member"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-  src: "assets/img/team/team-3.jpg",
-  alt: ""
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h4", null, "Gustavo de Jesús Caballero Hernández"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "Secretarío de Trabajo"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <p>\n                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara\n              </p> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "social"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "icofont-twitter"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "icofont-facebook"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "icofont-instagram"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "icofont-linkedin"
-})])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "col-lg-3 col-md-6 d-flex align-items-stretch",
-  "data-aos": "zoom-in"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "member"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-  src: "assets/img/team/team-3.jpg",
-  alt: ""
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h4", null, "Fernando José Martínez Urbina"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "Secretarío Tesorero"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <p>\n                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara\n              </p> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "social"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "icofont-twitter"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "icofont-facebook"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "icofont-instagram"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
-  "class": "icofont-linkedin"
-})])])])])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Team Section "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Contact Section ======= "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
+  "class": "team",
+  ref: "team"
+};
+
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"section-title\"><span>Equipo</span><h2>Equipo</h2><p>Ninguno de nosotros es tan bueno como todos nosotros juntos. Ray Kroc.</p></div><div class=\"row\"><div class=\"col-lg-3 col-md-6 d-flex align-items-stretch\" data-aos=\"zoom-in\"><div class=\"member\"><img src=\"assets/img/team/team-1.jpg\" alt=\"\"><h4>Fernando Agular Robles</h4><span>Secretario General</span><!-- &lt;p&gt;\n                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut\n              &lt;/p&gt; --><div class=\"social\"><a href=\"\"><i class=\"icofont-twitter\"></i></a><a href=\"\"><i class=\"icofont-facebook\"></i></a><a href=\"\"><i class=\"icofont-instagram\"></i></a><a href=\"\"><i class=\"icofont-linkedin\"></i></a></div></div></div><div class=\"col-lg-3 col-md-6 d-flex align-items-stretch\" data-aos=\"zoom-in\"><div class=\"member\"><img src=\"assets/img/team/team-2.jpg\" alt=\"\"><h4>Jorge Daniel Martínez Urbina</h4><span>Secretario de Actas y Conflictos</span><!-- &lt;p&gt;\n                Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus\n              &lt;/p&gt; --><div class=\"social\"><a href=\"\"><i class=\"icofont-twitter\"></i></a><a href=\"\"><i class=\"icofont-facebook\"></i></a><a href=\"\"><i class=\"icofont-instagram\"></i></a><a href=\"\"><i class=\"icofont-linkedin\"></i></a></div></div></div><div class=\"col-lg-3 col-md-6 d-flex align-items-stretch\" data-aos=\"zoom-in\"><div class=\"member\"><img src=\"assets/img/team/team-3.jpg\" alt=\"\"><h4>Julio Miguel Rubinos Ricárdez</h4><span>Secretarío de Organización</span><!-- &lt;p&gt;\n                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara\n              &lt;/p&gt; --><div class=\"social\"><a href=\"\"><i class=\"icofont-twitter\"></i></a><a href=\"\"><i class=\"icofont-facebook\"></i></a><a href=\"\"><i class=\"icofont-instagram\"></i></a><a href=\"\"><i class=\"icofont-linkedin\"></i></a></div></div></div><div class=\"col-lg-3 col-md-6 d-flex align-items-stretch\" data-aos=\"zoom-in\"><div class=\"member\"><img src=\"assets/img/team/team-3.jpg\" alt=\"\"><h4>Gustavo de Jesús Caballero Hernández</h4><span>Secretarío de Trabajo</span><!-- &lt;p&gt;\n                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara\n              &lt;/p&gt; --><div class=\"social\"><a href=\"\"><i class=\"icofont-twitter\"></i></a><a href=\"\"><i class=\"icofont-facebook\"></i></a><a href=\"\"><i class=\"icofont-instagram\"></i></a><a href=\"\"><i class=\"icofont-linkedin\"></i></a></div></div></div><div class=\"col-lg-3 col-md-6 d-flex align-items-stretch\" data-aos=\"zoom-in\"><div class=\"member\"><img src=\"assets/img/team/team-3.jpg\" alt=\"\"><h4>Fernando José Martínez Urbina</h4><span>Secretarío Tesorero</span><!-- &lt;p&gt;\n                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara\n              &lt;/p&gt; --><div class=\"social\"><a href=\"\"><i class=\"icofont-twitter\"></i></a><a href=\"\"><i class=\"icofont-facebook\"></i></a><a href=\"\"><i class=\"icofont-instagram\"></i></a><a href=\"\"><i class=\"icofont-linkedin\"></i></a></div></div></div></div></div>", 1);
+
+var _hoisted_13 = {
   id: "contact",
-  "class": "contact"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "contact",
+  ref: "contact"
+};
+
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "container"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "section-title"
@@ -17996,7 +17856,7 @@ var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
   "class": "bx bx-map"
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, "Nuestra Dirección"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
   id: "address"
-}, "CALLE PRIVADA DE MONTE ALBÁN, NÚMERO EXTERIOR 3, INTERIOR 2. COLONIA REFORMA, OAXACA DE JUÁREZ, OAXACA")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+}, "CALLE PRIVADA DE MONTE ALBÁN, NÚMERO EXTERIOR 3, INTERIOR 2. COLONIA REFORMA, OAXACA DE JUÁREZ, OAXACA. CP 68050.")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "col-lg-3 col-md-6"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "info-box  mb-4"
@@ -18102,13 +17962,13 @@ var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
   "class": "text-center"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
   type: "submit"
-}, "Enviar Correo.")])])])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Contact Section ")], -1
+}, "Enviar Correo.")])])])])], -1
 /* HOISTED */
 );
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<footer id=\"footer\"><!-- &lt;div class=&quot;footer-top&quot;&gt;\n      &lt;div class=&quot;container&quot;&gt;\n        &lt;div class=&quot;row&quot;&gt;\n\n          &lt;div class=&quot;col-lg-4 col-md-6&quot;&gt;\n            &lt;div class=&quot;footer-info&quot;&gt;\n              &lt;h3&gt;Day&lt;/h3&gt;\n              &lt;p&gt;\n                A108 Adam Street &lt;br&gt;\n                NY 535022, USA&lt;br&gt;&lt;br&gt;\n                &lt;strong&gt;Phone:&lt;/strong&gt; +1 5589 55488 55&lt;br&gt;\n                &lt;strong&gt;Email:&lt;/strong&gt; info@example.com&lt;br&gt;\n              &lt;/p&gt;\n              &lt;div class=&quot;social-links mt-3&quot;&gt;\n                &lt;a href=&quot;#&quot; class=&quot;twitter&quot;&gt;&lt;i class=&quot;bx bxl-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;facebook&quot;&gt;&lt;i class=&quot;bx bxl-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;instagram&quot;&gt;&lt;i class=&quot;bx bxl-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;google-plus&quot;&gt;&lt;i class=&quot;bx bxl-skype&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;linkedin&quot;&gt;&lt;i class=&quot;bx bxl-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n              &lt;/div&gt;\n            &lt;/div&gt;\n          &lt;/div&gt;\n\n          &lt;div class=&quot;col-lg-2 col-md-6 footer-links&quot;&gt;\n            &lt;h4&gt;Useful Links&lt;/h4&gt;\n            &lt;ul&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;About us&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Terms of service&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Privacy policy&lt;/a&gt;&lt;/li&gt;\n            &lt;/ul&gt;\n          &lt;/div&gt;\n\n          &lt;div class=&quot;col-lg-2 col-md-6 footer-links&quot;&gt;\n            &lt;h4&gt;Our Services&lt;/h4&gt;\n            &lt;ul&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Web Design&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Web Development&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Product Management&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Marketing&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Graphic Design&lt;/a&gt;&lt;/li&gt;\n            &lt;/ul&gt;\n          &lt;/div&gt;\n\n          &lt;div class=&quot;col-lg-4 col-md-6 footer-newsletter&quot;&gt;\n            &lt;h4&gt;Our Newsletter&lt;/h4&gt;\n            &lt;p&gt;Tamen quem nulla quae legam multos aute sint culpa legam noster magna&lt;/p&gt;\n            &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;\n              &lt;input type=&quot;email&quot; name=&quot;email&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Subscribe&quot;&gt;\n            &lt;/form&gt;\n\n          &lt;/div&gt;\n\n        &lt;/div&gt;\n      &lt;/div&gt;\n    &lt;/div&gt; --><div class=\"container\"><div class=\"copyright\"> © Copyright <strong><span>Sindicato Art. 123</span></strong>. All Rights Reserved </div><div class=\"credits\"><!-- All the links in the footer should remain intact. --><!-- You can delete the links only if you purchased the pro version. --><!-- Licensing information: https://bootstrapmade.com/license/ --><!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/day-multipurpose-html-template-for-free/ --> Desarrollado por <a href=\"http://impulzo.com.mx/\" target=\"_blank\">Impulzo S.A.S</a></div></div></footer>", 1);
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<footer id=\"footer\"><!-- &lt;div class=&quot;footer-top&quot;&gt;\n      &lt;div class=&quot;container&quot;&gt;\n        &lt;div class=&quot;row&quot;&gt;\n\n          &lt;div class=&quot;col-lg-4 col-md-6&quot;&gt;\n            &lt;div class=&quot;footer-info&quot;&gt;\n              &lt;h3&gt;Day&lt;/h3&gt;\n              &lt;p&gt;\n                A108 Adam Street &lt;br&gt;\n                NY 535022, USA&lt;br&gt;&lt;br&gt;\n                &lt;strong&gt;Phone:&lt;/strong&gt; +1 5589 55488 55&lt;br&gt;\n                &lt;strong&gt;Email:&lt;/strong&gt; info@example.com&lt;br&gt;\n              &lt;/p&gt;\n              &lt;div class=&quot;social-links mt-3&quot;&gt;\n                &lt;a href=&quot;#&quot; class=&quot;twitter&quot;&gt;&lt;i class=&quot;bx bxl-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;facebook&quot;&gt;&lt;i class=&quot;bx bxl-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;instagram&quot;&gt;&lt;i class=&quot;bx bxl-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;google-plus&quot;&gt;&lt;i class=&quot;bx bxl-skype&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;linkedin&quot;&gt;&lt;i class=&quot;bx bxl-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n              &lt;/div&gt;\n            &lt;/div&gt;\n          &lt;/div&gt;\n\n          &lt;div class=&quot;col-lg-2 col-md-6 footer-links&quot;&gt;\n            &lt;h4&gt;Useful Links&lt;/h4&gt;\n            &lt;ul&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;About us&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Terms of service&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Privacy policy&lt;/a&gt;&lt;/li&gt;\n            &lt;/ul&gt;\n          &lt;/div&gt;\n\n          &lt;div class=&quot;col-lg-2 col-md-6 footer-links&quot;&gt;\n            &lt;h4&gt;Our Services&lt;/h4&gt;\n            &lt;ul&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Web Design&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Web Development&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Product Management&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Marketing&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Graphic Design&lt;/a&gt;&lt;/li&gt;\n            &lt;/ul&gt;\n          &lt;/div&gt;\n\n          &lt;div class=&quot;col-lg-4 col-md-6 footer-newsletter&quot;&gt;\n            &lt;h4&gt;Our Newsletter&lt;/h4&gt;\n            &lt;p&gt;Tamen quem nulla quae legam multos aute sint culpa legam noster magna&lt;/p&gt;\n            &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;\n              &lt;input type=&quot;email&quot; name=&quot;email&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Subscribe&quot;&gt;\n            &lt;/form&gt;\n\n          &lt;/div&gt;\n\n        &lt;/div&gt;\n      &lt;/div&gt;\n    &lt;/div&gt; --><div class=\"container\"><div class=\"copyright\"> © Copyright <strong><span>Sindicato Art. 123</span></strong>. All Rights Reserved </div><div class=\"credits\"><!-- All the links in the footer should remain intact. --><!-- You can delete the links only if you purchased the pro version. --><!-- Licensing information: https://bootstrapmade.com/license/ --><!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/day-multipurpose-html-template-for-free/ --> Desarrollado por <a href=\"http://impulzo.com.mx/\" target=\"_blank\">Impulzo S.A.S</a></div></div></footer>", 1);
 
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
   href: "#",
   "class": "back-to-top"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
@@ -18124,7 +17984,56 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     component: $options.getComponentId('contact')
   }, null, 8
   /* PROPS */
-  , ["component"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Header ======= "), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Header "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Hero Section ======= "), _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Hero "), _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End #main "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Footer ======= "), _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Footer "), _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div id=\"preloader\"></div> ")]);
+  , ["component"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Header ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("header", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+    href: "javascript:void(0);",
+    onClick: _cache[1] || (_cache[1] = function ($event) {
+      return $options["goto"]('index');
+    })
+  }, "Sindicato Art. 123")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Uncomment below if you prefer to use an image logo "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <a href=\"index.html\" class=\"logo mr-auto\"><img src=\"assets/img/logo.png\" alt=\"\" class=\"img-fluid\"></a>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("nav", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
+    "class": $options.activeLink('index')
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+    href: "javascript:void(0);",
+    onClick: _cache[2] || (_cache[2] = function ($event) {
+      return $options["goto"]('index');
+    })
+  }, "Inicio")], 2
+  /* CLASS */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
+    "class": $options.activeLink('about')
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+    href: "javascript:void(0);",
+    onClick: _cache[3] || (_cache[3] = function ($event) {
+      return $options["goto"]('about');
+    })
+  }, "Nosotros")], 2
+  /* CLASS */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li><a href=\"#services\">Servicios</a></li>\n          <li><a href=\"#portfolio\">Portafolio</a></li>\n          <li><a href=\"#pricing\">Pricing</a></li> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
+    "class": $options.activeLink('team')
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+    href: "javascript:void(0);",
+    onClick: _cache[4] || (_cache[4] = function ($event) {
+      return $options["goto"]('team');
+    })
+  }, "Equipo")], 2
+  /* CLASS */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li class=\"drop-down\"><a href=\"\">Estados</a>\n            <ul>\n              <li><a href=\"#\">Drop Down 1</a></li>\n              <li class=\"drop-down\"><a href=\"#\">Deep Drop Down</a>\n                <ul>\n                  <li><a href=\"#\">Deep Drop Down 1</a></li>\n                  <li><a href=\"#\">Deep Drop Down 2</a></li>\n                  <li><a href=\"#\">Deep Drop Down 3</a></li>\n                  <li><a href=\"#\">Deep Drop Down 4</a></li>\n                  <li><a href=\"#\">Deep Drop Down 5</a></li>\n                </ul>\n              </li>\n              <li><a href=\"#\">Drop Down 2</a></li>\n              <li><a href=\"#\">Drop Down 3</a></li>\n              <li><a href=\"#\">Drop Down 4</a></li>\n            </ul>\n          </li> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
+    "class": $options.activeLink('contact')
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+    href: "javascript:void(0);",
+    onClick: _cache[5] || (_cache[5] = function ($event) {
+      return $options["goto"]('contact');
+    })
+  }, "Contacto")], 2
+  /* CLASS */
+  )])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nav-menu ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Header "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Hero Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_5, [_hoisted_6], 512
+  /* NEED_PATCH */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Hero "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("main", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= About Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_8, [_hoisted_9], 512
+  /* NEED_PATCH */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End About Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Why Us Section ======= "), _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Why Us Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Clients Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section id=\"clients\" class=\"clients\">\n      <div class=\"container\" data-aos=\"zoom-in\">\n\n        <div class=\"row d-flex align-items-center\">\n\n          <div class=\"col-lg-2 col-md-4 col-6\">\n            <img src=\"/templates/legal/img/clients/client-1.png\" class=\"img-fluid\" alt=\"\">\n          </div>\n\n          <div class=\"col-lg-2 col-md-4 col-6\">\n            <img src=\"/templates/legal/img/clients/client-2.png\" class=\"img-fluid\" alt=\"\">\n          </div>\n\n          <div class=\"col-lg-2 col-md-4 col-6\">\n            <img src=\"/templates/legal/img/clients/client-3.png\" class=\"img-fluid\" alt=\"\">\n          </div>\n\n          <div class=\"col-lg-2 col-md-4 col-6\">\n            <img src=\"/templates/legal/img/clients/client-4.png\" class=\"img-fluid\" alt=\"\">\n          </div>\n\n          <div class=\"col-lg-2 col-md-4 col-6\">\n            <img src=\"/templates/legal/img/clients/client-5.png\" class=\"img-fluid\" alt=\"\">\n          </div>\n\n          <div class=\"col-lg-2 col-md-4 col-6\">\n            <img src=\"/templates/legal/img/clients/client-6.png\" class=\"img-fluid\" alt=\"\">\n          </div>\n\n        </div>\n\n      </div>\n    </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Clients Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Services Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section id=\"services\" class=\"services\">\n      <div class=\"container\">\n\n        <div class=\"section-title\">\n          <span>Servicios</span>\n          <h2>Servicios</h2>\n          <p>“Dale al cliente siempre más de lo que espera”.&nbsp;&nbsp;&nbsp; Nelson Boswell.</p>\n        </div>\n\n        <div class=\"row\">\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch\" data-aos=\"fade-up\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bxl-dribbble\"></i></div>\n              <h4><a href=\"\">Lorem Ipsum</a></h4>\n              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0\" data-aos=\"fade-up\" data-aos-delay=\"150\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bx-file\"></i></div>\n              <h4><a href=\"\">Sed ut perspiciatis</a></h4>\n              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0\" data-aos=\"fade-up\" data-aos-delay=\"300\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bx-tachometer\"></i></div>\n              <h4><a href=\"\">Magni Dolores</a></h4>\n              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4\" data-aos=\"fade-up\" data-aos-delay=\"450\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bx-world\"></i></div>\n              <h4><a href=\"\">Nemo Enim</a></h4>\n              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4\" data-aos=\"fade-up\" data-aos-delay=\"600\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bx-slideshow\"></i></div>\n              <h4><a href=\"\">Dele cardo</a></h4>\n              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4\" data-aos=\"fade-up\" data-aos-delay=\"750\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bx-arch\"></i></div>\n              <h4><a href=\"\">Divera don</a></h4>\n              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>\n            </div>\n          </div>\n\n        </div>\n\n      </div>\n    </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Services Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Cta Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section id=\"cta\" class=\"cta\">\n      <div class=\"container\" data-aos=\"zoom-in\">\n\n        <div class=\"text-center\">\n          <h3>Call To Action</h3>\n          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n          <a class=\"cta-btn\" href=\"#\">Call To Action</a>\n        </div>\n\n      </div>\n    </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Cta Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Portfolio Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section id=\"portfolio\" class=\"portfolio\">\n      <div class=\"container\">\n\n        <div class=\"section-title\">\n          <span>Portfolio</span>\n          <h2>Portfolio</h2>\n          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>\n        </div>\n\n        <div class=\"row\" data-aos=\"fade-up\">\n          <div class=\"col-lg-12 d-flex justify-content-center\">\n            <ul id=\"portfolio-flters\">\n              <li data-filter=\"*\" class=\"filter-active\">All</li>\n              <li data-filter=\".filter-app\">App</li>\n              <li data-filter=\".filter-card\">Card</li>\n              <li data-filter=\".filter-web\">Web</li>\n            </ul>\n          </div>\n        </div>\n\n        <div class=\"row portfolio-container\" data-aos=\"fade-up\" data-aos-delay=\"150\">\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-app\">\n            <img src=\"assets/img/portfolio/portfolio-1.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>App 1</h4>\n              <p>App</p>\n              <a href=\"assets/img/portfolio/portfolio-1.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"App 1\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-web\">\n            <img src=\"assets/img/portfolio/portfolio-2.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Web 3</h4>\n              <p>Web</p>\n              <a href=\"assets/img/portfolio/portfolio-2.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Web 3\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-app\">\n            <img src=\"assets/img/portfolio/portfolio-3.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>App 2</h4>\n              <p>App</p>\n              <a href=\"assets/img/portfolio/portfolio-3.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"App 2\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-card\">\n            <img src=\"assets/img/portfolio/portfolio-4.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Card 2</h4>\n              <p>Card</p>\n              <a href=\"assets/img/portfolio/portfolio-4.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Card 2\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-web\">\n            <img src=\"assets/img/portfolio/portfolio-5.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Web 2</h4>\n              <p>Web</p>\n              <a href=\"assets/img/portfolio/portfolio-5.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Web 2\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-app\">\n            <img src=\"assets/img/portfolio/portfolio-6.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>App 3</h4>\n              <p>App</p>\n              <a href=\"assets/img/portfolio/portfolio-6.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"App 3\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-card\">\n            <img src=\"assets/img/portfolio/portfolio-7.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Card 1</h4>\n              <p>Card</p>\n              <a href=\"assets/img/portfolio/portfolio-7.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Card 1\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-card\">\n            <img src=\"assets/img/portfolio/portfolio-8.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Card 3</h4>\n              <p>Card</p>\n              <a href=\"assets/img/portfolio/portfolio-8.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Card 3\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-web\">\n            <img src=\"assets/img/portfolio/portfolio-9.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Web 3</h4>\n              <p>Web</p>\n              <a href=\"assets/img/portfolio/portfolio-9.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Web 3\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n        </div>\n\n      </div>\n    </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Portfolio Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Pricing Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section id=\"pricing\" class=\"pricing\">\n      <div class=\"container\">\n\n        <div class=\"section-title\">\n          <span>Pricing</span>\n          <h2>Pricing</h2>\n          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>\n        </div>\n\n        <div class=\"row\">\n\n          <div class=\"col-lg-4 col-md-6\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\n            <div class=\"box\">\n              <h3>Free</h3>\n              <h4><sup>$</sup>0<span> / month</span></h4>\n              <ul>\n                <li>Aida dere</li>\n                <li>Nec feugiat nisl</li>\n                <li>Nulla at volutpat dola</li>\n                <li class=\"na\">Pharetra massa</li>\n                <li class=\"na\">Massa ultricies mi</li>\n              </ul>\n              <div class=\"btn-wrap\">\n                <a href=\"#\" class=\"btn-buy\">Buy Now</a>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 mt-4 mt-md-0\" data-aos=\"zoom-in\">\n            <div class=\"box featured\">\n              <h3>Business</h3>\n              <h4><sup>$</sup>19<span> / month</span></h4>\n              <ul>\n                <li>Aida dere</li>\n                <li>Nec feugiat nisl</li>\n                <li>Nulla at volutpat dola</li>\n                <li>Pharetra massa</li>\n                <li class=\"na\">Massa ultricies mi</li>\n              </ul>\n              <div class=\"btn-wrap\">\n                <a href=\"#\" class=\"btn-buy\">Buy Now</a>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 mt-4 mt-lg-0\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\n            <div class=\"box\">\n              <h3>Developer</h3>\n              <h4><sup>$</sup>29<span> / month</span></h4>\n              <ul>\n                <li>Aida dere</li>\n                <li>Nec feugiat nisl</li>\n                <li>Nulla at volutpat dola</li>\n                <li>Pharetra massa</li>\n                <li>Massa ultricies mi</li>\n              </ul>\n              <div class=\"btn-wrap\">\n                <a href=\"#\" class=\"btn-buy\">Buy Now</a>\n              </div>\n            </div>\n          </div>\n\n        </div>\n\n      </div>\n    </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Pricing Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Team Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_11, [_hoisted_12], 512
+  /* NEED_PATCH */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Team Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Contact Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_13, [_hoisted_14], 512
+  /* NEED_PATCH */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Contact Section ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End #main "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Footer ======= "), _hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Footer "), _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div id=\"preloader\"></div> ")]);
 }
 
 /***/ }),
@@ -18201,7 +18110,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\np{\n    text-align: justify;\n}\n#statutes:hover{\n    color:#fff;\n}\n#address{\n    margin-left: 15px !important;\n    margin-right: 15px !important;\n    text-align: justify;\n}\n.sub-email{\n    text-align: center;\n}\n.sub-phone{\n    text-align: center;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\np{\n    text-align: justify;\n}\n#statutes:hover{\n    color:#fff;\n}\n#address{\n    margin-left: 15px !important;\n    margin-right: 15px !important;\n    text-align: justify;\n}\n.sub-email{\n    text-align: center;\n}\n.sub-phone{\n    text-align: center;\n}\n.member{\n    width: 100% !important;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
