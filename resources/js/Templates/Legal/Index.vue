@@ -435,7 +435,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
             <div class="member">
               <img src="assets/img/team/team-1.jpg" alt="">
-              <h4>Fernando Agular Robles</h4>
+              <h4>Fernando Aguilar Robles</h4>
               <span>Secretario General</span>
               <!-- <p>
                 Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
