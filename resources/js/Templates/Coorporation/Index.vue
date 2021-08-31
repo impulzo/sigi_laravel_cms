@@ -12,7 +12,7 @@
                 <div class="col-lg-12 col-md-12">
                     <div class="top-bar-left text-white">
                         <i class="fa fa-map-marker"></i>
-                        <span class="ml-2">CALLE PRIVADA DE MONTE ALBÁN, NÚMERO EXTERIOR 3, INTERIOR 2. COLONIA REFORMA, OAXACA DE JUÁREZ, OAXACA. CP 68050.</span>
+                        <span class="ml-2">Prolongación de &Aacute;lamos #213, Colonia Antiguo Aeropuerto, Santa Lucia del Camino, C.P. 71245 Oaxaca de Juárez, México.</span>
                     </div>
                 </div>
 
@@ -541,7 +541,10 @@
     </div>
 </section> -->
 
-<register-on-course></register-on-course>
+<div ref="registration">
+    <register-on-course></register-on-course>
+</div>
+
 
 <!-- <section id="projects" class="section-bottom">
     <div class="container">

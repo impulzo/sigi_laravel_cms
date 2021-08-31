@@ -1,6 +1,6 @@
 <template>
   <div>
-      <section class="section" id="projects-wrap" ref="registration">
+      <section class="section" id="projects-wrap">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
