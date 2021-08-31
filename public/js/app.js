@@ -18002,7 +18002,7 @@ var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
   }
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", {
   "class": "text-white"
-}, "Pre registro de alumnos \"CDC\" Serafín Aguilar Franco.")])], -1
+}, "PRE REGISTRO DE ALUMNOS CENTRO DE DESARROLLO E IMPULSO DE EMPRENDEDORES “CEDIEM”.")])], -1
 /* HOISTED */
 );
 
