@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="section-heading" style="margin-top:35%;">
-                        <h1 class="text-white">Pre registro de alumnos "CDC" Serafín Aguilar Franco.</h1>
+                        <h1 class="text-white">PRE REGISTRO DE ALUMNOS CENTRO DE DESARROLLO E IMPULSO DE EMPRENDEDORES “CEDIEM”.</h1>
                     </div>
                 </div>
                 <div class="col-lg-6">
