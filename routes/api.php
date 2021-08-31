@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/templates/{name}','TemplateController@show_for_name');
 Route::get('/components/{id}','ComponentController@show');
 Route::post('/request','RequestController@storage');
+Route::get('/courses','CourseController@index');
+Route::post('/students','StudentController@storage');
