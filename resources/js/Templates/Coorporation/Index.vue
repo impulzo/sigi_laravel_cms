@@ -34,7 +34,7 @@
                 <div class="col-lg-2">
                     <div class="logo d-none d-lg-block">
                         <!-- Brand -->
-                        <a class="navbar-brand js-scroll-trigger" href="index.html">
+                        <a class="navbar-brand js-scroll-trigger" href="javascript:void(0);" @click="goto('home')">
                             <h2>CEDIEM</h2>
                         </a>
                     </div>
@@ -170,10 +170,13 @@
                             <p class="lead mb-4" style="color:white">
                             CENTRO DE DESARROLLO E IMPULSO DE EMPRENDEDORES.
                             </p>
-                            <p class="lead mb-4" style="color:white" id="objetive">
+                            <!-- <p class="lead mb-4" style="color:white" id="objetive">
                                 <b>Objetivo:</b>
-                            CONTRIBUIR A TRAVÉS DE LA CAPACITACIÓN DE MANERA SISTÉMICA DESTINADO AL PERFECCIONAMIENTO Y ACTUALIZACIÓN DE CONOCIMIENTOS, OFRECIENDO OPORTUNIDADES DE APRENDIZAJE PARA EL DESARROLLO DE COMPETENCIAS Y HABILIDADES EN DIFERENTES OFICIOS HASTA LOGRAR QUE EL CAPACITANDO SE CONVIERTA EN UN EXITOSO EMPRENDEDOR..
-                            </p>
+                                LA FINALIDAD DEL CENTRO DE DESARROLLO E IMPULSO DE EMPRENDEDORES, ES EN BENEFICIO DE TODOS NUESTROS AGREMIADOS, 
+                                QUE REQUIERAN DESARROLLAR NUEVAS HABILIDADES Y DESTREZAS CREANDO ASÍ, A PROFESIONALES QUE REALMENTE SEAN CAPACES DE CUMPLIR CON SUS TAREAS 
+                                Y TRABAJEN EFICIENTEMENTE EN PRO DE LOS OBJETIVOS DE LAS EMPRESAS POR LAS CUALES SE ENCUENTREN CONTRATADOS, GENERANDO MEJORES COMPETENCIAS 
+                                LABORALES O EN SU CASO EMPRENDER ALGÚN NEGOCIO QUE LES PERMITA GENERAR OTROS INGRESOS, MEJORANDO LA CALIDAD DE VIDA A SUS FAMILIAS.
+                            </p> -->
                             <!-- Button -->
                             <!-- <p class="mb-0">
                                 <a href="#" target="_blank" class="btn btn-primary btn-circled">
@@ -361,30 +364,40 @@
         </div> <!-- / .row -->
 
         <div class="row justify-content-center">
-            <div class="col-lg-6 col-sm-6 col-md-6">
+            <div class="col-lg-4 col-sm-6 col-md-6">
                 <div class="process-block">
-                    <img :src="imageMision" alt=""  style="width:100%; height:300px;">
+                    <img :src="imageMision" alt=""  style="width:100%; height:200px;">
 
                     <h3>Misión</h3>
-                    <p>Asegurar que todas las personas se beneficien de los cursos de CEDIEM y con ello desarrollen habilidades que les permita vivir con dignidad humana siendo 
-                        protagonistas de sus decisiones y motor de su propio futuro.</p>
+                    <p>ASEGURAR QUE TODOS NUESTROS AGRAMIADOS, TRABAJADORES, EMPLAEDOS, OBREROS Y FAMILIARES SE BENEFICIEN DE LOS CURSOS DE CEDIEM Y CON ELLO DESARROLLEN HABILIDADES, 
+                    DESTREZAS GENERANDO MEJORES COMPETENCIAS LABORALES O EN SU CASO EMPRENDER ALGÚN NEGOCIO QUE LES PERMITA LA MEJORA DE CALIDAD DE VIDA, INDIVIDUAL, COLECTIVA Y  A 
+                    SUS FAMILIAS, SIENDO ELLOS LOS PROTAGONISTAS DE SUS DECISIONES Y MOTOR DE SU PROPIO FUTURO.
+                    </p>
                 </div>
             </div>
-            <!-- <div class="col-lg-4 col-sm-6 col-md-6">
+            <div class="col-lg-4 col-sm-6 col-md-6">
                 <div class="process-block">
-                    <img src="images/process/process-2.jpg" alt="" class="img-fluid">
+                    <img :src="imageObjetivo" alt="" class="img-fluid" style="width:100%; height:200px;">
 
-                    <h3>Project demostration</h3>
-                    <p>Nihil facere delectus eaque aut possimus nobis laudantium reprehenderit.</p>
+                    <h3>Objetivo</h3>
+                    <p>LA FINALIDAD DEL CENTRO DE DESARROLLO E IMPULSO DE EMPRENDEDORES, ES EN BENEFICIO DE TODOS NUESTROS AGREMIADOS, 
+                    QUE REQUIERAN DESARROLLAR NUEVAS HABILIDADES Y DESTREZAS CREANDO ASÍ, A PROFESIONALES QUE REALMENTE SEAN CAPACES DE CUMPLIR CON SUS TAREAS 
+                    Y TRABAJEN EFICIENTEMENTE EN PRO DE LOS OBJETIVOS DE LAS EMPRESAS POR LAS CUALES SE ENCUENTREN CONTRATADOS, GENERANDO MEJORES COMPETENCIAS 
+                    LABORALES O EN SU CASO EMPRENDER ALGÚN NEGOCIO QUE LES PERMITA GENERAR OTROS INGRESOS, MEJORANDO LA CALIDAD DE VIDA A SUS FAMILIAS.
+                    </p>
                 </div>
-            </div> -->
-            <div class="col-lg-6 col-sm-6 col-md-6">
+            </div>
+            <div class="col-lg-4 col-sm-6 col-md-6">
                 <div class="process-block">
                     <img :src="imageVision" alt="" class="img-fluid">
 
                     <h3>Visión</h3>
-                    <p>Ser un CENTRO DE DESARROLLO E IMPULSO DE EMPRENDEDORES influyente e incluyente en construir una cultura solidaridad centrada en las personas, 
-                        familias y en la necesidad de lograr mejores condiciones de vida, de trabajo, de libertad y de participación social para todos.</p>
+                    <p>SER EL CENTRO DE DESARROLLO E IMPULSO DE EMPRENDEDORES INFLUYENTE E INCLUYENTE EN EL ESTADO DE OAXACA, 
+                        ASI COMO EN TODA LA REPUBLICA MEXICANA, EN LA NECESIDAD CONSTRUIR UNA CULTURA DE SOLIDARIDAD, CON LA CAPACIDAD DE PROPORCIONAR LAS HERRAMIENTAS, 
+                        TECNICAS, EDUACION, ENTRADA EN LOS TRABAJADORES, EMPLEADOS, OBREROS, FAMILIARES Y AGREMIADOS PERTENECIENTES AL SINDICATO ARTÍCULO 123, 
+                        GENERANDO NUEVAS HABILIDADES QUE MEJOREN LAS COMPETENCIAS LABORALES, EN PRO DE CONDICIONES LABORALES, DESARROLLO PERSONAL, INTELECTUAL, 
+                        DE CAPACIDADES Y PARTICIPACIÓN SOCIAL.
+                    </p>
                 </div>
             </div>
         </div>
@@ -415,7 +428,7 @@
                 <div class="web-service-block">
                     <i class="fas fa-people-arrows"></i>
                     <h3>Respeto</h3>
-                    <p>tener un reconocimiento plural para generar la armonía y mejores resultados y mejores resultados haciendo cumplir con nuestros objetivos.</p>
+                    <p>Tener un reconocimiento plural para generar la armonía y mejores resultados y mejores resultados haciendo cumplir con nuestros objetivos.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 col-md-6 mb-30">
@@ -452,7 +465,7 @@
                 <div class="web-service-block">
                     <i class="far fa-handshake"></i>
                     <h3>Solaridad</h3>
-                    <p>Promover que el ciudadano sea tratado en un pie de igualdad y que puedan gozar de los derechos fundamentales que de ellos derivan.</p>
+                    <p>Invitar a colaborar a brindar apoyo y actuar ante las adversidades de los demás.</p>
                 </div>
             </div>
             <div class="col-lg-12 col-sm-12 col-md-12 ">
@@ -910,6 +923,7 @@ export default {
             logo: BASE_URL+'/img/logo/cediem_logo.png',
             imageMision: BASE_URL+'/templates/coorporation/images/banner/banner.jpg',
             imageVision: BASE_URL+'/templates/coorporation/images/banner/service.jpg',
+            imageObjetivo: BASE_URL+'/templates/coorporation/images/bg/banner_bg.jpg',
             ref: 'index',
         }
     },

@@ -17612,6 +17612,7 @@ __webpack_require__.r(__webpack_exports__);
   name: "Register On Course",
   data: function data() {
     return {
+      logo: BASE_URL + '/img/logo/cediem_logo.png',
       courses: [],
       student: {
         email: '',
@@ -17728,6 +17729,7 @@ __webpack_require__.r(__webpack_exports__);
       logo: BASE_URL + '/img/logo/cediem_logo.png',
       imageMision: BASE_URL + '/templates/coorporation/images/banner/banner.jpg',
       imageVision: BASE_URL + '/templates/coorporation/images/banner/service.jpg',
+      imageObjetivo: BASE_URL + '/templates/coorporation/images/bg/banner_bg.jpg',
       ref: 'index'
     };
   },
@@ -17991,37 +17993,31 @@ var _hoisted_3 = {
 var _hoisted_4 = {
   "class": "row"
 };
-
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_5 = {
   "class": "col-lg-6"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "section-heading",
-  style: {
-    "margin-top": "35%"
-  }
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", {
-  "class": "text-white"
-}, "PRE REGISTRO DE ALUMNOS CENTRO DE DESARROLLO E IMPULSO DE EMPRENDEDORES “CEDIEM”.")])], -1
+};
+var _hoisted_6 = {
+  "class": "section-heading"
+};
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br", null, null, -1
 /* HOISTED */
 );
 
-var _hoisted_6 = {
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", {
+  "class": "text-white"
+}, "PRE REGISTRO DE ALUMNOS CENTRO DE DESARROLLO E IMPULSO DE EMPRENDEDORES “CEDIEM”.", -1
+/* HOISTED */
+);
+
+var _hoisted_9 = {
   "class": "col-lg-6"
 };
-var _hoisted_7 = {
+var _hoisted_10 = {
   "class": "banner-contact-form bg-white"
 };
-var _hoisted_8 = {
-  action: "#"
-};
-var _hoisted_9 = {
-  "class": "form-group"
-};
-var _hoisted_10 = {
-  "class": "form-group"
-};
 var _hoisted_11 = {
-  "class": "form-group"
+  action: "#"
 };
 var _hoisted_12 = {
   "class": "form-group"
@@ -18032,27 +18028,46 @@ var _hoisted_13 = {
 var _hoisted_14 = {
   "class": "form-group"
 };
+var _hoisted_15 = {
+  "class": "form-group"
+};
+var _hoisted_16 = {
+  "class": "form-group"
+};
+var _hoisted_17 = {
+  "class": "form-group"
+};
 
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("option", {
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("option", {
   value: "0"
 }, "-- Seleccione un curso. --", -1
 /* HOISTED */
 );
 
-var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br", null, null, -1
+var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br", null, null, -1
 /* HOISTED */
 );
 
-var _hoisted_17 = {
+var _hoisted_20 = {
   key: 0,
   "class": "alert alert-success"
 };
-var _hoisted_18 = {
+var _hoisted_21 = {
   key: 1,
   "class": "alert alert-danger"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("form", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+    src: _ctx.logo,
+    alt: "banner-img",
+    "class": "img-fluid",
+    style: {
+      "width": "45%",
+      "margin-left": "23%"
+    }
+  }, null, 8
+  /* PROPS */
+  , ["src"]), _hoisted_7, _hoisted_8])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("form", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
     type: "text",
     "class": _ctx.valid.email,
     placeholder: "Correo: ",
@@ -18064,7 +18079,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     })
   }, null, 34
   /* CLASS, HYDRATE_EVENTS */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.student.email]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.student.email]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
     type: "text",
     "class": _ctx.valid.full_name,
     placeholder: "Nombre Completo:",
@@ -18076,10 +18091,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     })
   }, null, 34
   /* CLASS, HYDRATE_EVENTS */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.student.full_name]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.student.full_name]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
     type: "text",
     "class": _ctx.valid.age,
-    placeholder: "Edad (Solo mayores de edad)",
+    placeholder: "Edad:",
     "onUpdate:modelValue": _cache[5] || (_cache[5] = function ($event) {
       return _ctx.student.age = $event;
     }),
@@ -18088,12 +18103,12 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     })
   }, null, 34
   /* CLASS, HYDRATE_EVENTS */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.student.age]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.student.age]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
     type: "text",
     "class": _ctx.valid.municipality,
     name: "subject",
     id: "subject",
-    placeholder: "Municipio",
+    placeholder: "Municipio:",
     "onUpdate:modelValue": _cache[7] || (_cache[7] = function ($event) {
       return _ctx.student.municipality = $event;
     }),
@@ -18102,12 +18117,12 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     })
   }, null, 34
   /* CLASS, HYDRATE_EVENTS */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.student.municipality]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.student.municipality]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
     type: "text",
     "class": _ctx.valid.cell_phone,
     name: "subject",
     id: "subject",
-    placeholder: "Teléfono",
+    placeholder: "Teléfono:",
     "onUpdate:modelValue": _cache[9] || (_cache[9] = function ($event) {
       return _ctx.student.cell_phone = $event;
     }),
@@ -18116,7 +18131,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     })
   }, null, 34
   /* CLASS, HYDRATE_EVENTS */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.student.cell_phone]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("select", {
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.student.cell_phone]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("select", {
     "class": _ctx.valid.course_id,
     "onUpdate:modelValue": _cache[11] || (_cache[11] = function ($event) {
       return _ctx.student.course_id = $event;
@@ -18124,7 +18139,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onBlur: _cache[12] || (_cache[12] = function ($event) {
       return $options.validate('course_id');
     })
-  }, [_hoisted_15, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.courses, function (item) {
+  }, [_hoisted_18, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.courses, function (item) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("option", {
       key: item.id,
       value: item.id
@@ -18141,7 +18156,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onClick: _cache[13] || (_cache[13] = function () {
       return $options.sendStudent && $options.sendStudent.apply($options, arguments);
     })
-  }, "Registrarse."), _hoisted_16, _ctx.div.success ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_17, " Sus datos han sido registrados correctamente. ")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _ctx.div.error ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_18, " Error al registrarse. Contacte a algún administrador. ")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])])])])])]);
+  }, "Registrarse."), _hoisted_19, _ctx.div.success ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_20, " Sus datos han sido registrados correctamente. ")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _ctx.div.error ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_21, " Error al registrarse. Contacte a algún administrador. ")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])])])])])]);
 }
 
 /***/ }),
@@ -18166,28 +18181,44 @@ var _hoisted_2 = {
   "class": "logo-bar d-none d-md-block d-lg-block bg-light",
   ref: "home"
 };
-
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"row\"><div class=\"col-lg-2\"><div class=\"logo d-none d-lg-block\"><!-- Brand --><a class=\"navbar-brand js-scroll-trigger\" href=\"index.html\"><h2>CEDIEM</h2></a></div></div><div class=\"col-lg-8 justify-content-end ml-lg-auto d-flex col-12 col-md-12 justify-content-md-center\"><div class=\"top-info-block d-inline-flex\"><div class=\"icon-block\"><i class=\"ti-mobile\"></i></div><div class=\"info-block\"><h5 class=\"font-weight-500\">951-672-9426</h5><p>LLámanos</p></div></div><div class=\"top-info-block d-inline-flex\"><div class=\"icon-block\"><i class=\"ti-mobile\"></i></div><div class=\"info-block\"><h5 class=\"font-weight-500\">951-672-9356</h5><p>LLámanos</p></div></div><div class=\"top-info-block d-inline-flex\"><div class=\"icon-block\"><i class=\"ti-email\"></i></div><div class=\"info-block\"><h5 class=\"font-weight-500\">centrodedesarrollodeemprend@gmail.com</h5><p>Correo</p></div></div><!-- &lt;div class=&quot;top-info-block d-inline-flex&quot;&gt;\n                        &lt;div class=&quot;icon-block&quot;&gt;\n                            &lt;i class=&quot;ti-time&quot;&gt;&lt;/i&gt;\n                        &lt;/div&gt;\n                        &lt;div class=&quot;info-block&quot;&gt;\n                            &lt;h5 class=&quot;font-weight-500&quot;&gt;Mon-Sat 9:00-12.00 &lt;/h5&gt;\n                            &lt;p&gt;Sunday Closed&lt;/p&gt;\n                        &lt;/div&gt;\n                    &lt;/div&gt; --></div></div></div>", 1);
-
+var _hoisted_3 = {
+  "class": "container"
+};
 var _hoisted_4 = {
+  "class": "row"
+};
+var _hoisted_5 = {
+  "class": "col-lg-2"
+};
+var _hoisted_6 = {
+  "class": "logo d-none d-lg-block"
+};
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "CEDIEM", -1
+/* HOISTED */
+);
+
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-lg-8 justify-content-end ml-lg-auto d-flex col-12 col-md-12 justify-content-md-center\"><div class=\"top-info-block d-inline-flex\"><div class=\"icon-block\"><i class=\"ti-mobile\"></i></div><div class=\"info-block\"><h5 class=\"font-weight-500\">951-672-9426</h5><p>LLámanos</p></div></div><div class=\"top-info-block d-inline-flex\"><div class=\"icon-block\"><i class=\"ti-mobile\"></i></div><div class=\"info-block\"><h5 class=\"font-weight-500\">951-672-9356</h5><p>LLámanos</p></div></div><div class=\"top-info-block d-inline-flex\"><div class=\"icon-block\"><i class=\"ti-email\"></i></div><div class=\"info-block\"><h5 class=\"font-weight-500\">centrodedesarrollodeemprend@gmail.com</h5><p>Correo</p></div></div><!-- &lt;div class=&quot;top-info-block d-inline-flex&quot;&gt;\n                        &lt;div class=&quot;icon-block&quot;&gt;\n                            &lt;i class=&quot;ti-time&quot;&gt;&lt;/i&gt;\n                        &lt;/div&gt;\n                        &lt;div class=&quot;info-block&quot;&gt;\n                            &lt;h5 class=&quot;font-weight-500&quot;&gt;Mon-Sat 9:00-12.00 &lt;/h5&gt;\n                            &lt;p&gt;Sunday Closed&lt;/p&gt;\n                        &lt;/div&gt;\n                    &lt;/div&gt; --></div>", 1);
+
+var _hoisted_9 = {
   "class": "main-navigation",
   id: "mainmenu-area"
 };
-var _hoisted_5 = {
+var _hoisted_10 = {
   "class": "container"
 };
-var _hoisted_6 = {
+var _hoisted_11 = {
   "class": "navbar navbar-expand-lg navbar-dark bg-primary main-nav navbar-togglable rounded-radius"
 };
 
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
   "class": "navbar-brand d-lg-none d-block",
   href: ""
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h4", null, "CEDIEM")], -1
 /* HOISTED */
 );
 
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
   "class": "navbar-toggler",
   type: "button",
   "data-toggle": "collapse",
@@ -18201,65 +18232,82 @@ var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 /* HOISTED */
 );
 
-var _hoisted_9 = {
+var _hoisted_14 = {
   "class": "collapse navbar-collapse",
   id: "navbarCollapse"
 };
-var _hoisted_10 = {
+var _hoisted_15 = {
   "class": "navbar-nav "
 };
-var _hoisted_11 = {
+var _hoisted_16 = {
   "class": "nav-item dropdown"
 };
-var _hoisted_12 = {
+var _hoisted_17 = {
   "class": "nav-item "
 };
-var _hoisted_13 = {
+var _hoisted_18 = {
   "class": "nav-item "
 };
-var _hoisted_14 = {
+var _hoisted_19 = {
   "class": "ml-lg-auto list-unstyled m-0"
 };
-var _hoisted_15 = {
+var _hoisted_20 = {
   "class": "banner-area py-7"
 };
 
-var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   id: "content-banner"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_17 = {
+var _hoisted_22 = {
   "class": "container",
   id: "home"
 };
-var _hoisted_18 = {
+var _hoisted_23 = {
   "class": "row  align-items-center"
 };
 
-var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-md-12 col-lg-7 text-center text-lg-left\"><div class=\"main-banner\"><!-- Heading --><h1 class=\"display-4 mb-4 font-weight-normal\" style=\"color:white;\" id=\"title\"> CEDIEM </h1><!-- Subheading --><p class=\"lead mb-4\" style=\"color:white;\"> CENTRO DE DESARROLLO E IMPULSO DE EMPRENDEDORES. </p><p class=\"lead mb-4\" style=\"color:white;\" id=\"objetive\"><b>Objetivo:</b> CONTRIBUIR A TRAVÉS DE LA CAPACITACIÓN DE MANERA SISTÉMICA DESTINADO AL PERFECCIONAMIENTO Y ACTUALIZACIÓN DE CONOCIMIENTOS, OFRECIENDO OPORTUNIDADES DE APRENDIZAJE PARA EL DESARROLLO DE COMPETENCIAS Y HABILIDADES EN DIFERENTES OFICIOS HASTA LOGRAR QUE EL CAPACITANDO SE CONVIERTA EN UN EXITOSO EMPRENDEDOR.. </p><!-- Button --><!-- &lt;p class=&quot;mb-0&quot;&gt;\n                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;btn btn-primary btn-circled&quot;&gt;\n                                    Purchase now\n                                &lt;/a&gt;\n                            &lt;/p&gt; --></div></div>", 1);
+var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "col-md-12 col-lg-7 text-center text-lg-left"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "main-banner"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Heading "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", {
+  "class": "display-4 mb-4 font-weight-normal",
+  style: {
+    "color": "white"
+  },
+  id: "title"
+}, " CEDIEM "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Subheading "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "lead mb-4",
+  style: {
+    "color": "white"
+  }
+}, " CENTRO DE DESARROLLO E IMPULSO DE EMPRENDEDORES. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <p class=\"lead mb-4\" style=\"color:white\" id=\"objetive\">\n                                <b>Objetivo:</b>\n                                LA FINALIDAD DEL CENTRO DE DESARROLLO E IMPULSO DE EMPRENDEDORES, ES EN BENEFICIO DE TODOS NUESTROS AGREMIADOS, \n                                QUE REQUIERAN DESARROLLAR NUEVAS HABILIDADES Y DESTREZAS CREANDO ASÍ, A PROFESIONALES QUE REALMENTE SEAN CAPACES DE CUMPLIR CON SUS TAREAS \n                                Y TRABAJEN EFICIENTEMENTE EN PRO DE LOS OBJETIVOS DE LAS EMPRESAS POR LAS CUALES SE ENCUENTREN CONTRATADOS, GENERANDO MEJORES COMPETENCIAS \n                                LABORALES O EN SU CASO EMPRENDER ALGÚN NEGOCIO QUE LES PERMITA GENERAR OTROS INGRESOS, MEJORANDO LA CALIDAD DE VIDA A SUS FAMILIAS.\n                            </p> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Button "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <p class=\"mb-0\">\n                                <a href=\"#\" target=\"_blank\" class=\"btn btn-primary btn-circled\">\n                                    Purchase now\n                                </a>\n                            </p> ")])], -1
+/* HOISTED */
+);
 
-var _hoisted_20 = {
+var _hoisted_25 = {
   "class": "col-lg-3 d-none d-lg-block",
   style: {
     "margin-left": "12%"
   },
   id: "logo"
 };
-var _hoisted_21 = {
+var _hoisted_26 = {
   "class": "banner-img-block"
 };
-var _hoisted_22 = {
+var _hoisted_27 = {
   "class": "section",
   id: "process",
   ref: "about"
 };
-var _hoisted_23 = {
+var _hoisted_28 = {
   "class": "container"
 };
 
-var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_29 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "row justify-content-center"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "col-md-12 col-lg-12 text-center"
@@ -18271,54 +18319,69 @@ var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 /* HOISTED */
 );
 
-var _hoisted_25 = {
+var _hoisted_30 = {
   "class": "row justify-content-center"
 };
-var _hoisted_26 = {
-  "class": "col-lg-6 col-sm-6 col-md-6"
-};
-var _hoisted_27 = {
-  "class": "process-block"
-};
-
-var _hoisted_28 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, "Misión", -1
-/* HOISTED */
-);
-
-var _hoisted_29 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "Asegurar que todas las personas se beneficien de los cursos de CEDIEM y con ello desarrollen habilidades que les permita vivir con dignidad humana siendo protagonistas de sus decisiones y motor de su propio futuro.", -1
-/* HOISTED */
-);
-
-var _hoisted_30 = {
-  "class": "col-lg-6 col-sm-6 col-md-6"
-};
 var _hoisted_31 = {
+  "class": "col-lg-4 col-sm-6 col-md-6"
+};
+var _hoisted_32 = {
   "class": "process-block"
 };
 
-var _hoisted_32 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, "Visión", -1
+var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, "Misión", -1
 /* HOISTED */
 );
 
-var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "Ser un CENTRO DE DESARROLLO E IMPULSO DE EMPRENDEDORES influyente e incluyente en construir una cultura solidaridad centrada en las personas, familias y en la necesidad de lograr mejores condiciones de vida, de trabajo, de libertad y de participación social para todos.", -1
+var _hoisted_34 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "ASEGURAR QUE TODOS NUESTROS AGRAMIADOS, TRABAJADORES, EMPLAEDOS, OBREROS Y FAMILIARES SE BENEFICIEN DE LOS CURSOS DE CEDIEM Y CON ELLO DESARROLLEN HABILIDADES, DESTREZAS GENERANDO MEJORES COMPETENCIAS LABORALES O EN SU CASO EMPRENDER ALGÚN NEGOCIO QUE LES PERMITA LA MEJORA DE CALIDAD DE VIDA, INDIVIDUAL, COLECTIVA Y A SUS FAMILIAS, SIENDO ELLOS LOS PROTAGONISTAS DE SUS DECISIONES Y MOTOR DE SU PROPIO FUTURO. ", -1
 /* HOISTED */
 );
 
-var _hoisted_34 = {
+var _hoisted_35 = {
+  "class": "col-lg-4 col-sm-6 col-md-6"
+};
+var _hoisted_36 = {
+  "class": "process-block"
+};
+
+var _hoisted_37 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, "Objetivo", -1
+/* HOISTED */
+);
+
+var _hoisted_38 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "LA FINALIDAD DEL CENTRO DE DESARROLLO E IMPULSO DE EMPRENDEDORES, ES EN BENEFICIO DE TODOS NUESTROS AGREMIADOS, QUE REQUIERAN DESARROLLAR NUEVAS HABILIDADES Y DESTREZAS CREANDO ASÍ, A PROFESIONALES QUE REALMENTE SEAN CAPACES DE CUMPLIR CON SUS TAREAS Y TRABAJEN EFICIENTEMENTE EN PRO DE LOS OBJETIVOS DE LAS EMPRESAS POR LAS CUALES SE ENCUENTREN CONTRATADOS, GENERANDO MEJORES COMPETENCIAS LABORALES O EN SU CASO EMPRENDER ALGÚN NEGOCIO QUE LES PERMITA GENERAR OTROS INGRESOS, MEJORANDO LA CALIDAD DE VIDA A SUS FAMILIAS. ", -1
+/* HOISTED */
+);
+
+var _hoisted_39 = {
+  "class": "col-lg-4 col-sm-6 col-md-6"
+};
+var _hoisted_40 = {
+  "class": "process-block"
+};
+
+var _hoisted_41 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, "Visión", -1
+/* HOISTED */
+);
+
+var _hoisted_42 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "SER EL CENTRO DE DESARROLLO E IMPULSO DE EMPRENDEDORES INFLUYENTE E INCLUYENTE EN EL ESTADO DE OAXACA, ASI COMO EN TODA LA REPUBLICA MEXICANA, EN LA NECESIDAD CONSTRUIR UNA CULTURA DE SOLIDARIDAD, CON LA CAPACIDAD DE PROPORCIONAR LAS HERRAMIENTAS, TECNICAS, EDUACION, ENTRADA EN LOS TRABAJADORES, EMPLEADOS, OBREROS, FAMILIARES Y AGREMIADOS PERTENECIENTES AL SINDICATO ARTÍCULO 123, GENERANDO NUEVAS HABILIDADES QUE MEJOREN LAS COMPETENCIAS LABORALES, EN PRO DE CONDICIONES LABORALES, DESARROLLO PERSONAL, INTELECTUAL, DE CAPACIDADES Y PARTICIPACIÓN SOCIAL. ", -1
+/* HOISTED */
+);
+
+var _hoisted_43 = {
   "class": "section",
   id: "services-2",
   ref: "values"
 };
 
-var _hoisted_35 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"row justify-content-center\"><div class=\"col-md-8 col-lg-6 text-center\"><div class=\"section-heading\"><!-- Heading --><h2 class=\"section-title mb-2 text-white\"> Nuestros Valores </h2><!-- Subheading --><!-- &lt;p class=&quot;mb-5 text-white&quot;&gt;\n                        Rapoo can be used to create anything from a small marketing page to a sophisticated website.\n                    &lt;/p&gt; --></div></div></div><!-- / .row --><div class=\"row\"><div class=\"col-lg-4 col-sm-6 col-md-6 mb-30\"><div class=\"web-service-block\"><i class=\"fas fa-people-arrows\"></i><h3>Respeto</h3><p>tener un reconocimiento plural para generar la armonía y mejores resultados y mejores resultados haciendo cumplir con nuestros objetivos.</p></div></div><div class=\"col-lg-4 col-sm-6 col-md-6 mb-30\"><div class=\"web-service-block\"><i class=\"far fa-comments\"></i><h3>Comunicación.</h3><p>Como valor social e intercambiamos opiniones e interlocución y entre todas las partes para lograr mejore resultados colectivos.</p></div></div><div class=\"col-lg-4 col-sm-6 col-md-6 mb-30\"><div class=\"web-service-block\"><i class=\"ti-announcement\"></i><h3>Transparencia</h3><p>Las acciones claras y concretas para bue funcionamiento en todos y cada una de las áreas y priorizando siempre una mejor Rendición de Cuentas.</p></div></div><div class=\"col-lg-4 col-sm-6 col-md-6 \"><div class=\"web-service-block\"><i class=\"ti-layers-alt\"></i><h3>Trabajo Social</h3><p>Brindar y contribuir a mejores condiciones formativas para el desarrollo de sus habilidades y emprendimiento en apoya de mejores oportunidades para un mejor desarrollo de las personas. - DIGNIDAD: Promover que el ciudadano sea tratado en un pie de igualdad y que puedan gozar de los derechos fundamentales que de ellos derivan.</p></div></div><div class=\"col-lg-4 col-sm-6 col-md-6 \"><div class=\"web-service-block\"><i class=\"fas fa-fist-raised\"></i><h3>Dignidad</h3><p>Promover que el ciudadano sea tratado en un pie de igualdad y que puedan gozar de los derechos fundamentales que de ellos derivan.</p></div></div><div class=\"col-lg-4 col-sm-6 col-md-6 \"><div class=\"web-service-block\"><i class=\"far fa-handshake\"></i><h3>Solaridad</h3><p>Promover que el ciudadano sea tratado en un pie de igualdad y que puedan gozar de los derechos fundamentales que de ellos derivan.</p></div></div><div class=\"col-lg-12 col-sm-12 col-md-12 \"><div class=\"web-service-block\"><i class=\"fas fa-users\"></i><h3>Inclusión</h3><p style=\"text-align:center;\">Generar pluralidad en el ciudadano como un área de oportunidad para enriquecer objetivamente a la sociedad.</p></div></div></div></div>", 1);
+var _hoisted_44 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"row justify-content-center\"><div class=\"col-md-8 col-lg-6 text-center\"><div class=\"section-heading\"><!-- Heading --><h2 class=\"section-title mb-2 text-white\"> Nuestros Valores </h2><!-- Subheading --><!-- &lt;p class=&quot;mb-5 text-white&quot;&gt;\n                        Rapoo can be used to create anything from a small marketing page to a sophisticated website.\n                    &lt;/p&gt; --></div></div></div><!-- / .row --><div class=\"row\"><div class=\"col-lg-4 col-sm-6 col-md-6 mb-30\"><div class=\"web-service-block\"><i class=\"fas fa-people-arrows\"></i><h3>Respeto</h3><p>Tener un reconocimiento plural para generar la armonía y mejores resultados y mejores resultados haciendo cumplir con nuestros objetivos.</p></div></div><div class=\"col-lg-4 col-sm-6 col-md-6 mb-30\"><div class=\"web-service-block\"><i class=\"far fa-comments\"></i><h3>Comunicación.</h3><p>Como valor social e intercambiamos opiniones e interlocución y entre todas las partes para lograr mejore resultados colectivos.</p></div></div><div class=\"col-lg-4 col-sm-6 col-md-6 mb-30\"><div class=\"web-service-block\"><i class=\"ti-announcement\"></i><h3>Transparencia</h3><p>Las acciones claras y concretas para bue funcionamiento en todos y cada una de las áreas y priorizando siempre una mejor Rendición de Cuentas.</p></div></div><div class=\"col-lg-4 col-sm-6 col-md-6 \"><div class=\"web-service-block\"><i class=\"ti-layers-alt\"></i><h3>Trabajo Social</h3><p>Brindar y contribuir a mejores condiciones formativas para el desarrollo de sus habilidades y emprendimiento en apoya de mejores oportunidades para un mejor desarrollo de las personas. - DIGNIDAD: Promover que el ciudadano sea tratado en un pie de igualdad y que puedan gozar de los derechos fundamentales que de ellos derivan.</p></div></div><div class=\"col-lg-4 col-sm-6 col-md-6 \"><div class=\"web-service-block\"><i class=\"fas fa-fist-raised\"></i><h3>Dignidad</h3><p>Promover que el ciudadano sea tratado en un pie de igualdad y que puedan gozar de los derechos fundamentales que de ellos derivan.</p></div></div><div class=\"col-lg-4 col-sm-6 col-md-6 \"><div class=\"web-service-block\"><i class=\"far fa-handshake\"></i><h3>Solaridad</h3><p>Invitar a colaborar a brindar apoyo y actuar ante las adversidades de los demás.</p></div></div><div class=\"col-lg-12 col-sm-12 col-md-12 \"><div class=\"web-service-block\"><i class=\"fas fa-users\"></i><h3>Inclusión</h3><p style=\"text-align:center;\">Generar pluralidad en el ciudadano como un área de oportunidad para enriquecer objetivamente a la sociedad.</p></div></div></div></div>", 1);
 
-var _hoisted_36 = {
+var _hoisted_45 = {
   ref: "registration"
 };
 
-var _hoisted_37 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<footer class=\"section \" id=\"footer\"><div class=\"overlay footer-overlay\"></div><div class=\"container\"><div class=\"row justify-content-start\"><!-- &lt;div class=&quot;col-lg-4 col-sm-12&quot;&gt;\n                &lt;div class=&quot;footer-widget&quot;&gt;\n                    &lt;a href=&quot;#&quot; class=&quot;footer-brand text-white&quot;&gt;\n                        Rapoo\n                    &lt;/a&gt;\n                    &lt;p&gt;Each theme featured at the Bootstrap marketplace has been reviewed by Bootstrap&#39;s creators.Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;\n                &lt;/div&gt;\n            &lt;/div&gt; --><!-- &lt;div class=&quot;col-lg-3 ml-lg-auto col-sm-12&quot;&gt;\n                &lt;div class=&quot;footer-widget&quot;&gt;\n                    &lt;h3&gt;Account&lt;/h3&gt;\n                    &lt;ul class=&quot;footer-links &quot;&gt;\n                        &lt;li&gt;\n                            &lt;a href=&quot;#&quot;&gt;\n                                Terms and conditions\n                            &lt;/a&gt;\n                        &lt;/li&gt;\n                        &lt;li&gt;\n                            &lt;a href=&quot;#&quot;&gt;\n                                Privacy policy\n                            &lt;/a&gt;\n                        &lt;/li&gt;\n                        &lt;li&gt;\n                            &lt;a href=&quot;#&quot;&gt;\n                                Affiliate services\n                            &lt;/a&gt;\n                        &lt;/li&gt;\n                        &lt;li&gt;\n                            &lt;a href=&quot;#&quot;&gt;\n                                Help and support\n                            &lt;/a&gt;\n                        &lt;/li&gt;\n                        &lt;li&gt;\n                            &lt;a href=&quot;#&quot;&gt;\n                                Frequently Asked Question\n                            &lt;/a&gt;\n                        &lt;/li&gt;\n                    &lt;/ul&gt;\n                &lt;/div&gt;\n            &lt;/div&gt; --><!-- &lt;div class=&quot;col-lg-2 col-sm-6&quot;&gt;\n                &lt;div class=&quot;footer-widget&quot;&gt;\n                    &lt;h3&gt;About&lt;/h3&gt;\n                    &lt;ul class=&quot;footer-links &quot;&gt;\n                        &lt;li&gt;\n                            &lt;a href=&quot;#&quot;&gt;\n                                Services\n                            &lt;/a&gt;\n                        &lt;/li&gt;\n                        &lt;li&gt;\n                            &lt;a href=&quot;#&quot;&gt;\n                                About Us\n                            &lt;/a&gt;\n                        &lt;/li&gt;\n                        &lt;li&gt;\n                            &lt;a href=&quot;#&quot;&gt;\n                                Pricing\n                            &lt;/a&gt;\n                        &lt;/li&gt;\n                        &lt;li&gt;\n                            &lt;a href=&quot;#&quot;&gt;\n                                Products Shop\n                            &lt;/a&gt;\n                        &lt;/li&gt;\n\n                        &lt;li&gt;\n                            &lt;a href=&quot;#&quot;&gt;\n                                Contact\n                            &lt;/a&gt;\n                        &lt;/li&gt;\n                    &lt;/ul&gt;\n                &lt;/div&gt;\n            &lt;/div&gt; --><!-- &lt;div class=&quot;col-lg-2 col-sm-6&quot;&gt;\n                &lt;div class=&quot;footer-widget&quot;&gt;\n                    &lt;h3&gt;Socials&lt;/h3&gt;\n                    &lt;ul class=&quot;list-unstyled footer-links&quot;&gt;\n                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;Facebook&lt;/a&gt;&lt;/li&gt;\n                        &lt;li&gt;\n                        &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;Twitter\n                        &lt;/a&gt;&lt;/li&gt;\n                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-pinterest-p&quot;&gt;&lt;/i&gt;Pinterest\n                        &lt;/a&gt;&lt;/li&gt;\n                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-linkedin&quot;&gt;&lt;/i&gt;linkedin\n                        &lt;/a&gt;&lt;/li&gt;\n                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-youtube&quot;&gt;&lt;/i&gt;YouTube\n                        &lt;/a&gt;&lt;/li&gt;\n                    &lt;/ul&gt;\n                &lt;/div&gt;\n            &lt;/div&gt; --></div><div class=\"row text-right pt-5\"><div class=\"col-lg-12\"><!-- Copyright --><p> © Copyright <span class=\"current-year\">CEDIEM </span> All rights reserved. Creado por Impulzo S.A.S. </p></div></div><!-- / .row --></div><!-- / .container --></footer>", 1);
+var _hoisted_46 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<footer class=\"section \" id=\"footer\"><div class=\"overlay footer-overlay\"></div><div class=\"container\"><div class=\"row justify-content-start\"><!-- &lt;div class=&quot;col-lg-4 col-sm-12&quot;&gt;\n                &lt;div class=&quot;footer-widget&quot;&gt;\n                    &lt;a href=&quot;#&quot; class=&quot;footer-brand text-white&quot;&gt;\n                        Rapoo\n                    &lt;/a&gt;\n                    &lt;p&gt;Each theme featured at the Bootstrap marketplace has been reviewed by Bootstrap&#39;s creators.Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;\n                &lt;/div&gt;\n            &lt;/div&gt; --><!-- &lt;div class=&quot;col-lg-3 ml-lg-auto col-sm-12&quot;&gt;\n                &lt;div class=&quot;footer-widget&quot;&gt;\n                    &lt;h3&gt;Account&lt;/h3&gt;\n                    &lt;ul class=&quot;footer-links &quot;&gt;\n                        &lt;li&gt;\n                            &lt;a href=&quot;#&quot;&gt;\n                                Terms and conditions\n                            &lt;/a&gt;\n                        &lt;/li&gt;\n                        &lt;li&gt;\n                            &lt;a href=&quot;#&quot;&gt;\n                                Privacy policy\n                            &lt;/a&gt;\n                        &lt;/li&gt;\n                        &lt;li&gt;\n                            &lt;a href=&quot;#&quot;&gt;\n                                Affiliate services\n                            &lt;/a&gt;\n                        &lt;/li&gt;\n                        &lt;li&gt;\n                            &lt;a href=&quot;#&quot;&gt;\n                                Help and support\n                            &lt;/a&gt;\n                        &lt;/li&gt;\n                        &lt;li&gt;\n                            &lt;a href=&quot;#&quot;&gt;\n                                Frequently Asked Question\n                            &lt;/a&gt;\n                        &lt;/li&gt;\n                    &lt;/ul&gt;\n                &lt;/div&gt;\n            &lt;/div&gt; --><!-- &lt;div class=&quot;col-lg-2 col-sm-6&quot;&gt;\n                &lt;div class=&quot;footer-widget&quot;&gt;\n                    &lt;h3&gt;About&lt;/h3&gt;\n                    &lt;ul class=&quot;footer-links &quot;&gt;\n                        &lt;li&gt;\n                            &lt;a href=&quot;#&quot;&gt;\n                                Services\n                            &lt;/a&gt;\n                        &lt;/li&gt;\n                        &lt;li&gt;\n                            &lt;a href=&quot;#&quot;&gt;\n                                About Us\n                            &lt;/a&gt;\n                        &lt;/li&gt;\n                        &lt;li&gt;\n                            &lt;a href=&quot;#&quot;&gt;\n                                Pricing\n                            &lt;/a&gt;\n                        &lt;/li&gt;\n                        &lt;li&gt;\n                            &lt;a href=&quot;#&quot;&gt;\n                                Products Shop\n                            &lt;/a&gt;\n                        &lt;/li&gt;\n\n                        &lt;li&gt;\n                            &lt;a href=&quot;#&quot;&gt;\n                                Contact\n                            &lt;/a&gt;\n                        &lt;/li&gt;\n                    &lt;/ul&gt;\n                &lt;/div&gt;\n            &lt;/div&gt; --><!-- &lt;div class=&quot;col-lg-2 col-sm-6&quot;&gt;\n                &lt;div class=&quot;footer-widget&quot;&gt;\n                    &lt;h3&gt;Socials&lt;/h3&gt;\n                    &lt;ul class=&quot;list-unstyled footer-links&quot;&gt;\n                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;Facebook&lt;/a&gt;&lt;/li&gt;\n                        &lt;li&gt;\n                        &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;Twitter\n                        &lt;/a&gt;&lt;/li&gt;\n                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-pinterest-p&quot;&gt;&lt;/i&gt;Pinterest\n                        &lt;/a&gt;&lt;/li&gt;\n                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-linkedin&quot;&gt;&lt;/i&gt;linkedin\n                        &lt;/a&gt;&lt;/li&gt;\n                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-youtube&quot;&gt;&lt;/i&gt;YouTube\n                        &lt;/a&gt;&lt;/li&gt;\n                    &lt;/ul&gt;\n                &lt;/div&gt;\n            &lt;/div&gt; --></div><div class=\"row text-right pt-5\"><div class=\"col-lg-12\"><!-- Copyright --><p> © Copyright <span class=\"current-year\">CEDIEM </span> All rights reserved. Creado por Impulzo S.A.S. </p></div></div><!-- / .row --></div><!-- / .container --></footer>", 1);
 
-var _hoisted_38 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+var _hoisted_47 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
   "class": "scroll-to-top js-scroll-trigger",
   href: "#top-header"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
@@ -18330,12 +18393,18 @@ var _hoisted_38 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_register_on_course = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("register-on-course");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" LOADER TEMPLATE "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div id=\"page-loader\">\n    <div class=\"loader-icon fa fa-spin colored-border\"></div>\n</div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" /LOADER TEMPLATE "), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [_hoisted_3], 512
-  /* NEED_PATCH */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" NAVBAR\n    ================================================= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("nav", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Toggler "), _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Collapse "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Links "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-    "class": "nav-link",
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" LOADER TEMPLATE "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div id=\"page-loader\">\n    <div class=\"loader-icon fa fa-spin colored-border\"></div>\n</div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" /LOADER TEMPLATE "), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Brand "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+    "class": "navbar-brand js-scroll-trigger",
     href: "javascript:void(0);",
     onClick: _cache[1] || (_cache[1] = function ($event) {
+      return $options["goto"]('home');
+    })
+  }, [_hoisted_7])])]), _hoisted_8])])], 512
+  /* NEED_PATCH */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" NAVBAR\n    ================================================= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("nav", _hoisted_11, [_hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Toggler "), _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Collapse "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Links "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+    "class": "nav-link",
+    href: "javascript:void(0);",
+    onClick: _cache[2] || (_cache[2] = function ($event) {
       return $options["goto"]('home');
     }),
     id: "navbarWelcome",
@@ -18343,52 +18412,62 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "data-toggle": "dropdown",
     "aria-haspopup": "true",
     "aria-expanded": "false"
-  }, " Inicio "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"dropdown-menu\" aria-labelledby=\"navbarWelcome\">\n                                 <a class=\"dropdown-item \" href=\"index.html\">\n                                    Home-1\n                                </a>\n                                <a class=\"dropdown-item \" href=\"index-2.html\">\n                                    Home-2\n                                </a> \n                                <a class=\"dropdown-item \" href=\"index-3.html\">\n                                    Home-3\n                                </a>\n                                <a class=\"dropdown-item \" href=\"index-4.html\">\n                                    Home-4\n                                </a>\n                            </div> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+  }, " Inicio "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"dropdown-menu\" aria-labelledby=\"navbarWelcome\">\n                                 <a class=\"dropdown-item \" href=\"index.html\">\n                                    Home-1\n                                </a>\n                                <a class=\"dropdown-item \" href=\"index-2.html\">\n                                    Home-2\n                                </a> \n                                <a class=\"dropdown-item \" href=\"index-3.html\">\n                                    Home-3\n                                </a>\n                                <a class=\"dropdown-item \" href=\"index-4.html\">\n                                    Home-4\n                                </a>\n                            </div> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
     href: "javascript:void(0);",
     "class": "nav-link js-scroll-trigger",
-    onClick: _cache[2] || (_cache[2] = function ($event) {
+    onClick: _cache[3] || (_cache[3] = function ($event) {
       return $options["goto"]('about');
     })
-  }, " Nosotros ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li class=\"nav-item \">\n                            <a href=\"service.html\" class=\"nav-link js-scroll-trigger\">\n                                Cursos\n                            </a>\n                        </li>\n                        <li class=\"nav-item \">\n                            <a href=\"project.html\" class=\"nav-link js-scroll-trigger\">\n                                Registrate\n                            </a>\n                        </li> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+  }, " Nosotros ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li class=\"nav-item \">\n                            <a href=\"service.html\" class=\"nav-link js-scroll-trigger\">\n                                Cursos\n                            </a>\n                        </li>\n                        <li class=\"nav-item \">\n                            <a href=\"project.html\" class=\"nav-link js-scroll-trigger\">\n                                Registrate\n                            </a>\n                        </li> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
     href: "javascript:void(0);",
     "class": "nav-link",
-    onClick: _cache[3] || (_cache[3] = function ($event) {
+    onClick: _cache[4] || (_cache[4] = function ($event) {
       return $options["goto"]('values');
     })
-  }, " Valores ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+  }, " Valores ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
     href: "javascript:void(0);",
     "class": "btn btn-white btn-circled",
-    onClick: _cache[4] || (_cache[4] = function ($event) {
+    onClick: _cache[5] || (_cache[5] = function ($event) {
       return $options["goto"]('registration');
     })
-  }, "Regístrate")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" / .navbar-collapse ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" / .container ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" HERO\n    ================================================== "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_15, [_hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Content "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_18, [_hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  }, "Regístrate")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" / .navbar-collapse ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" / .container ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" HERO\n    ================================================== "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_20, [_hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Content "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_23, [_hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_26, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
     src: _ctx.logo,
     alt: "banner-img",
     "class": "img-fluid"
   }, null, 8
   /* PROPS */
-  , ["src"])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" / .row ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" / .container ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section class=\"section bg-grey\" id=\"feature\">\n    <div class=\"container\">\n        <div class=\"row justy-content-center\">\n            <div class=\"col-lg-3 col-sm-6 col-md-6\">\n                <div class=\"text-center feature-block\">\n                    <div class=\"img-icon-block mb-4\">\n                        <i class=\"ti-thumb-up\"></i>\n                    </div>\n                    <h4 class=\"mb-2\">The right advice</h4>\n                    <p>Our team are experts in matching you with the right provider.</p>\n                </div>\n            </div>\n\n            <div class=\"col-lg-3 col-sm-6 col-md-6\">\n                <div class=\"text-center feature-block\">\n                    <div class=\"img-icon-block mb-4\">\n                        <i class=\"ti-cup\"></i>\n                    </div>\n                    <h4 class=\"mb-2\">Recognised for excellence</h4>\n                    <p>We've been awarded for our high rate of customer satisfaction.</p>\n                </div>\n            </div>\n\n            <div class=\"col-lg-3 col-sm-6 col-md-6\">\n                <div class=\"text-center feature-block\">\n                    <div class=\"img-icon-block mb-4\">\n                        <i class=\"ti-wallet\"></i>\n                    </div>\n                    <h4 class=\"mb-2\">Compare the best</h4>\n                    <p>We only compare market leaders with a reputation for service quality.</p>\n                </div>\n            </div>\n\n            <div class=\"col-lg-3 col-sm-6 col-md-6\">\n                <div class=\"text-center feature-block\">\n                    <div class=\"img-icon-block mb-4\">\n                        <i class=\"ti-dashboard\"></i>\n                    </div>\n                    <h4 class=\"mb-2\">Premium Services</h4>\n                    <p>We only compare market leaders with a reputation for service quality.</p>\n                </div>\n            </div>\n        </div>\n    </div> \n</section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" / .container "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" SERVICE-1\n================================================== "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section class=\"bg-grey\" id=\"service\">\n    <div class=\"container\">\n        <div class=\"row \">\n            <div class=\"col-lg-4\">\n                <div class=\"service-img\">\n                    <img src=\"images/blog-lg.jpg\" alt=\"\" class=\"img-fluid\">\n                </div>\n            </div>\n\n            <div class=\"col-lg-6 pl-4\">\n                <div class=\"service-content\">\n                    <h1>Get a better deal and start saving money today</h1>\n                    <p>We compare hundreds of leading products and plans across many categories to bring you the best value for money.</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section class=\"pt-5 service-wrap\">\n    <div class=\"container\">\n        <div class=\"row \">\n            <div class=\"col-lg-8 offset-lg-4\">\n                <div class=\"carousel slide \" id=\"service-carousel\" data-ride=\"carousel\">\n                    <div class=\"carousel-inner\">\n                        <div class=\"carousel-item active\">\n                            <div class=\"col-lg-12\">\n                                <div class=\"row\">\n                                    <div class=\"col-lg-6\">\n                                        <div class=\"service-block media\">\n                                            <div class=\"service-icon\">\n                                                <i class=\"ti-reload\"></i>\n                                            </div>\n                                            <div class=\"service-inner-content media-body\">\n                                                <h4>Backup System</h4>\n                                                <p>Our team are experts in matching you with the right provider.</p>\n                                            </div>\n                                        </div>\n                                    </div>\n                                    <div class=\"col-lg-6\">\n                                        <div class=\"service-block media\">\n                                            <div class=\"service-icon\">\n                                                <i class=\"ti-cloud\"></i>\n                                            </div>\n                                            <div class=\"service-inner-content media-body\">\n                                                <h4>Cloud Hosting</h4>\n                                                <p>Our team are experts in matching you with the right provider.</p>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n\n                        <div class=\"carousel-item\">\n                            <div class=\"col-lg-12\">\n                                <div class=\"row\">\n                                    <div class=\"col-lg-6\">\n                                        <div class=\"service-block media\">\n                                            <div class=\"service-icon\">\n                                                <i class=\"ti-world\"></i>\n                                            </div>\n                                            <div class=\"service-inner-content media-body\">\n                                                <h4>Web hosting</h4>\n                                                <p>Our team are experts in matching you with the right provider.</p>\n                                            </div>\n                                        </div>\n                                    </div>\n                                    <div class=\"col-lg-6\">\n                                        <div class=\"service-block media\">\n                                            <div class=\"service-icon\">\n                                                <i class=\"ti-server\"></i>\n                                            </div>\n                                            <div class=\"service-inner-content media-body\">\n                                                <h4>Office Cloud</h4>\n                                                <p>Our team are experts in matching you with the right provider.</p>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <p class=\"pl-3\">Want to know more about this? <a href=\"#\">Contact us</a></p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Mision y Vision "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_23, [_hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" / .row "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_26, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_27, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  , ["src"])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" / .row ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" / .container ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section class=\"section bg-grey\" id=\"feature\">\n    <div class=\"container\">\n        <div class=\"row justy-content-center\">\n            <div class=\"col-lg-3 col-sm-6 col-md-6\">\n                <div class=\"text-center feature-block\">\n                    <div class=\"img-icon-block mb-4\">\n                        <i class=\"ti-thumb-up\"></i>\n                    </div>\n                    <h4 class=\"mb-2\">The right advice</h4>\n                    <p>Our team are experts in matching you with the right provider.</p>\n                </div>\n            </div>\n\n            <div class=\"col-lg-3 col-sm-6 col-md-6\">\n                <div class=\"text-center feature-block\">\n                    <div class=\"img-icon-block mb-4\">\n                        <i class=\"ti-cup\"></i>\n                    </div>\n                    <h4 class=\"mb-2\">Recognised for excellence</h4>\n                    <p>We've been awarded for our high rate of customer satisfaction.</p>\n                </div>\n            </div>\n\n            <div class=\"col-lg-3 col-sm-6 col-md-6\">\n                <div class=\"text-center feature-block\">\n                    <div class=\"img-icon-block mb-4\">\n                        <i class=\"ti-wallet\"></i>\n                    </div>\n                    <h4 class=\"mb-2\">Compare the best</h4>\n                    <p>We only compare market leaders with a reputation for service quality.</p>\n                </div>\n            </div>\n\n            <div class=\"col-lg-3 col-sm-6 col-md-6\">\n                <div class=\"text-center feature-block\">\n                    <div class=\"img-icon-block mb-4\">\n                        <i class=\"ti-dashboard\"></i>\n                    </div>\n                    <h4 class=\"mb-2\">Premium Services</h4>\n                    <p>We only compare market leaders with a reputation for service quality.</p>\n                </div>\n            </div>\n        </div>\n    </div> \n</section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" / .container "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" SERVICE-1\n================================================== "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section class=\"bg-grey\" id=\"service\">\n    <div class=\"container\">\n        <div class=\"row \">\n            <div class=\"col-lg-4\">\n                <div class=\"service-img\">\n                    <img src=\"images/blog-lg.jpg\" alt=\"\" class=\"img-fluid\">\n                </div>\n            </div>\n\n            <div class=\"col-lg-6 pl-4\">\n                <div class=\"service-content\">\n                    <h1>Get a better deal and start saving money today</h1>\n                    <p>We compare hundreds of leading products and plans across many categories to bring you the best value for money.</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section class=\"pt-5 service-wrap\">\n    <div class=\"container\">\n        <div class=\"row \">\n            <div class=\"col-lg-8 offset-lg-4\">\n                <div class=\"carousel slide \" id=\"service-carousel\" data-ride=\"carousel\">\n                    <div class=\"carousel-inner\">\n                        <div class=\"carousel-item active\">\n                            <div class=\"col-lg-12\">\n                                <div class=\"row\">\n                                    <div class=\"col-lg-6\">\n                                        <div class=\"service-block media\">\n                                            <div class=\"service-icon\">\n                                                <i class=\"ti-reload\"></i>\n                                            </div>\n                                            <div class=\"service-inner-content media-body\">\n                                                <h4>Backup System</h4>\n                                                <p>Our team are experts in matching you with the right provider.</p>\n                                            </div>\n                                        </div>\n                                    </div>\n                                    <div class=\"col-lg-6\">\n                                        <div class=\"service-block media\">\n                                            <div class=\"service-icon\">\n                                                <i class=\"ti-cloud\"></i>\n                                            </div>\n                                            <div class=\"service-inner-content media-body\">\n                                                <h4>Cloud Hosting</h4>\n                                                <p>Our team are experts in matching you with the right provider.</p>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n\n                        <div class=\"carousel-item\">\n                            <div class=\"col-lg-12\">\n                                <div class=\"row\">\n                                    <div class=\"col-lg-6\">\n                                        <div class=\"service-block media\">\n                                            <div class=\"service-icon\">\n                                                <i class=\"ti-world\"></i>\n                                            </div>\n                                            <div class=\"service-inner-content media-body\">\n                                                <h4>Web hosting</h4>\n                                                <p>Our team are experts in matching you with the right provider.</p>\n                                            </div>\n                                        </div>\n                                    </div>\n                                    <div class=\"col-lg-6\">\n                                        <div class=\"service-block media\">\n                                            <div class=\"service-icon\">\n                                                <i class=\"ti-server\"></i>\n                                            </div>\n                                            <div class=\"service-inner-content media-body\">\n                                                <h4>Office Cloud</h4>\n                                                <p>Our team are experts in matching you with the right provider.</p>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <p class=\"pl-3\">Want to know more about this? <a href=\"#\">Contact us</a></p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Mision y Vision "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_27, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_28, [_hoisted_29, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" / .row "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_31, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_32, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
     src: _ctx.imageMision,
     alt: "",
     style: {
       "width": "100%",
-      "height": "300px"
+      "height": "200px"
     }
   }, null, 8
   /* PROPS */
-  , ["src"]), _hoisted_28, _hoisted_29])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"col-lg-4 col-sm-6 col-md-6\">\n                <div class=\"process-block\">\n                    <img src=\"images/process/process-2.jpg\" alt=\"\" class=\"img-fluid\">\n\n                    <h3>Project demostration</h3>\n                    <p>Nihil facere delectus eaque aut possimus nobis laudantium reprehenderit.</p>\n                </div>\n            </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_31, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  , ["src"]), _hoisted_33, _hoisted_34])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_35, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_36, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+    src: _ctx.imageObjetivo,
+    alt: "",
+    "class": "img-fluid",
+    style: {
+      "width": "100%",
+      "height": "200px"
+    }
+  }, null, 8
+  /* PROPS */
+  , ["src"]), _hoisted_37, _hoisted_38])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_39, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_40, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
     src: _ctx.imageVision,
     alt: "",
     "class": "img-fluid"
   }, null, 8
   /* PROPS */
-  , ["src"]), _hoisted_32, _hoisted_33])])])])], 512
+  , ["src"]), _hoisted_41, _hoisted_42])])])])], 512
   /* NEED_PATCH */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_34, [_hoisted_35], 512
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_43, [_hoisted_44], 512
   /* NEED_PATCH */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section class=\"section\" id=\"pricing\">\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-8 col-lg-6 text-center\">\n                <div class=\"section-heading\">\n                    \n                    <h2 class=\"section-title\">\n                        Affordable Price Plan\n                    </h2>\n\n                    \n                    <p>\n                        Rapoo can be used to create anything from a small marketing page to a sophisticated website.\n                    </p>\n                </div>\n            </div>\n        </div> \n        <div class=\"row justify-content-center\">\n            <div class=\"col-lg-4 col-sm-6 col-md-6\">\n                <div class=\"pricing-box\">\n                    <h3>Stnadard</h3>\n                    <div class=\"price-block\">\n                            <h2><small>$</small>13<span>monthly</span></h2>\n                    </div>\n\n                    <ul class=\"price-features list-unstyled\">\n                        <li>Unlimited Domain</li>\n                        <li>Unmetered Bandwidth</li>\n                        <li>Free SSL Certificate </li>\n                        <li>20 Email Subscription</li>\n                        <li>SSD Hosting</li>\n                    </ul>\n\n                    <a href=\"#\" class=\"btn btn-outline-dark btn-circled\">Purchase Now</a>\n                </div>\n            </div>\n            <div class=\"col-lg-4 col-sm-6 col-md-6\">\n                <div class=\"pricing-box\">\n                    <h3>Premium</h3>\n                    <div class=\"price-block\">\n                            <h2><small>$</small>23<span>monthly</span></h2>\n                    </div>\n\n                    <ul class=\"price-features list-unstyled\">\n                        <li>Unlimited Domain</li>\n                        <li>Unmetered Bandwidth</li>\n                        <li>Free SSL Certificate </li>\n                        <li>20 Email Subscription</li>\n                        <li>SSD Hosting</li>\n                    </ul>\n\n                    <a href=\"#\" class=\"btn btn-primary btn-circled\">Purchase Now</a>\n                </div>\n            </div>\n            <div class=\"col-lg-4 col-sm-8 col-md-6\">\n                <div class=\"pricing-box \">\n                    <h3>Business</h3>\n                    <div class=\"price-block\">\n                            <h2><small>$</small>33<span>monthly</span></h2>\n                    </div>\n\n                    <ul class=\"price-features list-unstyled\">\n                        <li>Unlimited Domain</li>\n                        <li>Unmetered Bandwidth</li>\n                        <li>Free SSL Certificate </li>\n                        <li>20 Email Subscription</li>\n                        <li>SSD Hosting</li>\n                    </ul>\n\n                    <a href=\"#\" class=\"btn btn-outline-dark btn-circled\">Purchase Now</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_36, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_register_on_course)], 512
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section class=\"section\" id=\"pricing\">\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-8 col-lg-6 text-center\">\n                <div class=\"section-heading\">\n                    \n                    <h2 class=\"section-title\">\n                        Affordable Price Plan\n                    </h2>\n\n                    \n                    <p>\n                        Rapoo can be used to create anything from a small marketing page to a sophisticated website.\n                    </p>\n                </div>\n            </div>\n        </div> \n        <div class=\"row justify-content-center\">\n            <div class=\"col-lg-4 col-sm-6 col-md-6\">\n                <div class=\"pricing-box\">\n                    <h3>Stnadard</h3>\n                    <div class=\"price-block\">\n                            <h2><small>$</small>13<span>monthly</span></h2>\n                    </div>\n\n                    <ul class=\"price-features list-unstyled\">\n                        <li>Unlimited Domain</li>\n                        <li>Unmetered Bandwidth</li>\n                        <li>Free SSL Certificate </li>\n                        <li>20 Email Subscription</li>\n                        <li>SSD Hosting</li>\n                    </ul>\n\n                    <a href=\"#\" class=\"btn btn-outline-dark btn-circled\">Purchase Now</a>\n                </div>\n            </div>\n            <div class=\"col-lg-4 col-sm-6 col-md-6\">\n                <div class=\"pricing-box\">\n                    <h3>Premium</h3>\n                    <div class=\"price-block\">\n                            <h2><small>$</small>23<span>monthly</span></h2>\n                    </div>\n\n                    <ul class=\"price-features list-unstyled\">\n                        <li>Unlimited Domain</li>\n                        <li>Unmetered Bandwidth</li>\n                        <li>Free SSL Certificate </li>\n                        <li>20 Email Subscription</li>\n                        <li>SSD Hosting</li>\n                    </ul>\n\n                    <a href=\"#\" class=\"btn btn-primary btn-circled\">Purchase Now</a>\n                </div>\n            </div>\n            <div class=\"col-lg-4 col-sm-8 col-md-6\">\n                <div class=\"pricing-box \">\n                    <h3>Business</h3>\n                    <div class=\"price-block\">\n                            <h2><small>$</small>33<span>monthly</span></h2>\n                    </div>\n\n                    <ul class=\"price-features list-unstyled\">\n                        <li>Unlimited Domain</li>\n                        <li>Unmetered Bandwidth</li>\n                        <li>Free SSL Certificate </li>\n                        <li>20 Email Subscription</li>\n                        <li>SSD Hosting</li>\n                    </ul>\n\n                    <a href=\"#\" class=\"btn btn-outline-dark btn-circled\">Purchase Now</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_45, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_register_on_course)], 512
   /* NEED_PATCH */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section id=\"projects\" class=\"section-bottom\">\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-lg-4 col-md-6 col-sm-6 mb-5\">\n                <div class=\"single-project\">\n                    <img src=\"images/projects/p-1.jpg\" alt=\"\" class=\"img-fluid\">\n                    <div class=\"project-content\">\n                        <h4>Project: onepage</h4>\n                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eligendi consequuntur veniam quod</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-lg-4 col-md-6 col-sm-6 mb-5\">\n                <div class=\"single-project\">\n                    <img src=\"images/projects/p-4.jpg\" alt=\"\" class=\"img-fluid\">\n                    <div class=\"project-content\">\n                        <h4>Project: business</h4>\n                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eligendi consequuntur veniam quod</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-lg-4 col-md-6 col-sm-8 \">\n                <div class=\"single-project\">\n                    <img src=\"images/projects/p-3.jpg\" alt=\"\" class=\"img-fluid\">\n                    <div class=\"project-content\">\n                        <h4>Project : Marketing</h4>\n                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eligendi consequuntur veniam quod</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"row py-4\">\n            <div class=\"col-lg-7 col-md-12 col-sm-12 \">\n                <div class=\"single-project\">\n                    <img src=\"images/bg/banner_bg.jpg\" alt=\"\" class=\"img-fluid\">\n                </div>\n            </div>\n            <div class=\"col-lg-4 col-md-12 col-sm-12 \">\n                <div class=\"project-content-block\">\n                    <h4>Do you know who we are?</h4>\n                    <h2>More than just service your products...</h2>\n                    <p>Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and we will give you a complete account of the system.</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section class=\"section\" id=\"section-testimonial\">\n    <div class=\"container\">\n        <div class=\"row align-items-center\">\n            <div class=\"col-lg-4 col-sm-12 col-md-12\">\n                <div class=\"section-heading testimonial-heading\">\n                    <h1>What they say <br>about us</h1>\n                    <p>Numquam doloribus impedit at consectetur molestiae tempora ratione possimus in veniam aperiam, eum consequuntur, unde. Earum ullam molestiae suscipit saepe sunt recusandae.</p>\n                </div>\n            </div>\n            <div class=\"col-lg-8 col-sm-12 col-md-12\">\n                <div class=\"row\">\n                    <div class=\"col-lg-6\">\n                        <div class=\"test-inner \">\n                            <div class=\"test-author-thumb d-flex\">\n                                <img src=\"images/client/test-1.jpg\" alt=\"Testimonial author\" class=\"img-fluid\">\n                                <div class=\"test-author-info\">\n                                    <h4>Will Barrow</h4>\n                                    <h6>Sunrise Paradise Hotel</h6>\n                                </div>\n                            </div>\n\n                            Quas ut distinctio tenetur animi nihil rem, amet dolorum totam. Ab repudiandae tempore qui fugiat amet ipsa id omnis ipsam, laudantium! Dolorem.\n\n                            <i class=\"fa fa-quote-right\"></i>\n                        </div>\n                    </div>\n                    <div class=\"col-lg-6\">\n                        <div class=\"test-inner \">\n                            <div class=\"test-author-thumb d-flex\">\n                                <img src=\"images/client/test-2.jpg\" alt=\"Testimonial author\" class=\"img-fluid\">\n                                <div class=\"test-author-info\">\n                                    <h4>Will Barrow</h4>\n                                    <h6>Sunrise Paradise Hotel</h6>\n                                </div>\n                            </div>\n\n                            Quas ut distinctio tenetur animi nihil rem, amet dolorum totam. Ab repudiandae tempore qui fugiat amet ipsa id omnis ipsam, laudantium! Dolorem.\n\n                            <i class=\"fa fa-quote-right\"></i>\n                        </div>\n                    </div>\n                </div>\n                \n                    <div class=\"row\">\n                    <div class=\"col-lg-6\">\n                        <div class=\"test-inner \">\n                            <div class=\"test-author-thumb d-flex\">\n                                <img src=\"images/client/test-3.jpg\" alt=\"Testimonial author\" class=\"img-fluid\">\n                                <div class=\"test-author-info\">\n                                    <h4>Will Barrow</h4>\n                                    <h6>Sunrise Paradise Hotel</h6>\n                                </div>\n                            </div>\n\n                            Quas ut distinctio tenetur animi nihil rem, amet dolorum totam. Ab repudiandae tempore qui fugiat amet ipsa id omnis ipsam, laudantium! Dolorem.\n\n                            <i class=\"fa fa-quote-right\"></i>\n                        </div>\n                    </div>\n                    <div class=\"col-lg-6\">\n                        <div class=\"test-inner \">\n                            <div class=\"test-author-thumb d-flex\">\n                                <img src=\"images/client/test-4.jpg\" alt=\"Testimonial author\" class=\"img-fluid\">\n                                <div class=\"test-author-info\">\n                                    <h4>Will Barrow</h4>\n                                    <h6>Sunrise Paradise Hotel</h6>\n                                </div>\n                            </div>\n\n                            Quas ut distinctio tenetur animi nihil rem, amet dolorum totam. Ab repudiandae tempore qui fugiat amet ipsa id omnis ipsam, laudantium! Dolorem.\n\n                            <i class=\"fa fa-quote-right\"></i>\n                        </div>\n                    </div>\n                </div>\n                \n                    <div class=\"row\">\n                    <div class=\"col-lg-6\">\n                        <div class=\"test-inner\">\n                            <div class=\"test-author-thumb d-flex\">\n                                <img src=\"images/client/test-5.jpg\" alt=\"Testimonial author\" class=\"img-fluid\">\n                                <div class=\"test-author-info\">\n                                    <h4>Will Barrow</h4>\n                                    <h6>Sunrise Paradise Hotel</h6>\n                                </div>\n                            </div>\n\n                            Quas ut distinctio tenetur animi nihil rem, amet dolorum totam. Ab repudiandae tempore qui fugiat amet ipsa id omnis ipsam, laudantium! Dolorem.\n\n                            <i class=\"fa fa-quote-right\"></i>\n                        </div>\n                    </div>\n                    \n                    <div class=\"col-lg-6\">\n                        <div class=\"test-inner\">\n                            <div class=\"test-author-thumb d-flex\">\n                                <img src=\"images/client/test-6.jpg\" alt=\"Testimonial author\" class=\"img-fluid\">\n                                <div class=\"test-author-info\">\n                                    <h4>Will Barrow</h4>\n                                    <h6>Sunrise Paradise Hotel</h6>\n                                </div>\n                            </div>\n\n                            Quas ut distinctio tenetur animi nihil rem, amet dolorum totam. Ab repudiandae tempore qui fugiat amet ipsa id omnis ipsam, laudantium! Dolorem.\n\n                            <i class=\"fa fa-quote-right\"></i>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section class=\"section\" id=\"blog\">\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-8 col-lg-6 text-center\">\n                <div class=\"section-heading\">\n                    <h2 class=\"section-title\">\n                        Read our latest news\n                    </h2>\n                    <p>\n                        Our duty towards you is to share our experience we're reaching in our work path with you.\n                    </p>\n                </div>\n            </div>\n        </div> \n\n        <div class=\"row justify-content-center\">\n            <div class=\"col-lg-4 col-md-6\">\n                <div class=\"blog-box\">\n                    <div class=\"blog-img-box\">\n                        <img src=\"images/blog/blog-1.jpg\" alt=\"\" class=\"img-fluid blog-img\">\n                    </div>\n                    <div class=\"single-blog\">\n                        <div class=\"blog-content\">\n                            <h6> 17 October 2018</h6>\n                            <a href=\"#\">\n                                <h3 class=\"card-title\">Top tips to speed up your site in a speedy time</h3>\n                            </a>\n                            <p>There are many variations of passages Lorem Ipsum available, but majority have ama suffered altratio. the lorem.</p>\n                            <a href=\"#\" class=\"read-more\">Read More</a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"col-lg-4 col-md-6\">\n                <div class=\"blog-box\">\n                    <div class=\"blog-img-box\">\n                        <img src=\"images/blog/blog-2.jpg\" alt=\"\" class=\"img-fluid blog-img\">\n                    </div>\n                    <div class=\"single-blog\">\n                        <div class=\"blog-content\">\n                            <h6> 17 October 2018</h6>\n                            <a href=\"#\">\n                                <h3 class=\"card-title\">Brand your site value with marketing strategies</h3>\n                            </a>\n\n                            <p>There are many variations of passages Lorem Ipsum available, but majority have ama suffered altratio. the lorem.</p>\n                                <a href=\"#\" class=\"read-more\">Read More</a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"col-lg-4 col-md-8\">\n                <div class=\"blog-box\">\n                    <div class=\"blog-img-box\">\n                        <img src=\"images/blog/blog-3.jpg\" alt=\"\" class=\"img-fluid blog-img\">\n                    </div>\n                    <div class=\"single-blog\">\n                        <div class=\"blog-content\">\n                            <h6> 17 October 2018</h6>\n                            <a href=\"#\">\n                                <h3 class=\"card-title\">Website Optimization is very essential for site speed</h3>\n                            </a>\n                            <p>There are many variations of passages Lorem Ipsum available, but majority have ama suffered altratio. the lorem.</p>\n                                <a href=\"#\" class=\"read-more\">Read More</a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section> "), _hoisted_37, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  Page Scroll to Top  "), _hoisted_38]);
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section id=\"projects\" class=\"section-bottom\">\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-lg-4 col-md-6 col-sm-6 mb-5\">\n                <div class=\"single-project\">\n                    <img src=\"images/projects/p-1.jpg\" alt=\"\" class=\"img-fluid\">\n                    <div class=\"project-content\">\n                        <h4>Project: onepage</h4>\n                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eligendi consequuntur veniam quod</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-lg-4 col-md-6 col-sm-6 mb-5\">\n                <div class=\"single-project\">\n                    <img src=\"images/projects/p-4.jpg\" alt=\"\" class=\"img-fluid\">\n                    <div class=\"project-content\">\n                        <h4>Project: business</h4>\n                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eligendi consequuntur veniam quod</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-lg-4 col-md-6 col-sm-8 \">\n                <div class=\"single-project\">\n                    <img src=\"images/projects/p-3.jpg\" alt=\"\" class=\"img-fluid\">\n                    <div class=\"project-content\">\n                        <h4>Project : Marketing</h4>\n                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eligendi consequuntur veniam quod</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"row py-4\">\n            <div class=\"col-lg-7 col-md-12 col-sm-12 \">\n                <div class=\"single-project\">\n                    <img src=\"images/bg/banner_bg.jpg\" alt=\"\" class=\"img-fluid\">\n                </div>\n            </div>\n            <div class=\"col-lg-4 col-md-12 col-sm-12 \">\n                <div class=\"project-content-block\">\n                    <h4>Do you know who we are?</h4>\n                    <h2>More than just service your products...</h2>\n                    <p>Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and we will give you a complete account of the system.</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section class=\"section\" id=\"section-testimonial\">\n    <div class=\"container\">\n        <div class=\"row align-items-center\">\n            <div class=\"col-lg-4 col-sm-12 col-md-12\">\n                <div class=\"section-heading testimonial-heading\">\n                    <h1>What they say <br>about us</h1>\n                    <p>Numquam doloribus impedit at consectetur molestiae tempora ratione possimus in veniam aperiam, eum consequuntur, unde. Earum ullam molestiae suscipit saepe sunt recusandae.</p>\n                </div>\n            </div>\n            <div class=\"col-lg-8 col-sm-12 col-md-12\">\n                <div class=\"row\">\n                    <div class=\"col-lg-6\">\n                        <div class=\"test-inner \">\n                            <div class=\"test-author-thumb d-flex\">\n                                <img src=\"images/client/test-1.jpg\" alt=\"Testimonial author\" class=\"img-fluid\">\n                                <div class=\"test-author-info\">\n                                    <h4>Will Barrow</h4>\n                                    <h6>Sunrise Paradise Hotel</h6>\n                                </div>\n                            </div>\n\n                            Quas ut distinctio tenetur animi nihil rem, amet dolorum totam. Ab repudiandae tempore qui fugiat amet ipsa id omnis ipsam, laudantium! Dolorem.\n\n                            <i class=\"fa fa-quote-right\"></i>\n                        </div>\n                    </div>\n                    <div class=\"col-lg-6\">\n                        <div class=\"test-inner \">\n                            <div class=\"test-author-thumb d-flex\">\n                                <img src=\"images/client/test-2.jpg\" alt=\"Testimonial author\" class=\"img-fluid\">\n                                <div class=\"test-author-info\">\n                                    <h4>Will Barrow</h4>\n                                    <h6>Sunrise Paradise Hotel</h6>\n                                </div>\n                            </div>\n\n                            Quas ut distinctio tenetur animi nihil rem, amet dolorum totam. Ab repudiandae tempore qui fugiat amet ipsa id omnis ipsam, laudantium! Dolorem.\n\n                            <i class=\"fa fa-quote-right\"></i>\n                        </div>\n                    </div>\n                </div>\n                \n                    <div class=\"row\">\n                    <div class=\"col-lg-6\">\n                        <div class=\"test-inner \">\n                            <div class=\"test-author-thumb d-flex\">\n                                <img src=\"images/client/test-3.jpg\" alt=\"Testimonial author\" class=\"img-fluid\">\n                                <div class=\"test-author-info\">\n                                    <h4>Will Barrow</h4>\n                                    <h6>Sunrise Paradise Hotel</h6>\n                                </div>\n                            </div>\n\n                            Quas ut distinctio tenetur animi nihil rem, amet dolorum totam. Ab repudiandae tempore qui fugiat amet ipsa id omnis ipsam, laudantium! Dolorem.\n\n                            <i class=\"fa fa-quote-right\"></i>\n                        </div>\n                    </div>\n                    <div class=\"col-lg-6\">\n                        <div class=\"test-inner \">\n                            <div class=\"test-author-thumb d-flex\">\n                                <img src=\"images/client/test-4.jpg\" alt=\"Testimonial author\" class=\"img-fluid\">\n                                <div class=\"test-author-info\">\n                                    <h4>Will Barrow</h4>\n                                    <h6>Sunrise Paradise Hotel</h6>\n                                </div>\n                            </div>\n\n                            Quas ut distinctio tenetur animi nihil rem, amet dolorum totam. Ab repudiandae tempore qui fugiat amet ipsa id omnis ipsam, laudantium! Dolorem.\n\n                            <i class=\"fa fa-quote-right\"></i>\n                        </div>\n                    </div>\n                </div>\n                \n                    <div class=\"row\">\n                    <div class=\"col-lg-6\">\n                        <div class=\"test-inner\">\n                            <div class=\"test-author-thumb d-flex\">\n                                <img src=\"images/client/test-5.jpg\" alt=\"Testimonial author\" class=\"img-fluid\">\n                                <div class=\"test-author-info\">\n                                    <h4>Will Barrow</h4>\n                                    <h6>Sunrise Paradise Hotel</h6>\n                                </div>\n                            </div>\n\n                            Quas ut distinctio tenetur animi nihil rem, amet dolorum totam. Ab repudiandae tempore qui fugiat amet ipsa id omnis ipsam, laudantium! Dolorem.\n\n                            <i class=\"fa fa-quote-right\"></i>\n                        </div>\n                    </div>\n                    \n                    <div class=\"col-lg-6\">\n                        <div class=\"test-inner\">\n                            <div class=\"test-author-thumb d-flex\">\n                                <img src=\"images/client/test-6.jpg\" alt=\"Testimonial author\" class=\"img-fluid\">\n                                <div class=\"test-author-info\">\n                                    <h4>Will Barrow</h4>\n                                    <h6>Sunrise Paradise Hotel</h6>\n                                </div>\n                            </div>\n\n                            Quas ut distinctio tenetur animi nihil rem, amet dolorum totam. Ab repudiandae tempore qui fugiat amet ipsa id omnis ipsam, laudantium! Dolorem.\n\n                            <i class=\"fa fa-quote-right\"></i>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section class=\"section\" id=\"blog\">\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-8 col-lg-6 text-center\">\n                <div class=\"section-heading\">\n                    <h2 class=\"section-title\">\n                        Read our latest news\n                    </h2>\n                    <p>\n                        Our duty towards you is to share our experience we're reaching in our work path with you.\n                    </p>\n                </div>\n            </div>\n        </div> \n\n        <div class=\"row justify-content-center\">\n            <div class=\"col-lg-4 col-md-6\">\n                <div class=\"blog-box\">\n                    <div class=\"blog-img-box\">\n                        <img src=\"images/blog/blog-1.jpg\" alt=\"\" class=\"img-fluid blog-img\">\n                    </div>\n                    <div class=\"single-blog\">\n                        <div class=\"blog-content\">\n                            <h6> 17 October 2018</h6>\n                            <a href=\"#\">\n                                <h3 class=\"card-title\">Top tips to speed up your site in a speedy time</h3>\n                            </a>\n                            <p>There are many variations of passages Lorem Ipsum available, but majority have ama suffered altratio. the lorem.</p>\n                            <a href=\"#\" class=\"read-more\">Read More</a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"col-lg-4 col-md-6\">\n                <div class=\"blog-box\">\n                    <div class=\"blog-img-box\">\n                        <img src=\"images/blog/blog-2.jpg\" alt=\"\" class=\"img-fluid blog-img\">\n                    </div>\n                    <div class=\"single-blog\">\n                        <div class=\"blog-content\">\n                            <h6> 17 October 2018</h6>\n                            <a href=\"#\">\n                                <h3 class=\"card-title\">Brand your site value with marketing strategies</h3>\n                            </a>\n\n                            <p>There are many variations of passages Lorem Ipsum available, but majority have ama suffered altratio. the lorem.</p>\n                                <a href=\"#\" class=\"read-more\">Read More</a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"col-lg-4 col-md-8\">\n                <div class=\"blog-box\">\n                    <div class=\"blog-img-box\">\n                        <img src=\"images/blog/blog-3.jpg\" alt=\"\" class=\"img-fluid blog-img\">\n                    </div>\n                    <div class=\"single-blog\">\n                        <div class=\"blog-content\">\n                            <h6> 17 October 2018</h6>\n                            <a href=\"#\">\n                                <h3 class=\"card-title\">Website Optimization is very essential for site speed</h3>\n                            </a>\n                            <p>There are many variations of passages Lorem Ipsum available, but majority have ama suffered altratio. the lorem.</p>\n                                <a href=\"#\" class=\"read-more\">Read More</a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section> "), _hoisted_46, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  Page Scroll to Top  "), _hoisted_47]);
 }
 
 /***/ }),

@@ -5,7 +5,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="section-heading" style="margin-top:35%;">
+                    <div class="section-heading">
+                        <img :src="logo" alt="banner-img" class="img-fluid" style="width:45%; margin-left:23%;">
+                        <br> 
                         <h1 class="text-white">PRE REGISTRO DE ALUMNOS CENTRO DE DESARROLLO E IMPULSO DE EMPRENDEDORES “CEDIEM”.</h1>
                     </div>
                 </div>
@@ -19,13 +21,13 @@
                                     <input type="text" :class="valid.full_name" placeholder="Nombre Completo:" v-model="student.full_name" @blur="validate('full_name')">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" :class="valid.age" placeholder="Edad (Solo mayores de edad)" v-model="student.age" @blur="validate('age')">
+                                    <input type="text" :class="valid.age" placeholder="Edad:" v-model="student.age" @blur="validate('age')">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" :class="valid.municipality" name="subject" id="subject" placeholder="Municipio" v-model="student.municipality" @blur="validate('municipality')">
+                                    <input type="text" :class="valid.municipality" name="subject" id="subject" placeholder="Municipio:" v-model="student.municipality" @blur="validate('municipality')">
                                 </div>
                                  <div class="form-group">
-                                    <input type="text" :class="valid.cell_phone" name="subject" id="subject" placeholder="Teléfono" v-model="student.cell_phone" @blur="validate('municipality')">
+                                    <input type="text" :class="valid.cell_phone" name="subject" id="subject" placeholder="Teléfono:" v-model="student.cell_phone" @blur="validate('municipality')">
                                 </div>
                                  <div class="form-group">
                                     <select :class="valid.course_id" v-model="student.course_id" @blur="validate('course_id')">
@@ -54,6 +56,7 @@ export default {
     name: "Register On Course",
     data:function(){
         return {
+            logo: BASE_URL+'/img/logo/cediem_logo.png',
             courses: [],
             student:{
                 email: '',
