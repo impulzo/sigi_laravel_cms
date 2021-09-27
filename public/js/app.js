@@ -17749,6 +17749,44 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Banner.vue?vue&type=script&lang=js":
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Banner.vue?vue&type=script&lang=js ***!
+  \****************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: 'Banner Componnet From Legal Template',
+  props: ['component'],
+  data: function data() {
+    return {
+      items: null
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    if (this.component.name === 'banner' && this.component.isActive == true) {
+      //Get Components With Items
+      axios__WEBPACK_IMPORTED_MODULE_0___default().get(BASE_URL + '/api/components/' + this.component.id).then(function (response) {
+        if (response.data.status === 200) {
+          _this.items = response.data.data.component.items;
+        }
+      })["catch"]();
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Contact.vue?vue&type=script&lang=js":
 /*!*****************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Contact.vue?vue&type=script&lang=js ***!
@@ -17873,6 +17911,43 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Team.vue?vue&type=script&lang=js":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Team.vue?vue&type=script&lang=js ***!
+  \**************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: 'Team Componnent From Legal Template',
+  props: ['component'],
+  data: function data() {
+    return {
+      items: null
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    if (this.component.name === 'team' && this.component.isActive == true) {
+      axios__WEBPACK_IMPORTED_MODULE_0___default().get(BASE_URL + '/api/components/' + this.component.id).then(function (response) {
+        if (response.data.status === 200) {
+          _this.items = response.data.data.component.items;
+        }
+      })["catch"]();
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Index.vue?vue&type=script&lang=js":
 /*!****************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Index.vue?vue&type=script&lang=js ***!
@@ -17885,14 +17960,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Components_Contact_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Components/Contact.vue */ "./resources/js/Templates/Legal/Components/Contact.vue");
-/* harmony import */ var _Components_SendRequest_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Components/SendRequest.vue */ "./resources/js/Templates/Legal/Components/SendRequest.vue");
+/* harmony import */ var _Components_Banner_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Components/Banner.vue */ "./resources/js/Templates/Legal/Components/Banner.vue");
+/* harmony import */ var _Components_Team_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Components/Team.vue */ "./resources/js/Templates/Legal/Components/Team.vue");
+/* harmony import */ var _Components_SendRequest_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Components/SendRequest.vue */ "./resources/js/Templates/Legal/Components/SendRequest.vue");
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
 
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_defineProperty({
   components: {
-    Contact: _Components_Contact_vue__WEBPACK_IMPORTED_MODULE_0__.default
+    Contact: _Components_Contact_vue__WEBPACK_IMPORTED_MODULE_0__.default,
+    Banner: _Components_Banner_vue__WEBPACK_IMPORTED_MODULE_1__.default,
+    Team: _Components_Team_vue__WEBPACK_IMPORTED_MODULE_2__.default
   },
   name: 'Index Legal Template',
   props: ['template'],
@@ -17923,7 +18004,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   }
 }, "components", {
   Contact: _Components_Contact_vue__WEBPACK_IMPORTED_MODULE_0__.default,
-  SendRequest: _Components_SendRequest_vue__WEBPACK_IMPORTED_MODULE_1__.default
+  Banner: _Components_Banner_vue__WEBPACK_IMPORTED_MODULE_1__.default,
+  Team: _Components_Team_vue__WEBPACK_IMPORTED_MODULE_2__.default,
+  SendRequest: _Components_SendRequest_vue__WEBPACK_IMPORTED_MODULE_3__.default
 }));
 
 /***/ }),
@@ -18472,6 +18555,54 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Banner.vue?vue&type=template&id=2100ee4b":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Banner.vue?vue&type=template&id=2100ee4b ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  key: 0,
+  id: "banner"
+};
+var _hoisted_2 = {
+  "class": "container position-relative",
+  "ata-aos": "fade-up",
+  "data-aos-delay": "500"
+};
+var _hoisted_3 = {
+  key: 1
+};
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return $props.component.name === 'banner' && $props.component.isActive == true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.items, function (item) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("span", {
+      "class": "item",
+      key: item.id
+    }, [item.key === 'logo' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("img", {
+      key: 0,
+      src: "/templates/legal/img/".concat(item.value),
+      style: {
+        "width": "150px"
+      }
+    }, null, 8
+    /* PROPS */
+    , ["src"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), item.key === 'title' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("h1", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.value), 1
+    /* TEXT */
+    )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true);
+}
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Contact.vue?vue&type=template&id=75d4e511":
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Contact.vue?vue&type=template&id=75d4e511 ***!
@@ -18667,6 +18798,67 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Team.vue?vue&type=template&id=24b3a6bc":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Team.vue?vue&type=template&id=24b3a6bc ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  key: 0,
+  id: "team"
+};
+var _hoisted_2 = {
+  "class": "row"
+};
+var _hoisted_3 = {
+  "class": "col-lg-3 col-md-6 d-flex align-items-stretch",
+  "data-aos": "zoom-in"
+};
+var _hoisted_4 = {
+  "class": "member"
+};
+
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  src: "assets/img/team/team-1.jpg",
+  alt: ""
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_6 = {
+  key: 0
+};
+var _hoisted_7 = {
+  key: 1
+};
+
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"social\"><a href=\"\"><i class=\"icofont-twitter\"></i></a><a href=\"\"><i class=\"icofont-facebook\"></i></a><a href=\"\"><i class=\"icofont-instagram\"></i></a><a href=\"\"><i class=\"icofont-linkedin\"></i></a></div>", 1);
+
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return $props.component.name === 'team' && $props.component.isActive == true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.items, function (item) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("span", {
+      "class": "item",
+      key: item.id
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [_hoisted_5, item.key === 'trabajador1' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("h4", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.value), 1
+    /* TEXT */
+    )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), item.key === 'trabajador1' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("span", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.value), 1
+    /* TEXT */
+    )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <p>\n                        Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut\n                        </p> "), _hoisted_8])])]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true);
+}
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Index.vue?vue&type=template&id=4c909938":
 /*!********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Index.vue?vue&type=template&id=4c909938 ***!
@@ -18698,20 +18890,11 @@ var _hoisted_5 = {
   "class": "d-flex align-items-center",
   ref: "index"
 };
-
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_6 = {
   "class": "container position-relative",
   "data-aos": "fade-up",
   "data-aos-delay": "500"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-  src: "/templates/legal/img/circular.png",
-  style: {
-    "width": "150px"
-  }
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, "Sindicato Artículo 123"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <h2>We are team of talented designers making websites with Bootstrap</h2>\n      <a href=\"#about\" class=\"btn-get-started scrollto\">Get Started</a> ")], -1
-/* HOISTED */
-);
-
+};
 var _hoisted_7 = {
   id: "main"
 };
@@ -18731,7 +18914,7 @@ var _hoisted_11 = {
   ref: "team"
 };
 
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"section-title\"><span>Equipo</span><h2>Equipo</h2><p>Ninguno de nosotros es tan bueno como todos nosotros juntos. Ray Kroc.</p></div><div class=\"row\"><div class=\"col-lg-3 col-md-6 d-flex align-items-stretch\" data-aos=\"zoom-in\"><div class=\"member\"><img src=\"assets/img/team/team-1.jpg\" alt=\"\"><h4>Fernando Aguilar Robles</h4><span>Secretario General</span><!-- &lt;p&gt;\n                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut\n              &lt;/p&gt; --><div class=\"social\"><a href=\"\"><i class=\"icofont-twitter\"></i></a><a href=\"\"><i class=\"icofont-facebook\"></i></a><a href=\"\"><i class=\"icofont-instagram\"></i></a><a href=\"\"><i class=\"icofont-linkedin\"></i></a></div></div></div><div class=\"col-lg-3 col-md-6 d-flex align-items-stretch\" data-aos=\"zoom-in\"><div class=\"member\"><img src=\"assets/img/team/team-2.jpg\" alt=\"\"><h4>Jorge Daniel Martínez Urbina</h4><span>Secretario de Actas y Conflictos</span><!-- &lt;p&gt;\n                Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus\n              &lt;/p&gt; --><div class=\"social\"><a href=\"\"><i class=\"icofont-twitter\"></i></a><a href=\"\"><i class=\"icofont-facebook\"></i></a><a href=\"\"><i class=\"icofont-instagram\"></i></a><a href=\"\"><i class=\"icofont-linkedin\"></i></a></div></div></div><div class=\"col-lg-3 col-md-6 d-flex align-items-stretch\" data-aos=\"zoom-in\"><div class=\"member\"><img src=\"assets/img/team/team-3.jpg\" alt=\"\"><h4>Julio Miguel Rubinos Ricárdez</h4><span>Secretario de Organización</span><!-- &lt;p&gt;\n                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara\n              &lt;/p&gt; --><div class=\"social\"><a href=\"\"><i class=\"icofont-twitter\"></i></a><a href=\"\"><i class=\"icofont-facebook\"></i></a><a href=\"\"><i class=\"icofont-instagram\"></i></a><a href=\"\"><i class=\"icofont-linkedin\"></i></a></div></div></div><div class=\"col-lg-3 col-md-6 d-flex align-items-stretch\" data-aos=\"zoom-in\"><div class=\"member\"><img src=\"assets/img/team/team-3.jpg\" alt=\"\"><h4>Gustavo de Jesús Caballero Hernández</h4><span>Secretario de Trabajo</span><!-- &lt;p&gt;\n                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara\n              &lt;/p&gt; --><div class=\"social\"><a href=\"\"><i class=\"icofont-twitter\"></i></a><a href=\"\"><i class=\"icofont-facebook\"></i></a><a href=\"\"><i class=\"icofont-instagram\"></i></a><a href=\"\"><i class=\"icofont-linkedin\"></i></a></div></div></div><div class=\"col-lg-3 col-md-6 d-flex align-items-stretch\" data-aos=\"zoom-in\"><div class=\"member\"><img src=\"assets/img/team/team-3.jpg\" alt=\"\"><h4>Fernando José Martínez Urbina</h4><span>Secretario Tesorero</span><!-- &lt;p&gt;\n                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara\n              &lt;/p&gt; --><div class=\"social\"><a href=\"\"><i class=\"icofont-twitter\"></i></a><a href=\"\"><i class=\"icofont-facebook\"></i></a><a href=\"\"><i class=\"icofont-instagram\"></i></a><a href=\"\"><i class=\"icofont-linkedin\"></i></a></div></div></div></div></div>", 1);
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"section-title\"><span>Equipo</span><h2>Equipo</h2><p>Ninguno de nosotros es tan bueno como todos nosotros juntos. Ray Kroc.</p></div><div class=\"row\"><div class=\"col-lg-3 col-md-6 d-flex align-items-stretch\" data-aos=\"zoom-in\"><div class=\"member\"><img src=\"assets/img/team/team-1.jpg\" alt=\"\"><h4>Fernando Aguilar Robles</h4><span>Secretario General</span><!-- &lt;p&gt;\n                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut\n              &lt;/p&gt; --><div class=\"social\"><a href=\"\"><i class=\"icofont-twitter\"></i></a><a href=\"\"><i class=\"icofont-facebook\"></i></a><a href=\"\"><i class=\"icofont-instagram\"></i></a><a href=\"\"><i class=\"icofont-linkedin\"></i></a></div></div></div><!-- &lt;team :component=&quot;getComponentId(&#39;team&#39;)&quot; &gt;&lt;/team&gt; --><div class=\"col-lg-3 col-md-6 d-flex align-items-stretch\" data-aos=\"zoom-in\"><div class=\"member\"><img src=\"assets/img/team/team-2.jpg\" alt=\"\"><h4>Jorge Daniel Martínez Urbina</h4><span>Secretario de Actas y Conflictos</span><!-- &lt;p&gt;\n                Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus\n              &lt;/p&gt; --><div class=\"social\"><a href=\"\"><i class=\"icofont-twitter\"></i></a><a href=\"\"><i class=\"icofont-facebook\"></i></a><a href=\"\"><i class=\"icofont-instagram\"></i></a><a href=\"\"><i class=\"icofont-linkedin\"></i></a></div></div></div><div class=\"col-lg-3 col-md-6 d-flex align-items-stretch\" data-aos=\"zoom-in\"><div class=\"member\"><img src=\"assets/img/team/team-3.jpg\" alt=\"\"><h4>Julio Miguel Rubinos Ricárdez</h4><span>Secretario de Organización</span><!-- &lt;p&gt;\n                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara\n              &lt;/p&gt; --><div class=\"social\"><a href=\"\"><i class=\"icofont-twitter\"></i></a><a href=\"\"><i class=\"icofont-facebook\"></i></a><a href=\"\"><i class=\"icofont-instagram\"></i></a><a href=\"\"><i class=\"icofont-linkedin\"></i></a></div></div></div><div class=\"col-lg-3 col-md-6 d-flex align-items-stretch\" data-aos=\"zoom-in\"><div class=\"member\"><img src=\"assets/img/team/team-3.jpg\" alt=\"\"><h4>Gustavo de Jesús Caballero Hernández</h4><span>Secretario de Trabajo</span><!-- &lt;p&gt;\n                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara\n              &lt;/p&gt; --><div class=\"social\"><a href=\"\"><i class=\"icofont-twitter\"></i></a><a href=\"\"><i class=\"icofont-facebook\"></i></a><a href=\"\"><i class=\"icofont-instagram\"></i></a><a href=\"\"><i class=\"icofont-linkedin\"></i></a></div></div></div><div class=\"col-lg-3 col-md-6 d-flex align-items-stretch\" data-aos=\"zoom-in\"><div class=\"member\"><img src=\"assets/img/team/team-3.jpg\" alt=\"\"><h4>Fernando José Martínez Urbina</h4><span>Secretario Tesorero</span><!-- &lt;p&gt;\n                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara\n              &lt;/p&gt; --><div class=\"social\"><a href=\"\"><i class=\"icofont-twitter\"></i></a><a href=\"\"><i class=\"icofont-facebook\"></i></a><a href=\"\"><i class=\"icofont-instagram\"></i></a><a href=\"\"><i class=\"icofont-linkedin\"></i></a></div></div></div></div></div>", 1);
 
 var _hoisted_13 = {
   id: "contact",
@@ -18780,6 +18963,8 @@ var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_contact = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("contact");
 
+  var _component_banner = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("banner");
+
   var _component_send_request = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("send-request");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_contact, {
@@ -18827,7 +19012,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     })
   }, "Contacto")], 2
   /* CLASS */
-  )])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nav-menu ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Header "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Hero Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_5, [_hoisted_6], 512
+  )])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nav-menu ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Header "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Hero Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <img src=\"/templates/legal/img/circular.png\" style=\"width:150px\" />\n      <h1>Sindicato Artículo 123</h1> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_banner, {
+    component: $options.getComponentId('banner')
+  }, null, 8
+  /* PROPS */
+  , ["component"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <h2>We are team of talented designers making websites with Bootstrap</h2>\n      <a href=\"#about\" class=\"btn-get-started scrollto\">Get Started</a> ")])], 512
   /* NEED_PATCH */
   ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Hero "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("main", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= About Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_8, [_hoisted_9], 512
   /* NEED_PATCH */
@@ -36746,6 +36935,32 @@ _Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file =
 
 /***/ }),
 
+/***/ "./resources/js/Templates/Legal/Components/Banner.vue":
+/*!************************************************************!*\
+  !*** ./resources/js/Templates/Legal/Components/Banner.vue ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Banner_vue_vue_type_template_id_2100ee4b__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Banner.vue?vue&type=template&id=2100ee4b */ "./resources/js/Templates/Legal/Components/Banner.vue?vue&type=template&id=2100ee4b");
+/* harmony import */ var _Banner_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Banner.vue?vue&type=script&lang=js */ "./resources/js/Templates/Legal/Components/Banner.vue?vue&type=script&lang=js");
+
+
+
+_Banner_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.render = _Banner_vue_vue_type_template_id_2100ee4b__WEBPACK_IMPORTED_MODULE_0__.render
+/* hot reload */
+if (false) {}
+
+_Banner_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/Templates/Legal/Components/Banner.vue"
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_Banner_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
+
+/***/ }),
+
 /***/ "./resources/js/Templates/Legal/Components/Contact.vue":
 /*!*************************************************************!*\
   !*** ./resources/js/Templates/Legal/Components/Contact.vue ***!
@@ -36798,6 +37013,32 @@ if (false) {}
 _SendRequest_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/Templates/Legal/Components/SendRequest.vue"
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_SendRequest_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
+
+/***/ }),
+
+/***/ "./resources/js/Templates/Legal/Components/Team.vue":
+/*!**********************************************************!*\
+  !*** ./resources/js/Templates/Legal/Components/Team.vue ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Team_vue_vue_type_template_id_24b3a6bc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Team.vue?vue&type=template&id=24b3a6bc */ "./resources/js/Templates/Legal/Components/Team.vue?vue&type=template&id=24b3a6bc");
+/* harmony import */ var _Team_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Team.vue?vue&type=script&lang=js */ "./resources/js/Templates/Legal/Components/Team.vue?vue&type=script&lang=js");
+
+
+
+_Team_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.render = _Team_vue_vue_type_template_id_24b3a6bc__WEBPACK_IMPORTED_MODULE_0__.render
+/* hot reload */
+if (false) {}
+
+_Team_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/Templates/Legal/Components/Team.vue"
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_Team_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
 
 /***/ }),
 
@@ -36878,6 +37119,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Templates/Legal/Components/Banner.vue?vue&type=script&lang=js":
+/*!************************************************************************************!*\
+  !*** ./resources/js/Templates/Legal/Components/Banner.vue?vue&type=script&lang=js ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Banner_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Banner_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Banner.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Banner.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/Templates/Legal/Components/Contact.vue?vue&type=script&lang=js":
 /*!*************************************************************************************!*\
   !*** ./resources/js/Templates/Legal/Components/Contact.vue?vue&type=script&lang=js ***!
@@ -36906,6 +37163,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_SendRequest_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_SendRequest_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./SendRequest.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/SendRequest.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
+/***/ "./resources/js/Templates/Legal/Components/Team.vue?vue&type=script&lang=js":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/Templates/Legal/Components/Team.vue?vue&type=script&lang=js ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Team_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Team_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Team.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Team.vue?vue&type=script&lang=js");
  
 
 /***/ }),
@@ -36974,6 +37247,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Templates/Legal/Components/Banner.vue?vue&type=template&id=2100ee4b":
+/*!******************************************************************************************!*\
+  !*** ./resources/js/Templates/Legal/Components/Banner.vue?vue&type=template&id=2100ee4b ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Banner_vue_vue_type_template_id_2100ee4b__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Banner_vue_vue_type_template_id_2100ee4b__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Banner.vue?vue&type=template&id=2100ee4b */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Banner.vue?vue&type=template&id=2100ee4b");
+
+
+/***/ }),
+
 /***/ "./resources/js/Templates/Legal/Components/Contact.vue?vue&type=template&id=75d4e511":
 /*!*******************************************************************************************!*\
   !*** ./resources/js/Templates/Legal/Components/Contact.vue?vue&type=template&id=75d4e511 ***!
@@ -37002,6 +37291,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_SendRequest_vue_vue_type_template_id_13c562d8__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_SendRequest_vue_vue_type_template_id_13c562d8__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./SendRequest.vue?vue&type=template&id=13c562d8 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/SendRequest.vue?vue&type=template&id=13c562d8");
+
+
+/***/ }),
+
+/***/ "./resources/js/Templates/Legal/Components/Team.vue?vue&type=template&id=24b3a6bc":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/Templates/Legal/Components/Team.vue?vue&type=template&id=24b3a6bc ***!
+  \****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Team_vue_vue_type_template_id_24b3a6bc__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Team_vue_vue_type_template_id_24b3a6bc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Team.vue?vue&type=template&id=24b3a6bc */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Team.vue?vue&type=template&id=24b3a6bc");
 
 
 /***/ }),

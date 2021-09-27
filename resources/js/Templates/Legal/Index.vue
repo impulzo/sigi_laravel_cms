@@ -46,8 +46,9 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center" ref="index">
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
-      <img src="/templates/legal/img/circular.png" style="width:150px" />
-      <h1>Sindicato Artículo 123</h1>
+      <!-- <img src="/templates/legal/img/circular.png" style="width:150px" />
+      <h1>Sindicato Artículo 123</h1> -->
+      <banner :component="getComponentId('banner')" ></banner>
       <!-- <h2>We are team of talented designers making websites with Bootstrap</h2>
       <a href="#about" class="btn-get-started scrollto">Get Started</a> -->
     </div>
@@ -448,6 +449,7 @@
               </div>
             </div>
           </div>
+          <!-- <team :component="getComponentId('team')" ></team> -->
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
             <div class="member">
@@ -659,9 +661,11 @@
 
 <script>
 import Contact from './Components/Contact.vue'
+import Banner from './Components/Banner.vue'
+import Team from './Components/Team.vue'
 import SendRequest from './Components/SendRequest.vue'
 export default {
-  components: { Contact },
+  components: { Contact, Banner, Team },
   name: 'Index Legal Template',
   props: ['template'],
   data:function(){
@@ -687,6 +691,8 @@ export default {
   },
   components:{
     Contact,
+    Banner,
+    Team,
     SendRequest
   }
 }
