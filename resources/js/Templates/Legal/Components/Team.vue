@@ -19,7 +19,6 @@
                     </div>
                 </div>
             </span>
-            
         </div>
     </div>
 </template>
