@@ -54,6 +54,17 @@
   </section><!-- End Hero -->
 
   <main id="main">
+    <!-- ======= Imagen Section ======= -->
+    <section id="image" class="image">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-4">
+            <a href="http://www.centrodedesarrolloeimpulsodeemprendedores.org.mx"><img src="/templates/legal/img/CURSOS.png" class="img-fluid"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Imagen Section -->
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about" ref="about">
