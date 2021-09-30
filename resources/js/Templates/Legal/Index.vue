@@ -120,39 +120,14 @@
     </section><!-- End Why Us Section -->
 
     <!-- ======= Clients Section ======= -->
-    <!-- <section id="clients" class="clients">
+    
+    <section id="clients" class="clients">
       <div class="container" data-aos="zoom-in">
-
         <div class="row d-flex align-items-center">
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="/templates/legal/img/clients/client-1.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="/templates/legal/img/clients/client-2.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="/templates/legal/img/clients/client-3.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="/templates/legal/img/clients/client-4.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="/templates/legal/img/clients/client-5.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="/templates/legal/img/clients/client-6.png" class="img-fluid" alt="">
-          </div>
-
+            <client :component="getComponentId('clients_banner')" > </client>
         </div>
-
       </div>
-    </section> -->
+    </section>
     <!-- End Clients Section -->
 
     <!-- ======= Services Section ======= -->
@@ -663,9 +638,10 @@
 import Contact from './Components/Contact.vue'
 import Banner from './Components/Banner.vue'
 import Team from './Components/Team.vue'
+import Client from './Components/Client.vue'
 import SendRequest from './Components/SendRequest.vue'
 export default {
-  components: { Contact, Banner, Team },
+  components: { Contact, Banner, Team, Client },
   name: 'Index Legal Template',
   props: ['template'],
   data:function(){
@@ -693,6 +669,7 @@ export default {
     Contact,
     Banner,
     Team,
+    Client,
     SendRequest
   }
 }
