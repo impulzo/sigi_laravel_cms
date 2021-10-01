@@ -18699,24 +18699,22 @@ var _hoisted_5 = {
   ref: "index"
 };
 
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "container position-relative",
-  "data-aos": "fade-up",
-  "data-aos-delay": "500"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-  src: "/templates/legal/img/circular.png",
-  style: {
-    "width": "150px"
-  }
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, "Sindicato Artículo 123"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <h2>We are team of talented designers making websites with Bootstrap</h2>\n      <a href=\"#about\" class=\"btn-get-started scrollto\">Get Started</a> ")], -1
-/* HOISTED */
-);
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container position-relative\" style=\"margin-top:15%;\" data-aos=\"fade-up\" data-aos-delay=\"500\"><img src=\"/templates/legal/img/circular.png\" style=\"width:150px;\"><h1 style=\"margin-left:-10%;\">Sindicato Artículo 123</h1><!-- &lt;h2&gt;We are team of talented designers making websites with Bootstrap&lt;/h2&gt;\n      &lt;a href=&quot;#about&quot; class=&quot;btn-get-started scrollto&quot;&gt;Get Started&lt;/a&gt; --><div class=\"cediem\"><a href=\"http://www.centrodedesarrolloeimpulsodeemprendedores.org.mx\"><img src=\"/templates/legal/img/CURSOS.png\" class=\"img-fluid\"></a></div></div>", 1);
 
 var _hoisted_7 = {
   id: "main"
 };
 
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"image\" class=\"image\"><div class=\"container\"><div class=\"row justify-content-center\"><div class=\"col-lg-8 col-4\"><a href=\"http://www.centrodedesarrolloeimpulsodeemprendedores.org.mx\"><img src=\"/templates/legal/img/CURSOS.png\" class=\"img-fluid\"></a></div></div></div></section>", 1);
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", {
+  id: "image",
+  "class": "image"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "container"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "row justify-content-center"
+})])], -1
+/* HOISTED */
+);
 
 var _hoisted_9 = {
   id: "about",
@@ -18945,7 +18943,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\np{\n    text-align: justify;\n}\n#statutes{\n    text-decoration: none;\n    color: grey;\n}\n.box:hover  #statutes{\n    color:#fff;\n}\n#address{\n    margin-left: 15px !important;\n    margin-right: 15px !important;\n    text-align: justify;\n}\n.sub-email{\n    text-align: center;\n}\n.sub-phone{\n    text-align: center;\n}\n.member{\n    width: 100% !important;\n}\n.info-box{\n    height: 220px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\np{\n    text-align: justify;\n}\n#statutes{\n    text-decoration: none;\n    color: grey;\n}\n.box:hover  #statutes{\n    color:#fff;\n}\n#address{\n    margin-left: 15px !important;\n    margin-right: 15px !important;\n    text-align: justify;\n}\n.sub-email{\n    text-align: center;\n}\n.sub-phone{\n    text-align: center;\n}\n.member{\n    width: 100% !important;\n}\n.info-box{\n    height: 220px;\n}\n.cediem{\n    border-radius: 25px;\n    height: 25%;\n    width: 50%;\n    background: #fff;\n    margin-top: 20% !important;\n    margin-left: -15% !important;\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

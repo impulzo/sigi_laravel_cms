@@ -45,22 +45,24 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center" ref="index">
-    <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+    <div class="container position-relative" style="margin-top:15%" data-aos="fade-up" data-aos-delay="500">
       <img src="/templates/legal/img/circular.png" style="width:150px" />
-      <h1>Sindicato Artículo 123</h1>
+      <h1 style="margin-left: -10%">Sindicato Artículo 123</h1>
       <!-- <h2>We are team of talented designers making websites with Bootstrap</h2>
       <a href="#about" class="btn-get-started scrollto">Get Started</a> -->
-    </div>
+      <div class="cediem">
+        <a href="http://www.centrodedesarrolloeimpulsodeemprendedores.org.mx"><img src="/templates/legal/img/CURSOS.png" class="img-fluid"></a>
+      </div>
+    </div>    
   </section><!-- End Hero -->
+  
 
   <main id="main">
     <!-- ======= Imagen Section ======= -->
     <section id="image" class="image">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-8 col-4">
-            <a href="http://www.centrodedesarrolloeimpulsodeemprendedores.org.mx"><img src="/templates/legal/img/CURSOS.png" class="img-fluid"></a>
-          </div>
+          
         </div>
       </div>
     </section>
@@ -731,4 +733,13 @@ export default {
   .info-box{
     height: 220px;
   }
+  .cediem{
+    border-radius: 25px;
+    height: 25%;
+    width: 50%;
+    background: #fff;
+    margin-top: 20% !important;
+    margin-left: -15% !important;
+  }
+
 </style>
