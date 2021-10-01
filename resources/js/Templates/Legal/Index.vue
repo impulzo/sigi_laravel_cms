@@ -47,7 +47,7 @@
   <section id="hero" class="d-flex align-items-center" ref="index">
     <div class="container position-relative" style="margin-top:15%" data-aos="fade-up" data-aos-delay="500">
       <img src="/templates/legal/img/circular.png" style="width:150px" />
-      <h1>Sindicato Artículo 123</h1>
+      <h1 style="margin-left: -10%">Sindicato Artículo 123</h1>
       <!-- <h2>We are team of talented designers making websites with Bootstrap</h2>
       <a href="#about" class="btn-get-started scrollto">Get Started</a> -->
       <div class="cediem">

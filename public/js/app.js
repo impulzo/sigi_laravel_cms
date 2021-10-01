@@ -18699,7 +18699,7 @@ var _hoisted_5 = {
   ref: "index"
 };
 
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container position-relative\" style=\"margin-top:15%;\" data-aos=\"fade-up\" data-aos-delay=\"500\"><img src=\"/templates/legal/img/circular.png\" style=\"width:150px;\"><h1>Sindicato Artículo 123</h1><!-- &lt;h2&gt;We are team of talented designers making websites with Bootstrap&lt;/h2&gt;\n      &lt;a href=&quot;#about&quot; class=&quot;btn-get-started scrollto&quot;&gt;Get Started&lt;/a&gt; --><div class=\"cediem\"><a href=\"http://www.centrodedesarrolloeimpulsodeemprendedores.org.mx\"><img src=\"/templates/legal/img/CURSOS.png\" class=\"img-fluid\"></a></div></div>", 1);
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container position-relative\" style=\"margin-top:15%;\" data-aos=\"fade-up\" data-aos-delay=\"500\"><img src=\"/templates/legal/img/circular.png\" style=\"width:150px;\"><h1 style=\"margin-left:-10%;\">Sindicato Artículo 123</h1><!-- &lt;h2&gt;We are team of talented designers making websites with Bootstrap&lt;/h2&gt;\n      &lt;a href=&quot;#about&quot; class=&quot;btn-get-started scrollto&quot;&gt;Get Started&lt;/a&gt; --><div class=\"cediem\"><a href=\"http://www.centrodedesarrolloeimpulsodeemprendedores.org.mx\"><img src=\"/templates/legal/img/CURSOS.png\" class=\"img-fluid\"></a></div></div>", 1);
 
 var _hoisted_7 = {
   id: "main"
