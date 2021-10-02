@@ -428,21 +428,21 @@
                 <div class="web-service-block">
                     <i class="fas fa-people-arrows"></i>
                     <h3>Respeto</h3>
-                    <p>Tener un reconocimiento plural para generar la armonía y mejores resultados y mejores resultados haciendo cumplir con nuestros objetivos.</p>
+                    <p>Tener un reconocimiento plural para generar la armonía y mejores resultados haciendo cumplir con nuestros objetivos.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 col-md-6 mb-30">
                 <div class="web-service-block">
                     <i class="far fa-comments"></i>
                     <h3>Comunicación.</h3>
-                    <p>Como valor social e intercambiamos opiniones e interlocución y entre todas las partes para lograr mejore resultados colectivos.</p>
+                    <p>Como valor social e intercambio opiniones e interlocución y entre todas las partes para lograr mejores resultados colectivos.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 col-md-6 mb-30">
                 <div class="web-service-block">
                     <i class="ti-announcement"></i>
                     <h3>Transparencia</h3>
-                    <p>Las acciones claras y concretas para bue funcionamiento en todos y cada una de las áreas y priorizando siempre una mejor Rendición de Cuentas.</p>
+                    <p>Las acciones claras y concretas para buen funcionamiento en todos y cada una de las áreas y priorizando siempre una mejor Rendición de Cuentas.</p>
                 </div>
             </div>
 
@@ -450,8 +450,7 @@
                 <div class="web-service-block">
                     <i class="ti-layers-alt"></i>
                     <h3>Trabajo Social</h3>
-                    <p>Brindar y contribuir a mejores condiciones formativas para el desarrollo de sus habilidades y emprendimiento en apoya de mejores oportunidades para un mejor desarrollo de las personas.
-- DIGNIDAD: Promover que el ciudadano sea tratado en un pie de igualdad y que puedan gozar de los derechos fundamentales que de ellos derivan.</p>
+                    <p>Brindar y contribuir a mejores condiciones formativas para el desarrollo de sus habilidades y emprendimiento en apoyo de mejores oportunidades para un mejor desarrollo de las personas.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 col-md-6 ">
@@ -470,9 +469,9 @@
             </div>
             <div class="col-lg-12 col-sm-12 col-md-12 ">
                 <div class="web-service-block">
-                    <i class="fas fa-users"></i>
+                    <i class="fas fa-users"></i>ß
                     <h3>Inclusión</h3>
-                    <p style="text-align:center;">Generar pluralidad en el ciudadano como un área de oportunidad para enriquecer objetivamente a la sociedad.</p>
+                    <p style="text-align:center;">Generar pluralidad en el ciudadano como ßun área de oportunidad para enriquecer objetivamente a la sociedad.</p>
                 </div>
             </div>
         </div>
