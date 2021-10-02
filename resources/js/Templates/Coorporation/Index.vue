@@ -435,7 +435,7 @@
                 <div class="web-service-block">
                     <i class="far fa-comments"></i>
                     <h3>Comunicación.</h3>
-                    <p>Como valor social e intercambio opiniones e interlocución y entre todas las partes para lograr mejores resultados colectivos.</p>
+                    <p>Como valor social e intercambio de opiniones e interlocución y entre todas las partes para lograr mejores resultados colectivos.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 col-md-6 mb-30">
