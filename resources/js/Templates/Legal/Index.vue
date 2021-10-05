@@ -737,7 +737,7 @@ export default {
     border-radius: 25px;
     height: auto;
     width: 30%;
-    background: #fff;
+    background: #7F1E57;
     position:absolute;
     bottom: 0px !important;
   }
