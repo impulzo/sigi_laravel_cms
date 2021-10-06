@@ -18,12 +18,10 @@ export default {
     },
     mounted(){
         if(this.component.name === 'title' && this.component.isActive == true){
-            console.log(this.component)
             axios.get(BASE_URL + '/api/components/'+this.component.id)
             .then(response=>{
-                if(response.data.status === 200){
+                if(response.data.status == 200){
                     this.items = response.data.data.component.items;
-                    console.log(this.items)
                 }
             })
             .catch()

@@ -6,7 +6,6 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <!-- <h1 class="logo mr-auto"><a href="javascript:void(0);" @click="goto('index')">Sindicato Art. 123</a></h1> -->
       <titlen :component="getComponentId('title')"></titlen>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -15,8 +14,8 @@
         <ul>
           <li :class="activeLink('index')"><a href="javascript:void(0);" @click="goto('index')">Inicio</a></li>
           <li :class="activeLink('about')"><a href="javascript:void(0);" @click="goto('about')">Nosotros</a></li>
-          <!-- <li><a href="#services">Servicios</a></li>
-          <li><a href="#portfolio">Portafolio</a></li>
+          <li :class="activeLink('services')"><a href="javascript:void(0);" @click="goto('services')">Servicios</a></li>
+          <!-- <li><a href="#portfolio">Portafolio</a></li>
           <li><a href="#pricing">Pricing</a></li> -->
           <li :class="activeLink('team')"><a href="javascript:void(0);" @click="goto('team')">Equipo</a></li>
           <!-- <li class="drop-down"><a href="">Estados</a>
@@ -47,13 +46,10 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center" ref="index">
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
-      <!-- <img src="/templates/legal/img/circular.png" style="width:150px" />
-      <h1>Sindicato Artículo 123</h1> -->
       <banner :component="getComponentId('banner')" ></banner>
-      <!-- <h2>We are team of talented designers making websites with Bootstrap</h2>
-      <a href="#about" class="btn-get-started scrollto">Get Started</a> -->
     </div>
-  </section><!-- End Hero -->
+  </section>
+  <!-- End Hero -->
 
   <main id="main">
 
@@ -88,30 +84,6 @@
     <section id="why-us" class="why-us">
       <div class="container">
         <mission :component="getComponentId('mission_values')" ></mission>
-        <!-- <div class="row">
-          <div class="col-lg-4" data-aos="fade-up">
-            <div class="box">
-              <span>Misión</span>
-              <h4>Lorem Ipsum</h4>
-              <p>Retomar el verdadero cumplimiento de la función social para la cual los sindicatos han sido creados, buscando a través de las normas de trabajo, el equilibrio y la justicia social en las relaciones obrero patronales, el impulso de defensa de los derechos laborales, así como la calidad de vida de nuestros agremiados</p>
-            </div>
-          </div>
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="150">
-            <div class="box">
-              <span>Visión</span>
-              <h4>Repellat Nihil</h4>
-              <p>Ser un sindicato de vanguardia cumpliendo con las exigencias de la modernidad social, así como ser reconocidos como una organización sindical consolidada en el ámbito nacional que luche por la mejora y defensa de los intereses laborales, económicos, profesionales y sociales de los agremiados.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="box" style="height:300px;">
-              <span>Estatutos</span>
-              <h4> Ad ad velit qui</h4>
-              <br>
-              <p ><a id="statutes" href="/estatutos" target="_blank">Ver Estatutos</a></p>
-            </div>
-          </div>
-        </div> -->
       </div>
     </section>
     <!-- End Why Us Section -->
@@ -126,7 +98,7 @@
     <!-- End Clients Section -->
 
     <!-- ======= Services Section ======= -->
-    <!-- <section id="services" class="services">
+    <section id="services" class="services" ref="services">
       <div class="container">
 
         <div class="section-title">
@@ -134,60 +106,9 @@
           <h2>Servicios</h2>
           <p>“Dale al cliente siempre más de lo que espera”.&nbsp;&nbsp;&nbsp; Nelson Boswell.</p>
         </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="150">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Sed ut perspiciatis</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="450">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-slideshow"></i></div>
-              <h4><a href="">Dele cardo</a></h4>
-              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="750">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-arch"></i></div>
-              <h4><a href="">Divera don</a></h4>
-              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-            </div>
-          </div>
-
-        </div>
-
+        <service :component="getComponentId('services')" ></service>
       </div>
-    </section> -->
+    </section>
     <!-- End Services Section -->
 
     <!-- ======= Cta Section ======= -->
@@ -543,6 +464,7 @@
 </template>
 
 <script>
+import Service from './Components/Service.vue'
 import Titlen from './Components/Title.vue'
 import Contact from './Components/Contact.vue'
 import Banner from './Components/Banner.vue'
@@ -551,7 +473,7 @@ import Client from './Components/Client.vue'
 import Mission from './Components/Mission.vue'
 import SendRequest from './Components/SendRequest.vue'
 export default {
-  components: { Contact, Banner, Team, Client, Mission, Titlen },
+  components: { Contact, Banner, Team, Client, Mission, Titlen, Service },
   name: 'Index Legal Template',
   props: ['template'],
   data:function(){
@@ -582,6 +504,7 @@ export default {
     Banner,
     Team,
     Client,
+    Service,
     SendRequest
   }
 }

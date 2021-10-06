@@ -24,7 +24,7 @@ export default {
             //Get Components With Items
             axios.get(BASE_URL + '/api/components/'+this.component.id)
             .then(response=>{
-                if(response.data.status === 200){
+                if(response.data.status == 200){
                     this.items = response.data.data.component.items;
                 }
             })

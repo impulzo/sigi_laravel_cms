@@ -22,7 +22,7 @@
 <script>
 import axios from 'axios'
 export default {
-    name: 'Team Componnent From Legal Template',
+    name: 'Team Component From Legal Template',
     props: ['component'],
     data: function(){
         return{
@@ -31,10 +31,9 @@ export default {
     },
     mounted(){
         if(this.component.name === 'team' && this.component.isActive == true){
-            console.log(this.component)
             axios.get(BASE_URL + '/api/components/'+this.component.id)
             .then(response =>{
-                if(response.data.status === 200){
+                if(response.data.status == 200){
                     this.items = response.data.data.component.items;
                 }
             })
