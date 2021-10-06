@@ -56,27 +56,7 @@
     <!-- ======= About Section ======= -->
     <section id="about" class="about" ref="about">
       <div class="container">
-
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
-            <img src="/templates/legal/img/about.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
-            <h3>Organización Civil.</h3>
-            <p class="font-italic">
-              Somos una organización:
-            </p>
-            <ul>
-              <li><i class="icofont-check-circled"></i> Vanguardista.</li>
-              <li><i class="icofont-check-circled"></i> Nacionalista.</li>
-              <li><i class="icofont-check-circled"></i> Mayoritaria de trabajadores y clases proletarias.</li>
-            </ul>
-            <p>
-              Que está en permanente lucha para el cambio de una sociedad incluyente, con la firme determinación de eliminar la explotación y la inequidad.
-            </p>
-          </div>
-        </div>
-
+        <about :component="getComponentId('about')"></about>
       </div>
     </section><!-- End About Section -->
 
@@ -464,6 +444,7 @@
 </template>
 
 <script>
+import About from './Components/About.vue'
 import Service from './Components/Service.vue'
 import Titlen from './Components/Title.vue'
 import Contact from './Components/Contact.vue'
@@ -473,7 +454,15 @@ import Client from './Components/Client.vue'
 import Mission from './Components/Mission.vue'
 import SendRequest from './Components/SendRequest.vue'
 export default {
-  components: { Contact, Banner, Team, Client, Mission, Titlen, Service },
+  components: { 
+    Contact, 
+    Banner, 
+    Team, 
+    Client, 
+    Mission, 
+    Titlen,
+    About, 
+    Service },
   name: 'Index Legal Template',
   props: ['template'],
   data:function(){
@@ -498,6 +487,7 @@ export default {
     }
   },
   components:{
+    About,
     Contact,
     Mission,
     Titlen,
