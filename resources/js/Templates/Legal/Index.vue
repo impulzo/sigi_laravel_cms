@@ -6,7 +6,8 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="javascript:void(0);" @click="goto('index')">Sindicato Art. 123</a></h1>
+      <!-- <h1 class="logo mr-auto"><a href="javascript:void(0);" @click="goto('index')">Sindicato Art. 123</a></h1> -->
+      <titlen :component="getComponentId('title')"></titlen>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -86,46 +87,40 @@
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us">
       <div class="container">
-
-        <div class="row">
-
+        <mission :component="getComponentId('mission_values')" ></mission>
+        <!-- <div class="row">
           <div class="col-lg-4" data-aos="fade-up">
             <div class="box">
               <span>Misión</span>
-              <!-- <h4>Lorem Ipsum</h4> -->
+              <h4>Lorem Ipsum</h4>
               <p>Retomar el verdadero cumplimiento de la función social para la cual los sindicatos han sido creados, buscando a través de las normas de trabajo, el equilibrio y la justicia social en las relaciones obrero patronales, el impulso de defensa de los derechos laborales, así como la calidad de vida de nuestros agremiados</p>
             </div>
           </div>
-
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="150">
             <div class="box">
               <span>Visión</span>
-              <!-- <h4>Repellat Nihil</h4> -->
+              <h4>Repellat Nihil</h4>
               <p>Ser un sindicato de vanguardia cumpliendo con las exigencias de la modernidad social, así como ser reconocidos como una organización sindical consolidada en el ámbito nacional que luche por la mejora y defensa de los intereses laborales, económicos, profesionales y sociales de los agremiados.</p>
             </div>
           </div>
-
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
             <div class="box" style="height:300px;">
               <span>Estatutos</span>
-              <!-- <h4> Ad ad velit qui</h4> -->
+              <h4> Ad ad velit qui</h4>
               <br>
               <p ><a id="statutes" href="/estatutos" target="_blank">Ver Estatutos</a></p>
             </div>
           </div>
-
-        </div>
-
+        </div> -->
       </div>
-    </section><!-- End Why Us Section -->
+    </section>
+    <!-- End Why Us Section -->
 
     <!-- ======= Clients Section ======= -->
     
     <section id="clients" class="clients">
       <div class="container" data-aos="zoom-in">
-        <div class="row d-flex align-items-center">
-            <client :component="getComponentId('clients_banner')" > </client>
-        </div>
+        <client :component="getComponentId('clients_banner')" > </client>
       </div>
     </section>
     <!-- End Clients Section -->
@@ -400,104 +395,17 @@
     <!-- ======= Team Section ======= -->
     <section id="team" class="team" ref="team">
       <div class="container">
-
         <div class="section-title">
           <span>Equipo</span>
           <h2>Equipo</h2>
           <p>Ninguno de nosotros es tan bueno como todos nosotros juntos. Ray Kroc.</p>
         </div>
-
-        <div class="row">
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
-            <div class="member">
-              <img src="assets/img/team/team-1.jpg" alt="">
-              <h4>Fernando Aguilar Robles</h4>
-              <span>Secretario General</span>
-              <!-- <p>
-                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
-              </p> -->
-              <div class="social">
-                <a href=""><i class="icofont-twitter"></i></a>
-                <a href=""><i class="icofont-facebook"></i></a>
-                <a href=""><i class="icofont-instagram"></i></a>
-                <a href=""><i class="icofont-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-          <!-- <team :component="getComponentId('team')" ></team> -->
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
-            <div class="member">
-              <img src="assets/img/team/team-2.jpg" alt="">
-              <h4>Jorge Daniel Martínez Urbina</h4>
-              <span>Secretario de Actas y Conflictos</span>
-              <!-- <p>
-                Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
-              </p> -->
-              <div class="social">
-                <a href=""><i class="icofont-twitter"></i></a>
-                <a href=""><i class="icofont-facebook"></i></a>
-                <a href=""><i class="icofont-instagram"></i></a>
-                <a href=""><i class="icofont-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
-            <div class="member">
-              <img src="assets/img/team/team-3.jpg" alt="">
-              <h4>Julio Miguel Rubinos Ricárdez</h4>
-              <span>Secretario de Organización</span>
-              <!-- <p>
-                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-              </p> -->
-              <div class="social">
-                <a href=""><i class="icofont-twitter"></i></a>
-                <a href=""><i class="icofont-facebook"></i></a>
-                <a href=""><i class="icofont-instagram"></i></a>
-                <a href=""><i class="icofont-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
-            <div class="member">
-              <img src="assets/img/team/team-3.jpg" alt="">
-              <h4>Gustavo de Jesús Caballero Hernández</h4>
-              <span>Secretario de Trabajo</span>
-              <!-- <p>
-                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-              </p> -->
-              <div class="social">
-                <a href=""><i class="icofont-twitter"></i></a>
-                <a href=""><i class="icofont-facebook"></i></a>
-                <a href=""><i class="icofont-instagram"></i></a>
-                <a href=""><i class="icofont-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
-            <div class="member">
-              <img src="assets/img/team/team-3.jpg" alt="">
-              <h4>Fernando José Martínez Urbina</h4>
-              <span>Secretario Tesorero</span>
-              <!-- <p>
-                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-              </p> -->
-              <div class="social">
-                <a href=""><i class="icofont-twitter"></i></a>
-                <a href=""><i class="icofont-facebook"></i></a>
-                <a href=""><i class="icofont-instagram"></i></a>
-                <a href=""><i class="icofont-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
+        <!-- <div class="row"> -->
+          <team :component="getComponentId('team')" ></team>
+        <!-- </div> -->
       </div>
-    </section><!-- End Team Section -->
+    </section>
+    <!-- End Team Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact" ref="contact">
@@ -635,13 +543,15 @@
 </template>
 
 <script>
+import Titlen from './Components/Title.vue'
 import Contact from './Components/Contact.vue'
 import Banner from './Components/Banner.vue'
 import Team from './Components/Team.vue'
 import Client from './Components/Client.vue'
+import Mission from './Components/Mission.vue'
 import SendRequest from './Components/SendRequest.vue'
 export default {
-  components: { Contact, Banner, Team, Client },
+  components: { Contact, Banner, Team, Client, Mission, Titlen },
   name: 'Index Legal Template',
   props: ['template'],
   data:function(){
@@ -667,6 +577,8 @@ export default {
   },
   components:{
     Contact,
+    Mission,
+    Titlen,
     Banner,
     Team,
     Client,
@@ -698,9 +610,33 @@ export default {
     text-align: center;
   }
   .member{
-    width: 100% !important;
+    width: 200% !important;
   }
   .info-box{
     height: 220px;
   }
+  .clients {
+  background: #f2f2f2;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.clients img {
+  width: 50%;
+  filter: grayscale(100);
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  padding: 15px 0;
+}
+
+.clients img:hover {
+  filter: none;
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .clients img {
+    width: 40%;
+  }
+}
 </style>

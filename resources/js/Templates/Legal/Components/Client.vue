@@ -1,10 +1,10 @@
 <template>
-    <div v-if="component.name === 'clients_banner' && component.isActive == true" id="clients">
-        <span class="item" v-for="item in items" v-bind:key="item.id">
-            <div class="col-lg-2 col-md-4 col-6">
-                <img v-if="item.key==='client_1'" :src="`assets/img/clients/${item.value}`" class="img-fluid" alt=""/>
+    <div v-if="component.name === 'clients_banner' && component.isActive == true" >
+        <div class="row d-flex align-items-center">
+            <div v-for="item in items" v-bind:key="item.id" class="col-lg-2 col-md-4 col-6">
+                <img :src="`/templates/legal/img/${item.value}`" class="img-fluid" alt=""/>
             </div>
-        </span>
+        </div>   
     </div>
 </template>
 <script>
@@ -31,3 +31,7 @@ export default {
     }
 }
 </script>
+
+<style>
+
+</style>

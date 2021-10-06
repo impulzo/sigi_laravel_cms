@@ -17860,6 +17860,48 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Mission.vue?vue&type=script&lang=js":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Mission.vue?vue&type=script&lang=js ***!
+  \*****************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: 'Team Componnent From Legal Template',
+  props: ['component'],
+  data: function data() {
+    return {
+      items: null
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    if (this.component.name === 'mission_values' && this.component.isActive == true) {
+      axios__WEBPACK_IMPORTED_MODULE_0___default().get(BASE_URL + '/api/components/' + this.component.id).then(function (response) {
+        if (response.data.status === 200) {
+          _this.items = response.data.data.component.items;
+        }
+      })["catch"]();
+    }
+  },
+  methods: {
+    dataJSON: function dataJSON(item) {
+      return JSON.parse(item.value);
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/SendRequest.vue?vue&type=script&lang=js":
 /*!*********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/SendRequest.vue?vue&type=script&lang=js ***!
@@ -17974,9 +18016,54 @@ __webpack_require__.r(__webpack_exports__);
     var _this = this;
 
     if (this.component.name === 'team' && this.component.isActive == true) {
+      console.log(this.component);
       axios__WEBPACK_IMPORTED_MODULE_0___default().get(BASE_URL + '/api/components/' + this.component.id).then(function (response) {
         if (response.data.status === 200) {
           _this.items = response.data.data.component.items;
+        }
+      })["catch"]();
+    }
+  },
+  methods: {
+    dataJson: function dataJson(item) {
+      return JSON.parse(item.value);
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Title.vue?vue&type=script&lang=js":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Title.vue?vue&type=script&lang=js ***!
+  \***************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: 'Title Componnent From Legal Template',
+  props: ['component'],
+  data: function data() {
+    return {
+      items: null
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    if (this.component.name === 'title' && this.component.isActive == true) {
+      console.log(this.component);
+      axios__WEBPACK_IMPORTED_MODULE_0___default().get(BASE_URL + '/api/components/' + this.component.id).then(function (response) {
+        if (response.data.status === 200) {
+          _this.items = response.data.data.component.items;
+          console.log(_this.items);
         }
       })["catch"]();
     }
@@ -17996,12 +18083,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Components_Contact_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Components/Contact.vue */ "./resources/js/Templates/Legal/Components/Contact.vue");
-/* harmony import */ var _Components_Banner_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Components/Banner.vue */ "./resources/js/Templates/Legal/Components/Banner.vue");
-/* harmony import */ var _Components_Team_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Components/Team.vue */ "./resources/js/Templates/Legal/Components/Team.vue");
-/* harmony import */ var _Components_Client_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Components/Client.vue */ "./resources/js/Templates/Legal/Components/Client.vue");
-/* harmony import */ var _Components_SendRequest_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Components/SendRequest.vue */ "./resources/js/Templates/Legal/Components/SendRequest.vue");
+/* harmony import */ var _Components_Title_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Components/Title.vue */ "./resources/js/Templates/Legal/Components/Title.vue");
+/* harmony import */ var _Components_Contact_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Components/Contact.vue */ "./resources/js/Templates/Legal/Components/Contact.vue");
+/* harmony import */ var _Components_Banner_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Components/Banner.vue */ "./resources/js/Templates/Legal/Components/Banner.vue");
+/* harmony import */ var _Components_Team_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Components/Team.vue */ "./resources/js/Templates/Legal/Components/Team.vue");
+/* harmony import */ var _Components_Client_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Components/Client.vue */ "./resources/js/Templates/Legal/Components/Client.vue");
+/* harmony import */ var _Components_Mission_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Components/Mission.vue */ "./resources/js/Templates/Legal/Components/Mission.vue");
+/* harmony import */ var _Components_SendRequest_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Components/SendRequest.vue */ "./resources/js/Templates/Legal/Components/SendRequest.vue");
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
 
 
 
@@ -18010,10 +18101,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_defineProperty({
   components: {
-    Contact: _Components_Contact_vue__WEBPACK_IMPORTED_MODULE_0__.default,
-    Banner: _Components_Banner_vue__WEBPACK_IMPORTED_MODULE_1__.default,
-    Team: _Components_Team_vue__WEBPACK_IMPORTED_MODULE_2__.default,
-    Client: _Components_Client_vue__WEBPACK_IMPORTED_MODULE_3__.default
+    Contact: _Components_Contact_vue__WEBPACK_IMPORTED_MODULE_1__.default,
+    Banner: _Components_Banner_vue__WEBPACK_IMPORTED_MODULE_2__.default,
+    Team: _Components_Team_vue__WEBPACK_IMPORTED_MODULE_3__.default,
+    Client: _Components_Client_vue__WEBPACK_IMPORTED_MODULE_4__.default,
+    Mission: _Components_Mission_vue__WEBPACK_IMPORTED_MODULE_5__.default,
+    Titlen: _Components_Title_vue__WEBPACK_IMPORTED_MODULE_0__.default
   },
   name: 'Index Legal Template',
   props: ['template'],
@@ -18043,11 +18136,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     }
   }
 }, "components", {
-  Contact: _Components_Contact_vue__WEBPACK_IMPORTED_MODULE_0__.default,
-  Banner: _Components_Banner_vue__WEBPACK_IMPORTED_MODULE_1__.default,
-  Team: _Components_Team_vue__WEBPACK_IMPORTED_MODULE_2__.default,
-  Client: _Components_Client_vue__WEBPACK_IMPORTED_MODULE_3__.default,
-  SendRequest: _Components_SendRequest_vue__WEBPACK_IMPORTED_MODULE_4__.default
+  Contact: _Components_Contact_vue__WEBPACK_IMPORTED_MODULE_1__.default,
+  Mission: _Components_Mission_vue__WEBPACK_IMPORTED_MODULE_5__.default,
+  Titlen: _Components_Title_vue__WEBPACK_IMPORTED_MODULE_0__.default,
+  Banner: _Components_Banner_vue__WEBPACK_IMPORTED_MODULE_2__.default,
+  Team: _Components_Team_vue__WEBPACK_IMPORTED_MODULE_3__.default,
+  Client: _Components_Client_vue__WEBPACK_IMPORTED_MODULE_4__.default,
+  SendRequest: _Components_SendRequest_vue__WEBPACK_IMPORTED_MODULE_6__.default
 }));
 
 /***/ }),
@@ -18658,28 +18753,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  key: 0,
-  id: "clients"
+  key: 0
 };
 var _hoisted_2 = {
-  "class": "col-lg-2 col-md-4 col-6"
+  "class": "row d-flex align-items-center"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return $props.component.name === 'clients_banner' && $props.component.isActive == true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.items, function (item) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("span", {
-      "class": "item",
-      key: item.id
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [item.key === 'client_1' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("img", {
-      key: 0,
-      src: "assets/img/clients/".concat(item.value),
+  return $props.component.name === 'clients_banner' && $props.component.isActive == true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.items, function (item) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
+      key: item.id,
+      "class": "col-lg-2 col-md-4 col-6"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+      src: "/templates/legal/img/".concat(item.value),
       "class": "img-fluid",
       alt: ""
     }, null, 8
     /* PROPS */
-    , ["src"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]);
+    , ["src"])]);
   }), 128
   /* KEYED_FRAGMENT */
-  ))])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true);
+  ))])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true);
 }
 
 /***/ }),
@@ -18738,6 +18831,52 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }), 128
   /* KEYED_FRAGMENT */
   ))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"social-links\">\n        <a href=\"#\" class=\"twitter\"><i class=\"icofont-twitter\"></i></a>\n        <a href=\"#\" class=\"facebook\"><i class=\"icofont-facebook\"></i></a>\n        <a href=\"#\" class=\"instagram\"><i class=\"icofont-instagram\"></i></a>\n        <a href=\"#\" class=\"skype\"><i class=\"icofont-skype\"></i></a>\n        <a href=\"#\" class=\"linkedin\"><i class=\"icofont-linkedin\"></i></a>\n      </div> ")])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true);
+}
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Mission.vue?vue&type=template&id=7450a706":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Mission.vue?vue&type=template&id=7450a706 ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  key: 0,
+  "class": "row"
+};
+var _hoisted_2 = {
+  "class": "box"
+};
+var _hoisted_3 = {
+  key: 0
+};
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return $props.component.name == 'mission_values' && $props.component.isActive == true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.items, function (item) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
+      key: item.id,
+      "class": "col-lg-4",
+      "data-aos": "fade-up"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.dataJSON(item).name), 1
+    /* TEXT */
+    ), item.key === 'vision' || item.key === 'mision' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("p", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.dataJSON(item).value), 1
+    /* TEXT */
+    )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, [item.key === 'statutes' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("a", {
+      key: 0,
+      href: $options.dataJSON(item).url
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.dataJSON(item).value), 9
+    /* TEXT, PROPS */
+    , ["href"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true);
 }
 
 /***/ }),
@@ -18894,48 +19033,74 @@ __webpack_require__.r(__webpack_exports__);
 
 var _hoisted_1 = {
   key: 0,
-  id: "team"
-};
-var _hoisted_2 = {
   "class": "row"
 };
-var _hoisted_3 = {
-  "class": "col-lg-3 col-md-6 d-flex align-items-stretch",
-  "data-aos": "zoom-in"
-};
-var _hoisted_4 = {
+var _hoisted_2 = {
   "class": "member"
 };
 
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
   src: "assets/img/team/team-1.jpg",
   alt: ""
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_6 = {
-  key: 0
-};
-var _hoisted_7 = {
-  key: 1
-};
-
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"social\"><a href=\"\"><i class=\"icofont-twitter\"></i></a><a href=\"\"><i class=\"icofont-facebook\"></i></a><a href=\"\"><i class=\"icofont-instagram\"></i></a><a href=\"\"><i class=\"icofont-linkedin\"></i></a></div>", 1);
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"social\"><a href=\"\"><i class=\"icofont-twitter\"></i></a><a href=\"\"><i class=\"icofont-facebook\"></i></a><a href=\"\"><i class=\"icofont-instagram\"></i></a><a href=\"\"><i class=\"icofont-linkedin\"></i></a></div>", 1);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return $props.component.name === 'team' && $props.component.isActive == true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.items, function (item) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("span", {
-      "class": "item",
-      key: item.id
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [_hoisted_5, item.key === 'trabajador1' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("h4", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.value), 1
+  return $props.component.name === 'team' && $props.component.isActive == true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.items, function (item) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
+      key: item.id,
+      "class": "col-lg-3 col-md-6 d-flex align-items-stretch",
+      "data-aos": "zoom-in"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.dataJson(item).name), 1
     /* TEXT */
-    )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), item.key === 'trabajador1' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("span", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.value), 1
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.dataJson(item).rol), 1
     /* TEXT */
-    )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <p>\n                        Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut\n                        </p> "), _hoisted_8])])]);
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <p>\n                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut\n                </p> "), _hoisted_4])]);
   }), 128
   /* KEYED_FRAGMENT */
-  ))])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true);
+  ))])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true);
+}
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Title.vue?vue&type=template&id=00e46cee":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Title.vue?vue&type=template&id=00e46cee ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  key: 0,
+  "class": "container d-flex align-items-center"
+};
+var _hoisted_2 = {
+  "class": "logo mr-auto"
+};
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return $props.component.name === 'title' && $props.component.isActive == true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.items, function (item) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
+      key: item.id
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+      href: "javascript:void(0);",
+      onClick: _cache[1] || (_cache[1] = function ($event) {
+        return _ctx["goto"]('index');
+      })
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.value), 1
+    /* TEXT */
+    )])]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true);
 }
 
 /***/ }),
@@ -18961,34 +19126,36 @@ var _hoisted_2 = {
   "class": "container d-flex align-items-center"
 };
 var _hoisted_3 = {
-  "class": "logo mr-auto"
-};
-var _hoisted_4 = {
   "class": "nav-menu d-none d-lg-block"
 };
-var _hoisted_5 = {
+var _hoisted_4 = {
   id: "hero",
   "class": "d-flex align-items-center",
   ref: "index"
 };
-var _hoisted_6 = {
+var _hoisted_5 = {
   "class": "container position-relative",
   "data-aos": "fade-up",
   "data-aos-delay": "500"
 };
-var _hoisted_7 = {
+var _hoisted_6 = {
   id: "main"
 };
-var _hoisted_8 = {
+var _hoisted_7 = {
   id: "about",
   "class": "about",
   ref: "about"
 };
 
-var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"row\"><div class=\"col-lg-6 order-1 order-lg-2\" data-aos=\"fade-left\"><img src=\"/templates/legal/img/about.jpg\" class=\"img-fluid\" alt=\"\"></div><div class=\"col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content\" data-aos=\"fade-right\"><h3>Organización Civil.</h3><p class=\"font-italic\"> Somos una organización: </p><ul><li><i class=\"icofont-check-circled\"></i> Vanguardista.</li><li><i class=\"icofont-check-circled\"></i> Nacionalista.</li><li><i class=\"icofont-check-circled\"></i> Mayoritaria de trabajadores y clases proletarias.</li></ul><p> Que está en permanente lucha para el cambio de una sociedad incluyente, con la firme determinación de eliminar la explotación y la inequidad. </p></div></div></div>", 1);
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"row\"><div class=\"col-lg-6 order-1 order-lg-2\" data-aos=\"fade-left\"><img src=\"/templates/legal/img/about.jpg\" class=\"img-fluid\" alt=\"\"></div><div class=\"col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content\" data-aos=\"fade-right\"><h3>Organización Civil.</h3><p class=\"font-italic\"> Somos una organización: </p><ul><li><i class=\"icofont-check-circled\"></i> Vanguardista.</li><li><i class=\"icofont-check-circled\"></i> Nacionalista.</li><li><i class=\"icofont-check-circled\"></i> Mayoritaria de trabajadores y clases proletarias.</li></ul><p> Que está en permanente lucha para el cambio de una sociedad incluyente, con la firme determinación de eliminar la explotación y la inequidad. </p></div></div></div>", 1);
 
-var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"why-us\" class=\"why-us\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\" data-aos=\"fade-up\"><div class=\"box\"><span>Misión</span><!-- &lt;h4&gt;Lorem Ipsum&lt;/h4&gt; --><p>Retomar el verdadero cumplimiento de la función social para la cual los sindicatos han sido creados, buscando a través de las normas de trabajo, el equilibrio y la justicia social en las relaciones obrero patronales, el impulso de defensa de los derechos laborales, así como la calidad de vida de nuestros agremiados</p></div></div><div class=\"col-lg-4 mt-4 mt-lg-0\" data-aos=\"fade-up\" data-aos-delay=\"150\"><div class=\"box\"><span>Visión</span><!-- &lt;h4&gt;Repellat Nihil&lt;/h4&gt; --><p>Ser un sindicato de vanguardia cumpliendo con las exigencias de la modernidad social, así como ser reconocidos como una organización sindical consolidada en el ámbito nacional que luche por la mejora y defensa de los intereses laborales, económicos, profesionales y sociales de los agremiados.</p></div></div><div class=\"col-lg-4 mt-4 mt-lg-0\" data-aos=\"fade-up\" data-aos-delay=\"300\"><div class=\"box\" style=\"height:300px;\"><span>Estatutos</span><!-- &lt;h4&gt; Ad ad velit qui&lt;/h4&gt; --><br><p><a id=\"statutes\" href=\"/estatutos\" target=\"_blank\">Ver Estatutos</a></p></div></div></div></div></section>", 1);
-
+var _hoisted_9 = {
+  id: "why-us",
+  "class": "why-us"
+};
+var _hoisted_10 = {
+  "class": "container"
+};
 var _hoisted_11 = {
   id: "clients",
   "class": "clients"
@@ -18998,15 +19165,19 @@ var _hoisted_12 = {
   "data-aos": "zoom-in"
 };
 var _hoisted_13 = {
-  "class": "row d-flex align-items-center"
-};
-var _hoisted_14 = {
   id: "team",
   "class": "team",
   ref: "team"
 };
+var _hoisted_14 = {
+  "class": "container"
+};
 
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"section-title\"><span>Equipo</span><h2>Equipo</h2><p>Ninguno de nosotros es tan bueno como todos nosotros juntos. Ray Kroc.</p></div><div class=\"row\"><div class=\"col-lg-3 col-md-6 d-flex align-items-stretch\" data-aos=\"zoom-in\"><div class=\"member\"><img src=\"assets/img/team/team-1.jpg\" alt=\"\"><h4>Fernando Aguilar Robles</h4><span>Secretario General</span><!-- &lt;p&gt;\n                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut\n              &lt;/p&gt; --><div class=\"social\"><a href=\"\"><i class=\"icofont-twitter\"></i></a><a href=\"\"><i class=\"icofont-facebook\"></i></a><a href=\"\"><i class=\"icofont-instagram\"></i></a><a href=\"\"><i class=\"icofont-linkedin\"></i></a></div></div></div><!-- &lt;team :component=&quot;getComponentId(&#39;team&#39;)&quot; &gt;&lt;/team&gt; --><div class=\"col-lg-3 col-md-6 d-flex align-items-stretch\" data-aos=\"zoom-in\"><div class=\"member\"><img src=\"assets/img/team/team-2.jpg\" alt=\"\"><h4>Jorge Daniel Martínez Urbina</h4><span>Secretario de Actas y Conflictos</span><!-- &lt;p&gt;\n                Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus\n              &lt;/p&gt; --><div class=\"social\"><a href=\"\"><i class=\"icofont-twitter\"></i></a><a href=\"\"><i class=\"icofont-facebook\"></i></a><a href=\"\"><i class=\"icofont-instagram\"></i></a><a href=\"\"><i class=\"icofont-linkedin\"></i></a></div></div></div><div class=\"col-lg-3 col-md-6 d-flex align-items-stretch\" data-aos=\"zoom-in\"><div class=\"member\"><img src=\"assets/img/team/team-3.jpg\" alt=\"\"><h4>Julio Miguel Rubinos Ricárdez</h4><span>Secretario de Organización</span><!-- &lt;p&gt;\n                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara\n              &lt;/p&gt; --><div class=\"social\"><a href=\"\"><i class=\"icofont-twitter\"></i></a><a href=\"\"><i class=\"icofont-facebook\"></i></a><a href=\"\"><i class=\"icofont-instagram\"></i></a><a href=\"\"><i class=\"icofont-linkedin\"></i></a></div></div></div><div class=\"col-lg-3 col-md-6 d-flex align-items-stretch\" data-aos=\"zoom-in\"><div class=\"member\"><img src=\"assets/img/team/team-3.jpg\" alt=\"\"><h4>Gustavo de Jesús Caballero Hernández</h4><span>Secretario de Trabajo</span><!-- &lt;p&gt;\n                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara\n              &lt;/p&gt; --><div class=\"social\"><a href=\"\"><i class=\"icofont-twitter\"></i></a><a href=\"\"><i class=\"icofont-facebook\"></i></a><a href=\"\"><i class=\"icofont-instagram\"></i></a><a href=\"\"><i class=\"icofont-linkedin\"></i></a></div></div></div><div class=\"col-lg-3 col-md-6 d-flex align-items-stretch\" data-aos=\"zoom-in\"><div class=\"member\"><img src=\"assets/img/team/team-3.jpg\" alt=\"\"><h4>Fernando José Martínez Urbina</h4><span>Secretario Tesorero</span><!-- &lt;p&gt;\n                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara\n              &lt;/p&gt; --><div class=\"social\"><a href=\"\"><i class=\"icofont-twitter\"></i></a><a href=\"\"><i class=\"icofont-facebook\"></i></a><a href=\"\"><i class=\"icofont-instagram\"></i></a><a href=\"\"><i class=\"icofont-linkedin\"></i></a></div></div></div></div></div>", 1);
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "section-title"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "Equipo"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "Equipo"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "Ninguno de nosotros es tan bueno como todos nosotros juntos. Ray Kroc.")], -1
+/* HOISTED */
+);
 
 var _hoisted_16 = {
   id: "contact",
@@ -19055,9 +19226,15 @@ var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_contact = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("contact");
 
+  var _component_titlen = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("titlen");
+
   var _component_banner = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("banner");
 
+  var _component_mission = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("mission");
+
   var _component_client = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("client");
+
+  var _component_team = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("team");
 
   var _component_send_request = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("send-request");
 
@@ -19065,16 +19242,15 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     component: $options.getComponentId('contact')
   }, null, 8
   /* PROPS */
-  , ["component"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Header ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("header", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-    href: "javascript:void(0);",
-    onClick: _cache[1] || (_cache[1] = function ($event) {
-      return $options["goto"]('index');
-    })
-  }, "Sindicato Art. 123")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Uncomment below if you prefer to use an image logo "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <a href=\"index.html\" class=\"logo mr-auto\"><img src=\"assets/img/logo.png\" alt=\"\" class=\"img-fluid\"></a>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("nav", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
+  , ["component"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Header ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("header", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <h1 class=\"logo mr-auto\"><a href=\"javascript:void(0);\" @click=\"goto('index')\">Sindicato Art. 123</a></h1> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_titlen, {
+    component: $options.getComponentId('title')
+  }, null, 8
+  /* PROPS */
+  , ["component"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Uncomment below if you prefer to use an image logo "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <a href=\"index.html\" class=\"logo mr-auto\"><img src=\"assets/img/logo.png\" alt=\"\" class=\"img-fluid\"></a>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("nav", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
     "class": $options.activeLink('index')
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
     href: "javascript:void(0);",
-    onClick: _cache[2] || (_cache[2] = function ($event) {
+    onClick: _cache[1] || (_cache[1] = function ($event) {
       return $options["goto"]('index');
     })
   }, "Inicio")], 2
@@ -19083,7 +19259,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": $options.activeLink('about')
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
     href: "javascript:void(0);",
-    onClick: _cache[3] || (_cache[3] = function ($event) {
+    onClick: _cache[2] || (_cache[2] = function ($event) {
       return $options["goto"]('about');
     })
   }, "Nosotros")], 2
@@ -19092,7 +19268,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": $options.activeLink('team')
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
     href: "javascript:void(0);",
-    onClick: _cache[4] || (_cache[4] = function ($event) {
+    onClick: _cache[3] || (_cache[3] = function ($event) {
       return $options["goto"]('team');
     })
   }, "Equipo")], 2
@@ -19101,24 +19277,32 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": $options.activeLink('contact')
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
     href: "javascript:void(0);",
-    onClick: _cache[5] || (_cache[5] = function ($event) {
+    onClick: _cache[4] || (_cache[4] = function ($event) {
       return $options["goto"]('contact');
     })
   }, "Contacto")], 2
   /* CLASS */
-  )])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nav-menu ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Header "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Hero Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <img src=\"/templates/legal/img/circular.png\" style=\"width:150px\" />\n      <h1>Sindicato Artículo 123</h1> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_banner, {
+  )])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nav-menu ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Header "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Hero Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <img src=\"/templates/legal/img/circular.png\" style=\"width:150px\" />\n      <h1>Sindicato Artículo 123</h1> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_banner, {
     component: $options.getComponentId('banner')
   }, null, 8
   /* PROPS */
   , ["component"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <h2>We are team of talented designers making websites with Bootstrap</h2>\n      <a href=\"#about\" class=\"btn-get-started scrollto\">Get Started</a> ")])], 512
   /* NEED_PATCH */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Hero "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("main", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= About Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_8, [_hoisted_9], 512
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Hero "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("main", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= About Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_7, [_hoisted_8], 512
   /* NEED_PATCH */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End About Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Why Us Section ======= "), _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Why Us Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Clients Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_client, {
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End About Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Why Us Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_mission, {
+    component: $options.getComponentId('mission_values')
+  }, null, 8
+  /* PROPS */
+  , ["component"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"row\">\n          <div class=\"col-lg-4\" data-aos=\"fade-up\">\n            <div class=\"box\">\n              <span>Misión</span>\n              <h4>Lorem Ipsum</h4>\n              <p>Retomar el verdadero cumplimiento de la función social para la cual los sindicatos han sido creados, buscando a través de las normas de trabajo, el equilibrio y la justicia social en las relaciones obrero patronales, el impulso de defensa de los derechos laborales, así como la calidad de vida de nuestros agremiados</p>\n            </div>\n          </div>\n          <div class=\"col-lg-4 mt-4 mt-lg-0\" data-aos=\"fade-up\" data-aos-delay=\"150\">\n            <div class=\"box\">\n              <span>Visión</span>\n              <h4>Repellat Nihil</h4>\n              <p>Ser un sindicato de vanguardia cumpliendo con las exigencias de la modernidad social, así como ser reconocidos como una organización sindical consolidada en el ámbito nacional que luche por la mejora y defensa de los intereses laborales, económicos, profesionales y sociales de los agremiados.</p>\n            </div>\n          </div>\n          <div class=\"col-lg-4 mt-4 mt-lg-0\" data-aos=\"fade-up\" data-aos-delay=\"300\">\n            <div class=\"box\" style=\"height:300px;\">\n              <span>Estatutos</span>\n              <h4> Ad ad velit qui</h4>\n              <br>\n              <p ><a id=\"statutes\" href=\"/estatutos\" target=\"_blank\">Ver Estatutos</a></p>\n            </div>\n          </div>\n        </div> ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Why Us Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Clients Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_client, {
     component: $options.getComponentId('clients_banner')
   }, null, 8
   /* PROPS */
-  , ["component"])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Clients Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Services Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section id=\"services\" class=\"services\">\n      <div class=\"container\">\n\n        <div class=\"section-title\">\n          <span>Servicios</span>\n          <h2>Servicios</h2>\n          <p>“Dale al cliente siempre más de lo que espera”.&nbsp;&nbsp;&nbsp; Nelson Boswell.</p>\n        </div>\n\n        <div class=\"row\">\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch\" data-aos=\"fade-up\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bxl-dribbble\"></i></div>\n              <h4><a href=\"\">Lorem Ipsum</a></h4>\n              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0\" data-aos=\"fade-up\" data-aos-delay=\"150\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bx-file\"></i></div>\n              <h4><a href=\"\">Sed ut perspiciatis</a></h4>\n              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0\" data-aos=\"fade-up\" data-aos-delay=\"300\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bx-tachometer\"></i></div>\n              <h4><a href=\"\">Magni Dolores</a></h4>\n              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4\" data-aos=\"fade-up\" data-aos-delay=\"450\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bx-world\"></i></div>\n              <h4><a href=\"\">Nemo Enim</a></h4>\n              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4\" data-aos=\"fade-up\" data-aos-delay=\"600\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bx-slideshow\"></i></div>\n              <h4><a href=\"\">Dele cardo</a></h4>\n              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4\" data-aos=\"fade-up\" data-aos-delay=\"750\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bx-arch\"></i></div>\n              <h4><a href=\"\">Divera don</a></h4>\n              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>\n            </div>\n          </div>\n\n        </div>\n\n      </div>\n    </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Services Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Cta Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section id=\"cta\" class=\"cta\">\n      <div class=\"container\" data-aos=\"zoom-in\">\n\n        <div class=\"text-center\">\n          <h3>Call To Action</h3>\n          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n          <a class=\"cta-btn\" href=\"#\">Call To Action</a>\n        </div>\n\n      </div>\n    </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Cta Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Portfolio Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section id=\"portfolio\" class=\"portfolio\">\n      <div class=\"container\">\n\n        <div class=\"section-title\">\n          <span>Portfolio</span>\n          <h2>Portfolio</h2>\n          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>\n        </div>\n\n        <div class=\"row\" data-aos=\"fade-up\">\n          <div class=\"col-lg-12 d-flex justify-content-center\">\n            <ul id=\"portfolio-flters\">\n              <li data-filter=\"*\" class=\"filter-active\">All</li>\n              <li data-filter=\".filter-app\">App</li>\n              <li data-filter=\".filter-card\">Card</li>\n              <li data-filter=\".filter-web\">Web</li>\n            </ul>\n          </div>\n        </div>\n\n        <div class=\"row portfolio-container\" data-aos=\"fade-up\" data-aos-delay=\"150\">\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-app\">\n            <img src=\"assets/img/portfolio/portfolio-1.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>App 1</h4>\n              <p>App</p>\n              <a href=\"assets/img/portfolio/portfolio-1.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"App 1\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-web\">\n            <img src=\"assets/img/portfolio/portfolio-2.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Web 3</h4>\n              <p>Web</p>\n              <a href=\"assets/img/portfolio/portfolio-2.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Web 3\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-app\">\n            <img src=\"assets/img/portfolio/portfolio-3.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>App 2</h4>\n              <p>App</p>\n              <a href=\"assets/img/portfolio/portfolio-3.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"App 2\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-card\">\n            <img src=\"assets/img/portfolio/portfolio-4.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Card 2</h4>\n              <p>Card</p>\n              <a href=\"assets/img/portfolio/portfolio-4.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Card 2\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-web\">\n            <img src=\"assets/img/portfolio/portfolio-5.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Web 2</h4>\n              <p>Web</p>\n              <a href=\"assets/img/portfolio/portfolio-5.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Web 2\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-app\">\n            <img src=\"assets/img/portfolio/portfolio-6.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>App 3</h4>\n              <p>App</p>\n              <a href=\"assets/img/portfolio/portfolio-6.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"App 3\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-card\">\n            <img src=\"assets/img/portfolio/portfolio-7.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Card 1</h4>\n              <p>Card</p>\n              <a href=\"assets/img/portfolio/portfolio-7.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Card 1\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-card\">\n            <img src=\"assets/img/portfolio/portfolio-8.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Card 3</h4>\n              <p>Card</p>\n              <a href=\"assets/img/portfolio/portfolio-8.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Card 3\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-web\">\n            <img src=\"assets/img/portfolio/portfolio-9.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Web 3</h4>\n              <p>Web</p>\n              <a href=\"assets/img/portfolio/portfolio-9.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Web 3\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n        </div>\n\n      </div>\n    </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Portfolio Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Pricing Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section id=\"pricing\" class=\"pricing\">\n      <div class=\"container\">\n\n        <div class=\"section-title\">\n          <span>Pricing</span>\n          <h2>Pricing</h2>\n          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>\n        </div>\n\n        <div class=\"row\">\n\n          <div class=\"col-lg-4 col-md-6\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\n            <div class=\"box\">\n              <h3>Free</h3>\n              <h4><sup>$</sup>0<span> / month</span></h4>\n              <ul>\n                <li>Aida dere</li>\n                <li>Nec feugiat nisl</li>\n                <li>Nulla at volutpat dola</li>\n                <li class=\"na\">Pharetra massa</li>\n                <li class=\"na\">Massa ultricies mi</li>\n              </ul>\n              <div class=\"btn-wrap\">\n                <a href=\"#\" class=\"btn-buy\">Buy Now</a>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 mt-4 mt-md-0\" data-aos=\"zoom-in\">\n            <div class=\"box featured\">\n              <h3>Business</h3>\n              <h4><sup>$</sup>19<span> / month</span></h4>\n              <ul>\n                <li>Aida dere</li>\n                <li>Nec feugiat nisl</li>\n                <li>Nulla at volutpat dola</li>\n                <li>Pharetra massa</li>\n                <li class=\"na\">Massa ultricies mi</li>\n              </ul>\n              <div class=\"btn-wrap\">\n                <a href=\"#\" class=\"btn-buy\">Buy Now</a>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 mt-4 mt-lg-0\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\n            <div class=\"box\">\n              <h3>Developer</h3>\n              <h4><sup>$</sup>29<span> / month</span></h4>\n              <ul>\n                <li>Aida dere</li>\n                <li>Nec feugiat nisl</li>\n                <li>Nulla at volutpat dola</li>\n                <li>Pharetra massa</li>\n                <li>Massa ultricies mi</li>\n              </ul>\n              <div class=\"btn-wrap\">\n                <a href=\"#\" class=\"btn-buy\">Buy Now</a>\n              </div>\n            </div>\n          </div>\n\n        </div>\n\n      </div>\n    </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Pricing Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Team Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_14, [_hoisted_15], 512
+  , ["component"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Clients Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Services Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section id=\"services\" class=\"services\">\n      <div class=\"container\">\n\n        <div class=\"section-title\">\n          <span>Servicios</span>\n          <h2>Servicios</h2>\n          <p>“Dale al cliente siempre más de lo que espera”.&nbsp;&nbsp;&nbsp; Nelson Boswell.</p>\n        </div>\n\n        <div class=\"row\">\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch\" data-aos=\"fade-up\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bxl-dribbble\"></i></div>\n              <h4><a href=\"\">Lorem Ipsum</a></h4>\n              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0\" data-aos=\"fade-up\" data-aos-delay=\"150\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bx-file\"></i></div>\n              <h4><a href=\"\">Sed ut perspiciatis</a></h4>\n              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0\" data-aos=\"fade-up\" data-aos-delay=\"300\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bx-tachometer\"></i></div>\n              <h4><a href=\"\">Magni Dolores</a></h4>\n              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4\" data-aos=\"fade-up\" data-aos-delay=\"450\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bx-world\"></i></div>\n              <h4><a href=\"\">Nemo Enim</a></h4>\n              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4\" data-aos=\"fade-up\" data-aos-delay=\"600\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bx-slideshow\"></i></div>\n              <h4><a href=\"\">Dele cardo</a></h4>\n              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4\" data-aos=\"fade-up\" data-aos-delay=\"750\">\n            <div class=\"icon-box\">\n              <div class=\"icon\"><i class=\"bx bx-arch\"></i></div>\n              <h4><a href=\"\">Divera don</a></h4>\n              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>\n            </div>\n          </div>\n\n        </div>\n\n      </div>\n    </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Services Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Cta Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section id=\"cta\" class=\"cta\">\n      <div class=\"container\" data-aos=\"zoom-in\">\n\n        <div class=\"text-center\">\n          <h3>Call To Action</h3>\n          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n          <a class=\"cta-btn\" href=\"#\">Call To Action</a>\n        </div>\n\n      </div>\n    </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Cta Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Portfolio Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section id=\"portfolio\" class=\"portfolio\">\n      <div class=\"container\">\n\n        <div class=\"section-title\">\n          <span>Portfolio</span>\n          <h2>Portfolio</h2>\n          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>\n        </div>\n\n        <div class=\"row\" data-aos=\"fade-up\">\n          <div class=\"col-lg-12 d-flex justify-content-center\">\n            <ul id=\"portfolio-flters\">\n              <li data-filter=\"*\" class=\"filter-active\">All</li>\n              <li data-filter=\".filter-app\">App</li>\n              <li data-filter=\".filter-card\">Card</li>\n              <li data-filter=\".filter-web\">Web</li>\n            </ul>\n          </div>\n        </div>\n\n        <div class=\"row portfolio-container\" data-aos=\"fade-up\" data-aos-delay=\"150\">\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-app\">\n            <img src=\"assets/img/portfolio/portfolio-1.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>App 1</h4>\n              <p>App</p>\n              <a href=\"assets/img/portfolio/portfolio-1.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"App 1\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-web\">\n            <img src=\"assets/img/portfolio/portfolio-2.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Web 3</h4>\n              <p>Web</p>\n              <a href=\"assets/img/portfolio/portfolio-2.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Web 3\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-app\">\n            <img src=\"assets/img/portfolio/portfolio-3.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>App 2</h4>\n              <p>App</p>\n              <a href=\"assets/img/portfolio/portfolio-3.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"App 2\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-card\">\n            <img src=\"assets/img/portfolio/portfolio-4.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Card 2</h4>\n              <p>Card</p>\n              <a href=\"assets/img/portfolio/portfolio-4.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Card 2\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-web\">\n            <img src=\"assets/img/portfolio/portfolio-5.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Web 2</h4>\n              <p>Web</p>\n              <a href=\"assets/img/portfolio/portfolio-5.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Web 2\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-app\">\n            <img src=\"assets/img/portfolio/portfolio-6.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>App 3</h4>\n              <p>App</p>\n              <a href=\"assets/img/portfolio/portfolio-6.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"App 3\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-card\">\n            <img src=\"assets/img/portfolio/portfolio-7.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Card 1</h4>\n              <p>Card</p>\n              <a href=\"assets/img/portfolio/portfolio-7.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Card 1\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-card\">\n            <img src=\"assets/img/portfolio/portfolio-8.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Card 3</h4>\n              <p>Card</p>\n              <a href=\"assets/img/portfolio/portfolio-8.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Card 3\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-web\">\n            <img src=\"assets/img/portfolio/portfolio-9.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Web 3</h4>\n              <p>Web</p>\n              <a href=\"assets/img/portfolio/portfolio-9.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Web 3\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n        </div>\n\n      </div>\n    </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Portfolio Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Pricing Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section id=\"pricing\" class=\"pricing\">\n      <div class=\"container\">\n\n        <div class=\"section-title\">\n          <span>Pricing</span>\n          <h2>Pricing</h2>\n          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>\n        </div>\n\n        <div class=\"row\">\n\n          <div class=\"col-lg-4 col-md-6\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\n            <div class=\"box\">\n              <h3>Free</h3>\n              <h4><sup>$</sup>0<span> / month</span></h4>\n              <ul>\n                <li>Aida dere</li>\n                <li>Nec feugiat nisl</li>\n                <li>Nulla at volutpat dola</li>\n                <li class=\"na\">Pharetra massa</li>\n                <li class=\"na\">Massa ultricies mi</li>\n              </ul>\n              <div class=\"btn-wrap\">\n                <a href=\"#\" class=\"btn-buy\">Buy Now</a>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 mt-4 mt-md-0\" data-aos=\"zoom-in\">\n            <div class=\"box featured\">\n              <h3>Business</h3>\n              <h4><sup>$</sup>19<span> / month</span></h4>\n              <ul>\n                <li>Aida dere</li>\n                <li>Nec feugiat nisl</li>\n                <li>Nulla at volutpat dola</li>\n                <li>Pharetra massa</li>\n                <li class=\"na\">Massa ultricies mi</li>\n              </ul>\n              <div class=\"btn-wrap\">\n                <a href=\"#\" class=\"btn-buy\">Buy Now</a>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 mt-4 mt-lg-0\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\n            <div class=\"box\">\n              <h3>Developer</h3>\n              <h4><sup>$</sup>29<span> / month</span></h4>\n              <ul>\n                <li>Aida dere</li>\n                <li>Nec feugiat nisl</li>\n                <li>Nulla at volutpat dola</li>\n                <li>Pharetra massa</li>\n                <li>Massa ultricies mi</li>\n              </ul>\n              <div class=\"btn-wrap\">\n                <a href=\"#\" class=\"btn-buy\">Buy Now</a>\n              </div>\n            </div>\n          </div>\n\n        </div>\n\n      </div>\n    </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Pricing Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Team Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_14, [_hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"row\"> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_team, {
+    component: $options.getComponentId('team')
+  }, null, 8
+  /* PROPS */
+  , ["component"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" </div> ")])], 512
   /* NEED_PATCH */
   ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Team Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Contact Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_17, [_hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_20, [_hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_send_request)])])], 512
   /* NEED_PATCH */
@@ -19229,7 +19413,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\np{\n    text-align: justify;\n}\n#statutes{\n    text-decoration: none;\n    color: grey;\n}\n.box:hover  #statutes{\n    color:#fff;\n}\n#address{\n    margin-left: 15px !important;\n    margin-right: 15px !important;\n    text-align: justify;\n}\n.sub-email{\n    text-align: center;\n}\n.sub-phone{\n    text-align: center;\n}\n.member{\n    width: 100% !important;\n}\n.info-box{\n    height: 220px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\np{\n    text-align: justify;\n}\n#statutes{\n    text-decoration: none;\n    color: grey;\n}\n.box:hover  #statutes{\n    color:#fff;\n}\n#address{\n    margin-left: 15px !important;\n    margin-right: 15px !important;\n    text-align: justify;\n}\n.sub-email{\n    text-align: center;\n}\n.sub-phone{\n    text-align: center;\n}\n.member{\n    width: 200% !important;\n}\n.info-box{\n    height: 220px;\n}\n.clients {\n  background: #f2f2f2;\n  padding: 15px 0;\n  text-align: center;\n}\n.clients img {\n  width: 50%;\n  filter: grayscale(100);\n  transition: all 0.4s ease-in-out;\n  display: inline-block;\n  padding: 15px 0;\n}\n.clients img:hover {\n  filter: none;\n  transform: scale(1.2);\n}\n@media (max-width: 768px) {\n.clients img {\n    width: 40%;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -37114,6 +37298,32 @@ _Contact_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file
 
 /***/ }),
 
+/***/ "./resources/js/Templates/Legal/Components/Mission.vue":
+/*!*************************************************************!*\
+  !*** ./resources/js/Templates/Legal/Components/Mission.vue ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Mission_vue_vue_type_template_id_7450a706__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Mission.vue?vue&type=template&id=7450a706 */ "./resources/js/Templates/Legal/Components/Mission.vue?vue&type=template&id=7450a706");
+/* harmony import */ var _Mission_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Mission.vue?vue&type=script&lang=js */ "./resources/js/Templates/Legal/Components/Mission.vue?vue&type=script&lang=js");
+
+
+
+_Mission_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.render = _Mission_vue_vue_type_template_id_7450a706__WEBPACK_IMPORTED_MODULE_0__.render
+/* hot reload */
+if (false) {}
+
+_Mission_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/Templates/Legal/Components/Mission.vue"
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_Mission_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
+
+/***/ }),
+
 /***/ "./resources/js/Templates/Legal/Components/SendRequest.vue":
 /*!*****************************************************************!*\
   !*** ./resources/js/Templates/Legal/Components/SendRequest.vue ***!
@@ -37163,6 +37373,32 @@ if (false) {}
 _Team_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/Templates/Legal/Components/Team.vue"
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_Team_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
+
+/***/ }),
+
+/***/ "./resources/js/Templates/Legal/Components/Title.vue":
+/*!***********************************************************!*\
+  !*** ./resources/js/Templates/Legal/Components/Title.vue ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Title_vue_vue_type_template_id_00e46cee__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Title.vue?vue&type=template&id=00e46cee */ "./resources/js/Templates/Legal/Components/Title.vue?vue&type=template&id=00e46cee");
+/* harmony import */ var _Title_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Title.vue?vue&type=script&lang=js */ "./resources/js/Templates/Legal/Components/Title.vue?vue&type=script&lang=js");
+
+
+
+_Title_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.render = _Title_vue_vue_type_template_id_00e46cee__WEBPACK_IMPORTED_MODULE_0__.render
+/* hot reload */
+if (false) {}
+
+_Title_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/Templates/Legal/Components/Title.vue"
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_Title_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
 
 /***/ }),
 
@@ -37291,6 +37527,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Templates/Legal/Components/Mission.vue?vue&type=script&lang=js":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/Templates/Legal/Components/Mission.vue?vue&type=script&lang=js ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Mission_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Mission_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Mission.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Mission.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/Templates/Legal/Components/SendRequest.vue?vue&type=script&lang=js":
 /*!*****************************************************************************************!*\
   !*** ./resources/js/Templates/Legal/Components/SendRequest.vue?vue&type=script&lang=js ***!
@@ -37319,6 +37571,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Team_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Team_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Team.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Team.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
+/***/ "./resources/js/Templates/Legal/Components/Title.vue?vue&type=script&lang=js":
+/*!***********************************************************************************!*\
+  !*** ./resources/js/Templates/Legal/Components/Title.vue?vue&type=script&lang=js ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Title_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Title_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Title.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Title.vue?vue&type=script&lang=js");
  
 
 /***/ }),
@@ -37435,6 +37703,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Templates/Legal/Components/Mission.vue?vue&type=template&id=7450a706":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/Templates/Legal/Components/Mission.vue?vue&type=template&id=7450a706 ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Mission_vue_vue_type_template_id_7450a706__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Mission_vue_vue_type_template_id_7450a706__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Mission.vue?vue&type=template&id=7450a706 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Mission.vue?vue&type=template&id=7450a706");
+
+
+/***/ }),
+
 /***/ "./resources/js/Templates/Legal/Components/SendRequest.vue?vue&type=template&id=13c562d8":
 /*!***********************************************************************************************!*\
   !*** ./resources/js/Templates/Legal/Components/SendRequest.vue?vue&type=template&id=13c562d8 ***!
@@ -37463,6 +37747,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Team_vue_vue_type_template_id_24b3a6bc__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Team_vue_vue_type_template_id_24b3a6bc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Team.vue?vue&type=template&id=24b3a6bc */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Team.vue?vue&type=template&id=24b3a6bc");
+
+
+/***/ }),
+
+/***/ "./resources/js/Templates/Legal/Components/Title.vue?vue&type=template&id=00e46cee":
+/*!*****************************************************************************************!*\
+  !*** ./resources/js/Templates/Legal/Components/Title.vue?vue&type=template&id=00e46cee ***!
+  \*****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Title_vue_vue_type_template_id_00e46cee__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Title_vue_vue_type_template_id_00e46cee__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Title.vue?vue&type=template&id=00e46cee */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Title.vue?vue&type=template&id=00e46cee");
 
 
 /***/ }),
