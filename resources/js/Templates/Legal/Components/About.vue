@@ -8,9 +8,7 @@
                 <h3>{{dataJson(item).title}}</h3>
                 <p class="font-italic">{{dataJson(item).subtitle}}</p>
                 <ul>
-                <li><i class="icofont-check-circled"></i>{{dataJson(item).point1}} </li>
-                <li><i class="icofont-check-circled"></i>{{dataJson(item).point2}} </li>
-                <li><i class="icofont-check-circled"></i>{{dataJson(item).point3}} </li>
+                <li v-for="point in dataJson(item).points" v-bind:key="point.id"><i class="icofont-check-circled"></i>{{point}} </li>
                 </ul>
                 <p>{{dataJson(item).description}}</p>
             </div>
