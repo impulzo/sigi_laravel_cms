@@ -92,17 +92,11 @@
     <!-- End Services Section -->
 
     <!-- ======= Cta Section ======= -->
-    <!-- <section id="cta" class="cta">
+    <section id="cta" class="cta">
       <div class="container" data-aos="zoom-in">
-
-        <div class="text-center">
-          <h3>Call To Action</h3>
-          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a class="cta-btn" href="#">Call To Action</a>
-        </div>
-
+        <suscription :component="getComponentId('suscription')"></suscription>
       </div>
-    </section> -->
+    </section>
     <!-- End Cta Section -->
 
     <!-- ======= Portfolio Section ======= -->
@@ -386,6 +380,7 @@
 </template>
 
 <script>
+import Suscription from './Components/Suscription.vue'
 import Package from './Components/Package.vue'
 import About from './Components/About.vue'
 import Service from './Components/Service.vue'
@@ -406,7 +401,8 @@ export default {
     Titlen,
     About, 
     Service,
-    Package },
+    Package,
+    Suscription },
   name: 'Index Legal Template',
   props: ['template'],
   data:function(){
@@ -440,6 +436,7 @@ export default {
     Team,
     Client,
     Service,
+    Suscription,
     SendRequest
   }
 }
