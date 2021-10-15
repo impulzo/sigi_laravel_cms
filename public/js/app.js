@@ -17986,6 +17986,60 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Portfolio.vue?vue&type=script&lang=js":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Portfolio.vue?vue&type=script&lang=js ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: 'Portfolio Component From Legal Template',
+  props: ['component'],
+  data: function data() {
+    return {
+      items: null
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    if (this.component.name === 'portfolio' && this.component.isActive == true) {
+      axios__WEBPACK_IMPORTED_MODULE_0___default().get(BASE_URL + '/api/components/' + this.component.id).then(function (response) {
+        if (response.data.status == 200) {
+          _this.items = response.data.data.component.items;
+        }
+      })["catch"]();
+    }
+  },
+  methods: {
+    dataJson: function dataJson(item) {
+      return JSON.parse(item.value);
+    },
+    data: function data(items) {
+      var newArrayImages = [];
+      items.forEach(function (element) {
+        var arrayImages = JSON.parse(element.value).images;
+        var arrayFilter = JSON.parse(element.value).filter;
+        arrayImages.map(function (images) {
+          images.filter = arrayFilter;
+          newArrayImages.push(images);
+        });
+      });
+      return newArrayImages;
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/SendRequest.vue?vue&type=script&lang=js":
 /*!*********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/SendRequest.vue?vue&type=script&lang=js ***!
@@ -18145,7 +18199,6 @@ __webpack_require__.r(__webpack_exports__);
       axios__WEBPACK_IMPORTED_MODULE_0___default().get(BASE_URL + '/api/components/' + this.component.id).then(function (response) {
         if (response.data.status == 200) {
           _this.items = response.data.data.component.items;
-          console.log(items);
         }
       })["catch"]();
     }
@@ -18249,18 +18302,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Components_Suscription_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Components/Suscription.vue */ "./resources/js/Templates/Legal/Components/Suscription.vue");
-/* harmony import */ var _Components_Package_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Components/Package.vue */ "./resources/js/Templates/Legal/Components/Package.vue");
-/* harmony import */ var _Components_About_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Components/About.vue */ "./resources/js/Templates/Legal/Components/About.vue");
-/* harmony import */ var _Components_Service_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Components/Service.vue */ "./resources/js/Templates/Legal/Components/Service.vue");
-/* harmony import */ var _Components_Title_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Components/Title.vue */ "./resources/js/Templates/Legal/Components/Title.vue");
-/* harmony import */ var _Components_Contact_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Components/Contact.vue */ "./resources/js/Templates/Legal/Components/Contact.vue");
-/* harmony import */ var _Components_Banner_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Components/Banner.vue */ "./resources/js/Templates/Legal/Components/Banner.vue");
-/* harmony import */ var _Components_Team_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Components/Team.vue */ "./resources/js/Templates/Legal/Components/Team.vue");
-/* harmony import */ var _Components_Client_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Components/Client.vue */ "./resources/js/Templates/Legal/Components/Client.vue");
-/* harmony import */ var _Components_Mission_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Components/Mission.vue */ "./resources/js/Templates/Legal/Components/Mission.vue");
-/* harmony import */ var _Components_SendRequest_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Components/SendRequest.vue */ "./resources/js/Templates/Legal/Components/SendRequest.vue");
+/* harmony import */ var _Components_Portfolio_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Components/Portfolio.vue */ "./resources/js/Templates/Legal/Components/Portfolio.vue");
+/* harmony import */ var _Components_Suscription_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Components/Suscription.vue */ "./resources/js/Templates/Legal/Components/Suscription.vue");
+/* harmony import */ var _Components_Package_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Components/Package.vue */ "./resources/js/Templates/Legal/Components/Package.vue");
+/* harmony import */ var _Components_About_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Components/About.vue */ "./resources/js/Templates/Legal/Components/About.vue");
+/* harmony import */ var _Components_Service_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Components/Service.vue */ "./resources/js/Templates/Legal/Components/Service.vue");
+/* harmony import */ var _Components_Title_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Components/Title.vue */ "./resources/js/Templates/Legal/Components/Title.vue");
+/* harmony import */ var _Components_Contact_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Components/Contact.vue */ "./resources/js/Templates/Legal/Components/Contact.vue");
+/* harmony import */ var _Components_Banner_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Components/Banner.vue */ "./resources/js/Templates/Legal/Components/Banner.vue");
+/* harmony import */ var _Components_Team_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Components/Team.vue */ "./resources/js/Templates/Legal/Components/Team.vue");
+/* harmony import */ var _Components_Client_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Components/Client.vue */ "./resources/js/Templates/Legal/Components/Client.vue");
+/* harmony import */ var _Components_Mission_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Components/Mission.vue */ "./resources/js/Templates/Legal/Components/Mission.vue");
+/* harmony import */ var _Components_SendRequest_vue__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./Components/SendRequest.vue */ "./resources/js/Templates/Legal/Components/SendRequest.vue");
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 
 
@@ -18275,16 +18330,17 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_defineProperty({
   components: {
-    Contact: _Components_Contact_vue__WEBPACK_IMPORTED_MODULE_5__.default,
-    Banner: _Components_Banner_vue__WEBPACK_IMPORTED_MODULE_6__.default,
-    Team: _Components_Team_vue__WEBPACK_IMPORTED_MODULE_7__.default,
-    Client: _Components_Client_vue__WEBPACK_IMPORTED_MODULE_8__.default,
-    Mission: _Components_Mission_vue__WEBPACK_IMPORTED_MODULE_9__.default,
-    Titlen: _Components_Title_vue__WEBPACK_IMPORTED_MODULE_4__.default,
-    About: _Components_About_vue__WEBPACK_IMPORTED_MODULE_2__.default,
-    Service: _Components_Service_vue__WEBPACK_IMPORTED_MODULE_3__.default,
-    Package: _Components_Package_vue__WEBPACK_IMPORTED_MODULE_1__.default,
-    Suscription: _Components_Suscription_vue__WEBPACK_IMPORTED_MODULE_0__.default
+    Portfolio: _Components_Portfolio_vue__WEBPACK_IMPORTED_MODULE_0__.default,
+    Contact: _Components_Contact_vue__WEBPACK_IMPORTED_MODULE_6__.default,
+    Banner: _Components_Banner_vue__WEBPACK_IMPORTED_MODULE_7__.default,
+    Team: _Components_Team_vue__WEBPACK_IMPORTED_MODULE_8__.default,
+    Client: _Components_Client_vue__WEBPACK_IMPORTED_MODULE_9__.default,
+    Mission: _Components_Mission_vue__WEBPACK_IMPORTED_MODULE_10__.default,
+    Titlen: _Components_Title_vue__WEBPACK_IMPORTED_MODULE_5__.default,
+    About: _Components_About_vue__WEBPACK_IMPORTED_MODULE_3__.default,
+    Service: _Components_Service_vue__WEBPACK_IMPORTED_MODULE_4__.default,
+    Package: _Components_Package_vue__WEBPACK_IMPORTED_MODULE_2__.default,
+    Suscription: _Components_Suscription_vue__WEBPACK_IMPORTED_MODULE_1__.default
   },
   name: 'Index Legal Template',
   props: ['template'],
@@ -18314,17 +18370,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     }
   }
 }, "components", {
-  Package: _Components_Package_vue__WEBPACK_IMPORTED_MODULE_1__.default,
-  About: _Components_About_vue__WEBPACK_IMPORTED_MODULE_2__.default,
-  Contact: _Components_Contact_vue__WEBPACK_IMPORTED_MODULE_5__.default,
-  Mission: _Components_Mission_vue__WEBPACK_IMPORTED_MODULE_9__.default,
-  Titlen: _Components_Title_vue__WEBPACK_IMPORTED_MODULE_4__.default,
-  Banner: _Components_Banner_vue__WEBPACK_IMPORTED_MODULE_6__.default,
-  Team: _Components_Team_vue__WEBPACK_IMPORTED_MODULE_7__.default,
-  Client: _Components_Client_vue__WEBPACK_IMPORTED_MODULE_8__.default,
-  Service: _Components_Service_vue__WEBPACK_IMPORTED_MODULE_3__.default,
-  Suscription: _Components_Suscription_vue__WEBPACK_IMPORTED_MODULE_0__.default,
-  SendRequest: _Components_SendRequest_vue__WEBPACK_IMPORTED_MODULE_10__.default
+  Portfolio: _Components_Portfolio_vue__WEBPACK_IMPORTED_MODULE_0__.default,
+  Package: _Components_Package_vue__WEBPACK_IMPORTED_MODULE_2__.default,
+  About: _Components_About_vue__WEBPACK_IMPORTED_MODULE_3__.default,
+  Contact: _Components_Contact_vue__WEBPACK_IMPORTED_MODULE_6__.default,
+  Mission: _Components_Mission_vue__WEBPACK_IMPORTED_MODULE_10__.default,
+  Titlen: _Components_Title_vue__WEBPACK_IMPORTED_MODULE_5__.default,
+  Banner: _Components_Banner_vue__WEBPACK_IMPORTED_MODULE_7__.default,
+  Team: _Components_Team_vue__WEBPACK_IMPORTED_MODULE_8__.default,
+  Client: _Components_Client_vue__WEBPACK_IMPORTED_MODULE_9__.default,
+  Service: _Components_Service_vue__WEBPACK_IMPORTED_MODULE_4__.default,
+  Suscription: _Components_Suscription_vue__WEBPACK_IMPORTED_MODULE_1__.default,
+  SendRequest: _Components_SendRequest_vue__WEBPACK_IMPORTED_MODULE_11__.default
 }));
 
 /***/ }),
@@ -19192,6 +19249,107 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Portfolio.vue?vue&type=template&id=4547bff9":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Portfolio.vue?vue&type=template&id=4547bff9 ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  key: 0
+};
+var _hoisted_2 = {
+  "class": "row",
+  "data-aos": "fade-up"
+};
+var _hoisted_3 = {
+  "class": "col-lg-12 d-flex justify-content-center"
+};
+var _hoisted_4 = {
+  id: "portfolio-flters"
+};
+
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
+  "data-filter": "*",
+  "class": "filter-active"
+}, "All", -1
+/* HOISTED */
+);
+
+var _hoisted_6 = {
+  key: 0,
+  "class": "row portfolio-container",
+  "data-aos": "fade-up",
+  "data-aos-delay": "150"
+};
+var _hoisted_7 = {
+  "class": "portfolio-info"
+};
+
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+  "class": "bx bx-plus"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+  href: "portfolio-details.html",
+  "class": "details-link",
+  title: "More Details"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+  "class": "bx bx-link"
+})], -1
+/* HOISTED */
+);
+
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return $props.component.name == 'portfolio' && $props.component.isActive == true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", _hoisted_4, [_hoisted_5, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.items, function (item) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("li", {
+      key: item.id,
+      "data-filter": ".".concat($options.dataJson(item).filter)
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.dataJson(item).name), 9
+    /* TEXT, PROPS */
+    , ["data-filter"]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))])])]), _ctx.items != null ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_6, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.data(_ctx.items), function (imagenes) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
+      key: imagenes.id,
+      "class": "col-lg-4 col-md-6 portfolio-item ".concat(imagenes.filter)
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+      src: "/templates/legal/img/portfolio/".concat(imagenes.image),
+      "class": "img-fluid",
+      alt: ""
+    }, null, 8
+    /* PROPS */
+    , ["src"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(imagenes.title), 1
+    /* TEXT */
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(imagenes.description), 1
+    /* TEXT */
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+      href: "/templates/legal/img/portfolio/".concat(imagenes.url),
+      "data-gall": "portfolioGallery",
+      "class": "venobox preview-link",
+      title: "App 1"
+    }, [_hoisted_8], 8
+    /* PROPS */
+    , ["href"]), _hoisted_9])], 2
+    /* CLASS */
+    );
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true);
+}
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/SendRequest.vue?vue&type=template&id=13c562d8":
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/SendRequest.vue?vue&type=template&id=13c562d8 ***!
@@ -19589,8 +19747,8 @@ var _hoisted_17 = {
   "data-aos": "zoom-in"
 };
 var _hoisted_18 = {
-  id: "pricing",
-  "class": "pricing"
+  id: "portfolio",
+  "class": "portfolio"
 };
 var _hoisted_19 = {
   "class": "container"
@@ -19598,14 +19756,13 @@ var _hoisted_19 = {
 
 var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "section-title"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "Pricing"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "Pricing"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "Sit sint consectetur velit quisquam cupiditate impedit suscipit alias")], -1
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "Portfolio"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "Portfolio"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "Sit sint consectetur velit quisquam cupiditate impedit suscipit alias")], -1
 /* HOISTED */
 );
 
 var _hoisted_21 = {
-  id: "team",
-  "class": "team",
-  ref: "team"
+  id: "pricing",
+  "class": "pricing"
 };
 var _hoisted_22 = {
   "class": "container"
@@ -19613,27 +19770,42 @@ var _hoisted_22 = {
 
 var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "section-title"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "Equipo"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "Equipo"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "Ninguno de nosotros es tan bueno como todos nosotros juntos. Ray Kroc.")], -1
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "Pricing"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "Pricing"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "Sit sint consectetur velit quisquam cupiditate impedit suscipit alias")], -1
 /* HOISTED */
 );
 
 var _hoisted_24 = {
-  id: "contact",
-  "class": "contact",
-  ref: "contact"
+  id: "team",
+  "class": "team",
+  ref: "team"
 };
 var _hoisted_25 = {
   "class": "container"
 };
 
-var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"section-title\"><span>Contacto</span><h2>Contacto</h2><!-- &lt;p&gt;Sit sint consectetur velit quisquam cupiditate impedit suscipit alias&lt;/p&gt; --></div><div class=\"row\" data-aos=\"fade-up\"><div class=\"col-lg-4\"><div class=\"info-box mb-4\"><i class=\"bx bx-map\"></i><h3>Nuestra Dirección</h3><p id=\"address\">CALLE PRIVADA DE MONTE ALBÁN, NÚMERO EXTERIOR 3, INTERIOR 2. COLONIA REFORMA, OAXACA DE JUÁREZ, OAXACA. CP 68050.</p></div></div><div class=\"col-lg-4 col-md-6\"><div class=\"info-box  mb-4\"><i class=\"bx bx-envelope\"></i><h3>Correos</h3><p class=\"sub-email\">adm1nsindicato.dm@gmail.com</p><p class=\"sub-email\">adm1nsindicato.fa@gmail.com</p></div></div><div class=\"col-lg-4 col-md-6\"><div class=\"info-box  mb-4\"><i class=\"bx bx-phone-call\"></i><h3>Teléfonos</h3><p class=\"sub-phone\">951 672 28 55</p><p class=\"sub-phone\">951 672 28 36</p><p class=\"sub-phone\">951 178 50 92</p></div></div></div>", 2);
+var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "section-title"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "Equipo"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "Equipo"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "Ninguno de nosotros es tan bueno como todos nosotros juntos. Ray Kroc.")], -1
+/* HOISTED */
+);
 
+var _hoisted_27 = {
+  id: "contact",
+  "class": "contact",
+  ref: "contact"
+};
 var _hoisted_28 = {
+  "class": "container"
+};
+
+var _hoisted_29 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"section-title\"><span>Contacto</span><h2>Contacto</h2><!-- &lt;p&gt;Sit sint consectetur velit quisquam cupiditate impedit suscipit alias&lt;/p&gt; --></div><div class=\"row\" data-aos=\"fade-up\"><div class=\"col-lg-4\"><div class=\"info-box mb-4\"><i class=\"bx bx-map\"></i><h3>Nuestra Dirección</h3><p id=\"address\">CALLE PRIVADA DE MONTE ALBÁN, NÚMERO EXTERIOR 3, INTERIOR 2. COLONIA REFORMA, OAXACA DE JUÁREZ, OAXACA. CP 68050.</p></div></div><div class=\"col-lg-4 col-md-6\"><div class=\"info-box  mb-4\"><i class=\"bx bx-envelope\"></i><h3>Correos</h3><p class=\"sub-email\">adm1nsindicato.dm@gmail.com</p><p class=\"sub-email\">adm1nsindicato.fa@gmail.com</p></div></div><div class=\"col-lg-4 col-md-6\"><div class=\"info-box  mb-4\"><i class=\"bx bx-phone-call\"></i><h3>Teléfonos</h3><p class=\"sub-phone\">951 672 28 55</p><p class=\"sub-phone\">951 672 28 36</p><p class=\"sub-phone\">951 178 50 92</p></div></div></div>", 2);
+
+var _hoisted_31 = {
   "class": "row",
   "data-aos": "fade-up"
 };
 
-var _hoisted_29 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_32 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "col-lg-6 "
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <iframe class=\"mb-4 mb-lg-0\" src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621\" frameborder=\"0\" style=\"border:0; width: 100%; height: 384px;\" allowfullscreen></iframe> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("iframe", {
   "class": "mb-4 mb-lg-0",
@@ -19650,9 +19822,9 @@ var _hoisted_29 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 /* HOISTED */
 );
 
-var _hoisted_30 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<footer id=\"footer\"><!-- &lt;div class=&quot;footer-top&quot;&gt;\n      &lt;div class=&quot;container&quot;&gt;\n        &lt;div class=&quot;row&quot;&gt;\n\n          &lt;div class=&quot;col-lg-4 col-md-6&quot;&gt;\n            &lt;div class=&quot;footer-info&quot;&gt;\n              &lt;h3&gt;Day&lt;/h3&gt;\n              &lt;p&gt;\n                A108 Adam Street &lt;br&gt;\n                NY 535022, USA&lt;br&gt;&lt;br&gt;\n                &lt;strong&gt;Phone:&lt;/strong&gt; +1 5589 55488 55&lt;br&gt;\n                &lt;strong&gt;Email:&lt;/strong&gt; info@example.com&lt;br&gt;\n              &lt;/p&gt;\n              &lt;div class=&quot;social-links mt-3&quot;&gt;\n                &lt;a href=&quot;#&quot; class=&quot;twitter&quot;&gt;&lt;i class=&quot;bx bxl-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;facebook&quot;&gt;&lt;i class=&quot;bx bxl-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;instagram&quot;&gt;&lt;i class=&quot;bx bxl-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;google-plus&quot;&gt;&lt;i class=&quot;bx bxl-skype&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;linkedin&quot;&gt;&lt;i class=&quot;bx bxl-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n              &lt;/div&gt;\n            &lt;/div&gt;\n          &lt;/div&gt;\n\n          &lt;div class=&quot;col-lg-2 col-md-6 footer-links&quot;&gt;\n            &lt;h4&gt;Useful Links&lt;/h4&gt;\n            &lt;ul&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;About us&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Terms of service&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Privacy policy&lt;/a&gt;&lt;/li&gt;\n            &lt;/ul&gt;\n          &lt;/div&gt;\n\n          &lt;div class=&quot;col-lg-2 col-md-6 footer-links&quot;&gt;\n            &lt;h4&gt;Our Services&lt;/h4&gt;\n            &lt;ul&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Web Design&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Web Development&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Product Management&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Marketing&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Graphic Design&lt;/a&gt;&lt;/li&gt;\n            &lt;/ul&gt;\n          &lt;/div&gt;\n\n          &lt;div class=&quot;col-lg-4 col-md-6 footer-newsletter&quot;&gt;\n            &lt;h4&gt;Our Newsletter&lt;/h4&gt;\n            &lt;p&gt;Tamen quem nulla quae legam multos aute sint culpa legam noster magna&lt;/p&gt;\n            &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;\n              &lt;input type=&quot;email&quot; name=&quot;email&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Subscribe&quot;&gt;\n            &lt;/form&gt;\n\n          &lt;/div&gt;\n\n        &lt;/div&gt;\n      &lt;/div&gt;\n    &lt;/div&gt; --><div class=\"container\"><div class=\"copyright\"> © Copyright <strong><span>Sindicato Art. 123</span></strong>. All Rights Reserved </div><div class=\"credits\"><!-- All the links in the footer should remain intact. --><!-- You can delete the links only if you purchased the pro version. --><!-- Licensing information: https://bootstrapmade.com/license/ --><!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/day-multipurpose-html-template-for-free/ --> Desarrollado por <a href=\"http://impulzo.com.mx/\" target=\"_blank\">Impulzo S.A.S</a></div></div></footer>", 1);
+var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<footer id=\"footer\"><!-- &lt;div class=&quot;footer-top&quot;&gt;\n      &lt;div class=&quot;container&quot;&gt;\n        &lt;div class=&quot;row&quot;&gt;\n\n          &lt;div class=&quot;col-lg-4 col-md-6&quot;&gt;\n            &lt;div class=&quot;footer-info&quot;&gt;\n              &lt;h3&gt;Day&lt;/h3&gt;\n              &lt;p&gt;\n                A108 Adam Street &lt;br&gt;\n                NY 535022, USA&lt;br&gt;&lt;br&gt;\n                &lt;strong&gt;Phone:&lt;/strong&gt; +1 5589 55488 55&lt;br&gt;\n                &lt;strong&gt;Email:&lt;/strong&gt; info@example.com&lt;br&gt;\n              &lt;/p&gt;\n              &lt;div class=&quot;social-links mt-3&quot;&gt;\n                &lt;a href=&quot;#&quot; class=&quot;twitter&quot;&gt;&lt;i class=&quot;bx bxl-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;facebook&quot;&gt;&lt;i class=&quot;bx bxl-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;instagram&quot;&gt;&lt;i class=&quot;bx bxl-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;google-plus&quot;&gt;&lt;i class=&quot;bx bxl-skype&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;linkedin&quot;&gt;&lt;i class=&quot;bx bxl-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n              &lt;/div&gt;\n            &lt;/div&gt;\n          &lt;/div&gt;\n\n          &lt;div class=&quot;col-lg-2 col-md-6 footer-links&quot;&gt;\n            &lt;h4&gt;Useful Links&lt;/h4&gt;\n            &lt;ul&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;About us&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Terms of service&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Privacy policy&lt;/a&gt;&lt;/li&gt;\n            &lt;/ul&gt;\n          &lt;/div&gt;\n\n          &lt;div class=&quot;col-lg-2 col-md-6 footer-links&quot;&gt;\n            &lt;h4&gt;Our Services&lt;/h4&gt;\n            &lt;ul&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Web Design&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Web Development&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Product Management&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Marketing&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Graphic Design&lt;/a&gt;&lt;/li&gt;\n            &lt;/ul&gt;\n          &lt;/div&gt;\n\n          &lt;div class=&quot;col-lg-4 col-md-6 footer-newsletter&quot;&gt;\n            &lt;h4&gt;Our Newsletter&lt;/h4&gt;\n            &lt;p&gt;Tamen quem nulla quae legam multos aute sint culpa legam noster magna&lt;/p&gt;\n            &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;\n              &lt;input type=&quot;email&quot; name=&quot;email&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Subscribe&quot;&gt;\n            &lt;/form&gt;\n\n          &lt;/div&gt;\n\n        &lt;/div&gt;\n      &lt;/div&gt;\n    &lt;/div&gt; --><div class=\"container\"><div class=\"copyright\"> © Copyright <strong><span>Sindicato Art. 123</span></strong>. All Rights Reserved </div><div class=\"credits\"><!-- All the links in the footer should remain intact. --><!-- You can delete the links only if you purchased the pro version. --><!-- Licensing information: https://bootstrapmade.com/license/ --><!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/day-multipurpose-html-template-for-free/ --> Desarrollado por <a href=\"http://impulzo.com.mx/\" target=\"_blank\">Impulzo S.A.S</a></div></div></footer>", 1);
 
-var _hoisted_31 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+var _hoisted_34 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
   href: "#",
   "class": "back-to-top"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
@@ -19677,6 +19849,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_service = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("service");
 
   var _component_suscription = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("suscription");
+
+  var _component_portfolio = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("portfolio");
 
   var _component_package = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("package");
 
@@ -19767,19 +19941,23 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     component: $options.getComponentId('suscription')
   }, null, 8
   /* PROPS */
-  , ["component"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Cta Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Portfolio Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section id=\"portfolio\" class=\"portfolio\">\n      <div class=\"container\">\n\n        <div class=\"section-title\">\n          <span>Portfolio</span>\n          <h2>Portfolio</h2>\n          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>\n        </div>\n\n        <div class=\"row\" data-aos=\"fade-up\">\n          <div class=\"col-lg-12 d-flex justify-content-center\">\n            <ul id=\"portfolio-flters\">\n              <li data-filter=\"*\" class=\"filter-active\">All</li>\n              <li data-filter=\".filter-app\">App</li>\n              <li data-filter=\".filter-card\">Card</li>\n              <li data-filter=\".filter-web\">Web</li>\n            </ul>\n          </div>\n        </div>\n\n        <div class=\"row portfolio-container\" data-aos=\"fade-up\" data-aos-delay=\"150\">\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-app\">\n            <img src=\"assets/img/portfolio/portfolio-1.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>App 1</h4>\n              <p>App</p>\n              <a href=\"assets/img/portfolio/portfolio-1.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"App 1\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-web\">\n            <img src=\"assets/img/portfolio/portfolio-2.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Web 3</h4>\n              <p>Web</p>\n              <a href=\"assets/img/portfolio/portfolio-2.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Web 3\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-app\">\n            <img src=\"assets/img/portfolio/portfolio-3.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>App 2</h4>\n              <p>App</p>\n              <a href=\"assets/img/portfolio/portfolio-3.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"App 2\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-card\">\n            <img src=\"assets/img/portfolio/portfolio-4.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Card 2</h4>\n              <p>Card</p>\n              <a href=\"assets/img/portfolio/portfolio-4.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Card 2\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-web\">\n            <img src=\"assets/img/portfolio/portfolio-5.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Web 2</h4>\n              <p>Web</p>\n              <a href=\"assets/img/portfolio/portfolio-5.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Web 2\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-app\">\n            <img src=\"assets/img/portfolio/portfolio-6.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>App 3</h4>\n              <p>App</p>\n              <a href=\"assets/img/portfolio/portfolio-6.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"App 3\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-card\">\n            <img src=\"assets/img/portfolio/portfolio-7.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Card 1</h4>\n              <p>Card</p>\n              <a href=\"assets/img/portfolio/portfolio-7.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Card 1\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-card\">\n            <img src=\"assets/img/portfolio/portfolio-8.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Card 3</h4>\n              <p>Card</p>\n              <a href=\"assets/img/portfolio/portfolio-8.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Card 3\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n          <div class=\"col-lg-4 col-md-6 portfolio-item filter-web\">\n            <img src=\"assets/img/portfolio/portfolio-9.jpg\" class=\"img-fluid\" alt=\"\">\n            <div class=\"portfolio-info\">\n              <h4>Web 3</h4>\n              <p>Web</p>\n              <a href=\"assets/img/portfolio/portfolio-9.jpg\" data-gall=\"portfolioGallery\" class=\"venobox preview-link\" title=\"Web 3\"><i class=\"bx bx-plus\"></i></a>\n              <a href=\"portfolio-details.html\" class=\"details-link\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\n            </div>\n          </div>\n\n        </div>\n\n      </div>\n    </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Portfolio Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Pricing Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_19, [_hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_package, {
+  , ["component"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Cta Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Portfolio Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_19, [_hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_portfolio, {
+    component: $options.getComponentId('portfolio')
+  }, null, 8
+  /* PROPS */
+  , ["component"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Portfolio Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Pricing Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_22, [_hoisted_23, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_package, {
     component: $options.getComponentId('packages')
   }, null, 8
   /* PROPS */
-  , ["component"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Pricing Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Team Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_22, [_hoisted_23, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_team, {
+  , ["component"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Pricing Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Team Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_25, [_hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_team, {
     component: $options.getComponentId('team')
   }, null, 8
   /* PROPS */
   , ["component"])])], 512
   /* NEED_PATCH */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Team Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Contact Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_25, [_hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_28, [_hoisted_29, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_send_request)])])], 512
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Team Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Contact Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_27, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_28, [_hoisted_29, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_31, [_hoisted_32, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_send_request)])])], 512
   /* NEED_PATCH */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Contact Section ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End #main "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Footer ======= "), _hoisted_30, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Footer "), _hoisted_31, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div id=\"preloader\"></div> ")]);
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Contact Section ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End #main "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Footer ======= "), _hoisted_33, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Footer "), _hoisted_34, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div id=\"preloader\"></div> ")]);
 }
 
 /***/ }),
@@ -37849,6 +38027,32 @@ _Package_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file
 
 /***/ }),
 
+/***/ "./resources/js/Templates/Legal/Components/Portfolio.vue":
+/*!***************************************************************!*\
+  !*** ./resources/js/Templates/Legal/Components/Portfolio.vue ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Portfolio_vue_vue_type_template_id_4547bff9__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Portfolio.vue?vue&type=template&id=4547bff9 */ "./resources/js/Templates/Legal/Components/Portfolio.vue?vue&type=template&id=4547bff9");
+/* harmony import */ var _Portfolio_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Portfolio.vue?vue&type=script&lang=js */ "./resources/js/Templates/Legal/Components/Portfolio.vue?vue&type=script&lang=js");
+
+
+
+_Portfolio_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.render = _Portfolio_vue_vue_type_template_id_4547bff9__WEBPACK_IMPORTED_MODULE_0__.render
+/* hot reload */
+if (false) {}
+
+_Portfolio_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/Templates/Legal/Components/Portfolio.vue"
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_Portfolio_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
+
+/***/ }),
+
 /***/ "./resources/js/Templates/Legal/Components/SendRequest.vue":
 /*!*****************************************************************!*\
   !*** ./resources/js/Templates/Legal/Components/SendRequest.vue ***!
@@ -38152,6 +38356,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Templates/Legal/Components/Portfolio.vue?vue&type=script&lang=js":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/Templates/Legal/Components/Portfolio.vue?vue&type=script&lang=js ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Portfolio_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Portfolio_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Portfolio.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Portfolio.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/Templates/Legal/Components/SendRequest.vue?vue&type=script&lang=js":
 /*!*****************************************************************************************!*\
   !*** ./resources/js/Templates/Legal/Components/SendRequest.vue?vue&type=script&lang=js ***!
@@ -38388,6 +38608,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Package_vue_vue_type_template_id_acdb1b92__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Package_vue_vue_type_template_id_acdb1b92__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Package.vue?vue&type=template&id=acdb1b92 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Package.vue?vue&type=template&id=acdb1b92");
+
+
+/***/ }),
+
+/***/ "./resources/js/Templates/Legal/Components/Portfolio.vue?vue&type=template&id=4547bff9":
+/*!*********************************************************************************************!*\
+  !*** ./resources/js/Templates/Legal/Components/Portfolio.vue?vue&type=template&id=4547bff9 ***!
+  \*********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Portfolio_vue_vue_type_template_id_4547bff9__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Portfolio_vue_vue_type_template_id_4547bff9__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Portfolio.vue?vue&type=template&id=4547bff9 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Templates/Legal/Components/Portfolio.vue?vue&type=template&id=4547bff9");
 
 
 /***/ }),
