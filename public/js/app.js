@@ -17975,7 +17975,6 @@ __webpack_require__.r(__webpack_exports__);
       axios__WEBPACK_IMPORTED_MODULE_0___default().get(BASE_URL + '/api/components/' + this.component.id).then(function (response) {
         if (response.data.status == 200) {
           _this.items = response.data.data.component.items;
-          console.log(items);
         }
       })["catch"]();
     }
