@@ -151,17 +151,8 @@
         </div>
 
         <footer-contact :component="getComponentId('contact_footer')"></footer-contact>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-6 ">
-            <!-- <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe> -->
-            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d953.459759062526!2d-96.71915167082706!3d17.080524381219178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c72226472648a7%3A0xb7c77e75fb58627b!2sPrivada%20de%20Monte%20de%20Alb%C3%A1n%2C%20Reforma%2C%2068050%20Oaxaca%20de%20Ju%C3%A1rez%2C%20Oax.!5e0!3m2!1ses-419!2smx!4v1628052454730!5m2!1ses-419!2smx" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-
-          <send-request></send-request>
-
-        </div>
-
+        <map-frame :component="getComponentId('map')"></map-frame>
+        
       </div>
     </section><!-- End Contact Section -->
 
@@ -247,6 +238,7 @@
 </template>
 
 <script>
+import MapFrame from './Components/Map.vue'
 import FooterContact from './Components/FooterContact.vue'
 import Portfolio from './Components/Portfolio.vue'
 import Suscription from './Components/Suscription.vue'
@@ -262,6 +254,7 @@ import Mission from './Components/Mission.vue'
 import SendRequest from './Components/SendRequest.vue'
 export default {
   components: { 
+    MapFrame,
     Portfolio,
     Contact, 
     Banner, 
@@ -298,6 +291,7 @@ export default {
     }
   },
   components:{
+    MapFrame,
     Portfolio,
     Package,
     About,
