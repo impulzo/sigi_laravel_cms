@@ -10,7 +10,7 @@
         </div>
         <div v-if="items != null" class="row portfolio-container" data-aos="fade-up" data-aos-delay="150">
             <div v-for="imagenes in data(items)" v-bind:key="imagenes.id" :class="`col-lg-4 col-md-6 portfolio-item ${imagenes.filter}`">
-                <img :src="`/templates/legal/img/portfolio/${imagenes.image}`" class="img-fluid" alt="">
+                <img :src="`/templates/legal/img/portfolio/${imagenes.image}`" class="img-fluid" style="height:100%" alt="">
                 <div class="portfolio-info">
                     <h4>{{imagenes.title}}</h4>
                     <p>{{imagenes.description}}</p>

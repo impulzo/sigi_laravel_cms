@@ -150,38 +150,9 @@
           <!-- <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p> -->
         </div>
 
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-4">
-            <div class="info-box mb-4">
-              <i class="bx bx-map"></i>
-              <h3>Nuestra Dirección</h3>
-              <p id="address">CALLE PRIVADA DE MONTE ALBÁN, NÚMERO EXTERIOR 3, INTERIOR 2. COLONIA REFORMA, OAXACA DE JUÁREZ, OAXACA. CP 68050.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="info-box  mb-4">
-              <i class="bx bx-envelope"></i>
-              <h3>Correos</h3>
-              <p class="sub-email">adm1nsindicato.dm@gmail.com</p>
-              <p class="sub-email">adm1nsindicato.fa@gmail.com</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="info-box  mb-4">
-              <i class="bx bx-phone-call"></i>
-              <h3>Teléfonos</h3>
-              <p class="sub-phone">951 672 28 55</p>
-              <p class="sub-phone">951 672 28 36</p>
-              <p class="sub-phone">951 178 50 92</p>
-            </div>
-          </div>
-
-        </div>
+        <footer-contact :component="getComponentId('contact_footer')"></footer-contact>
 
         <div class="row" data-aos="fade-up">
-
           <div class="col-lg-6 ">
             <!-- <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe> -->
             <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d953.459759062526!2d-96.71915167082706!3d17.080524381219178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c72226472648a7%3A0xb7c77e75fb58627b!2sPrivada%20de%20Monte%20de%20Alb%C3%A1n%2C%20Reforma%2C%2068050%20Oaxaca%20de%20Ju%C3%A1rez%2C%20Oax.!5e0!3m2!1ses-419!2smx!4v1628052454730!5m2!1ses-419!2smx" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen="" loading="lazy"></iframe>
@@ -276,6 +247,7 @@
 </template>
 
 <script>
+import FooterContact from './Components/FooterContact.vue'
 import Portfolio from './Components/Portfolio.vue'
 import Suscription from './Components/Suscription.vue'
 import Package from './Components/Package.vue'
@@ -293,7 +265,8 @@ export default {
     Portfolio,
     Contact, 
     Banner, 
-    Team, 
+    Team,
+    FooterContact,
     Client, 
     Mission, 
     Titlen,
@@ -335,6 +308,7 @@ export default {
     Team,
     Client,
     Service,
+    FooterContact,
     Suscription,
     SendRequest
   }
