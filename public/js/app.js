@@ -18089,7 +18089,8 @@ __webpack_require__.r(__webpack_exports__);
   props: ['component'],
   data: function data() {
     return {
-      items: null
+      items: [],
+      categorySelected: '*'
     };
   },
   mounted: function mounted() {
@@ -18103,21 +18104,38 @@ __webpack_require__.r(__webpack_exports__);
       })["catch"]();
     }
   },
-  methods: {
-    dataJson: function dataJson(item) {
-      return JSON.parse(item.value);
-    },
-    data: function data(items) {
+  computed: {
+    filteredImages: function filteredImages() {
       var newArrayImages = [];
-      items.forEach(function (element) {
-        var arrayImages = JSON.parse(element.value).images;
-        var arrayFilter = JSON.parse(element.value).filter;
+      var filteredCategory = "";
+
+      if (this.categorySelected == '*') {
+        this.items.forEach(function (element) {
+          var arrayImages = JSON.parse(element.value).images;
+          arrayImages.map(function (images) {
+            newArrayImages.push(images);
+          });
+        });
+      } else {
+        filteredCategory = this.items.filter(this.isSelected);
+        var arrayImages = JSON.parse(filteredCategory[0].value).images;
         arrayImages.map(function (images) {
-          images.filter = arrayFilter;
           newArrayImages.push(images);
         });
-      });
+      }
+
       return newArrayImages;
+    }
+  },
+  methods: {
+    dataJson: function dataJson(item) {
+      return JSON.parse(item);
+    },
+    changeFilter: function changeFilter(category) {
+      this.categorySelected = category;
+    },
+    isSelected: function isSelected(item) {
+      return JSON.parse(item.value).filter == this.categorySelected;
     }
   }
 });
@@ -19518,31 +19536,23 @@ var _hoisted_3 = {
 var _hoisted_4 = {
   id: "portfolio-flters"
 };
-
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
-  "data-filter": "*",
-  "class": "filter-active"
-}, "All", -1
-/* HOISTED */
-);
-
-var _hoisted_6 = {
+var _hoisted_5 = {
   key: 0,
   "class": "row portfolio-container",
   "data-aos": "fade-up",
   "data-aos-delay": "150"
 };
-var _hoisted_7 = {
+var _hoisted_6 = {
   "class": "portfolio-info"
 };
 
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
   "class": "bx bx-plus"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
   href: "portfolio-details.html",
   "class": "details-link",
   title: "More Details"
@@ -19553,16 +19563,30 @@ var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 );
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return $props.component.name == 'portfolio' && $props.component.isActive == true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", _hoisted_4, [_hoisted_5, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.items, function (item) {
+  return $props.component.name == 'portfolio' && $props.component.isActive == true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", {
+    onClick: _cache[1] || (_cache[1] = function ($event) {
+      return $options.changeFilter('*');
+    }),
+    "class": {
+      'filter-active': '*' == _ctx.categorySelected
+    }
+  }, "All", 2
+  /* CLASS */
+  ), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.items, function (item) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("li", {
       key: item.id,
-      "data-filter": ".".concat($options.dataJson(item).filter)
-    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.dataJson(item).name), 9
-    /* TEXT, PROPS */
-    , ["data-filter"]);
+      onClick: function onClick($event) {
+        return $options.changeFilter($options.dataJson(item.value).filter);
+      },
+      "class": {
+        'filter-active': $options.dataJson(item.value).filter == _ctx.categorySelected
+      }
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.dataJson(item.value).name), 11
+    /* TEXT, CLASS, PROPS */
+    , ["onClick"]);
   }), 128
   /* KEYED_FRAGMENT */
-  ))])])]), _ctx.items != null ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_6, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.data(_ctx.items), function (imagenes) {
+  ))])])]), _ctx.items != null ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_5, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.filteredImages, function (imagenes) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
       key: imagenes.id,
       "class": "col-lg-4 col-md-6 portfolio-item ".concat(imagenes.filter)
@@ -19575,7 +19599,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       alt: ""
     }, null, 8
     /* PROPS */
-    , ["src"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(imagenes.title), 1
+    , ["src"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(imagenes.title), 1
     /* TEXT */
     ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(imagenes.description), 1
     /* TEXT */
@@ -19584,9 +19608,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       "data-gall": "portfolioGallery",
       "class": "venobox preview-link",
       title: "App 1"
-    }, [_hoisted_8], 8
+    }, [_hoisted_7], 8
     /* PROPS */
-    , ["href"]), _hoisted_9])], 2
+    , ["href"]), _hoisted_8])], 2
     /* CLASS */
     );
   }), 128
