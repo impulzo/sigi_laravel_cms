@@ -175,6 +175,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Grohiro\LaravelCamelCaseJson\CamelCaseJsonResponseServiceProvider::class,
+        //Laravel Migrations Generator
+        \MigrationsGenerator\MigrationsGeneratorServiceProvider::class,
+        //ISEED -> Generate Seed
+        Orangehill\Iseed\IseedServiceProvider::class,
 
     ],
 
