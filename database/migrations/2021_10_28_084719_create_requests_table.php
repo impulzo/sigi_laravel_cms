@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTableItems extends Migration
+class CreateRequestsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,14 @@ class CreateTableItems extends Migration
      */
     public function up()
     {
-        Schema::create('items', function (Blueprint $table) {
-            $table->id();
-            $table->integer("component_id");
-            $table->string("key");
-            $table->longText("value");
-            $table->integer("type_item_id");
+        Schema::create('requests', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name', 50);
+            $table->string('email', 80);
+            $table->string('subject', 140)->nullable();
+            $table->text('message');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
@@ -30,6 +31,6 @@ class CreateTableItems extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table_items');
+        Schema::dropIfExists('requests');
     }
 }
