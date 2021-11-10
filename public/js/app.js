@@ -17921,7 +17921,8 @@ __webpack_require__.r(__webpack_exports__);
   props: ['component'],
   data: function data() {
     return {
-      items: null
+      items: null,
+      texts: null
     };
   },
   mounted: function mounted() {
@@ -17930,7 +17931,13 @@ __webpack_require__.r(__webpack_exports__);
     if (this.component.name === 'contact_footer' && this.component.isActive == true) {
       axios__WEBPACK_IMPORTED_MODULE_0___default().get(BASE_URL + '/api/components/' + this.component.id).then(function (response) {
         if (response.data.status == 200) {
-          _this.items = response.data.data.component.items;
+          _this.items = response.data.data.component.items.filter(function (item) {
+            return item.typeItem.name === 'json';
+          });
+          _this.texts = response.data.data.component.items.filter(function (item) {
+            return item.typeItem.name === 'text';
+          });
+          console.log(_this.texts);
         }
       });
     }
@@ -19292,68 +19299,90 @@ var _hoisted_1 = {
   key: 0
 };
 var _hoisted_2 = {
-  "class": "col-lg-4"
+  key: 0
 };
 var _hoisted_3 = {
+  key: 1
+};
+var _hoisted_4 = {
+  key: 2
+};
+var _hoisted_5 = {
+  "class": "col-lg-4"
+};
+var _hoisted_6 = {
   "class": "info-box mb-4"
 };
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
   "class": "bx bx-map"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, "Nuestra Dirección", -1
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, "Nuestra Dirección", -1
 /* HOISTED */
 );
 
-var _hoisted_6 = {
+var _hoisted_9 = {
   id: "address"
 };
-var _hoisted_7 = {
+var _hoisted_10 = {
   "class": "col-lg-4 col-md-6"
 };
-var _hoisted_8 = {
+var _hoisted_11 = {
   "class": "info-box  mb-4"
 };
 
-var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
   "class": "bx bx-envelope"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, "Correos", -1
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, "Correos", -1
 /* HOISTED */
 );
 
-var _hoisted_11 = {
+var _hoisted_14 = {
   "class": "col-lg-4 col-md-6"
 };
-var _hoisted_12 = {
+var _hoisted_15 = {
   "class": "info-box  mb-4"
 };
 
-var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
   "class": "bx bx-phone-call"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, "Teléfonos", -1
+var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, "Teléfonos", -1
 /* HOISTED */
 );
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return $props.component.name === 'contact_footer' && $props.component.isActive == true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.items, function (item) {
+  return $props.component.name === 'contact_footer' && $props.component.isActive == true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.texts, function (text) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
+      key: text.id,
+      "class": "section-title"
+    }, [text.key === 'title' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("span", _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(text.value), 1
+    /* TEXT */
+    )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), text.key === 'title' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("h2", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(text.value), 1
+    /* TEXT */
+    )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), text.key === 'description' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("p", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(text.value), 1
+    /* TEXT */
+    )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  )), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.items, function (item) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
       key: item.id,
       "class": "row",
       "data-aos": "fade-up"
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [_hoisted_4, _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.dataJson(item).address), 1
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [_hoisted_7, _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.dataJson(item).address), 1
     /* TEXT */
-    )])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [_hoisted_9, _hoisted_10, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.dataJson(item).mails, function (mail) {
+    )])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_11, [_hoisted_12, _hoisted_13, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.dataJson(item).mails, function (mail) {
       return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("p", {
         key: mail.id,
         "class": "sub-email"
@@ -19362,7 +19391,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       );
     }), 128
     /* KEYED_FRAGMENT */
-    ))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_12, [_hoisted_13, _hoisted_14, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.dataJson(item).phones, function (phone) {
+    ))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_15, [_hoisted_16, _hoisted_17, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.dataJson(item).phones, function (phone) {
       return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("p", {
         key: phone.id,
         "class": "sub-phone"
@@ -20172,15 +20201,9 @@ var _hoisted_25 = {
   "class": "container"
 };
 
-var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "section-title"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, "Contacto"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "Contacto"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p> ")], -1
-/* HOISTED */
-);
+var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<footer id=\"footer\"><!-- &lt;div class=&quot;footer-top&quot;&gt;\n      &lt;div class=&quot;container&quot;&gt;\n        &lt;div class=&quot;row&quot;&gt;\n\n          &lt;div class=&quot;col-lg-4 col-md-6&quot;&gt;\n            &lt;div class=&quot;footer-info&quot;&gt;\n              &lt;h3&gt;Day&lt;/h3&gt;\n              &lt;p&gt;\n                A108 Adam Street &lt;br&gt;\n                NY 535022, USA&lt;br&gt;&lt;br&gt;\n                &lt;strong&gt;Phone:&lt;/strong&gt; +1 5589 55488 55&lt;br&gt;\n                &lt;strong&gt;Email:&lt;/strong&gt; info@example.com&lt;br&gt;\n              &lt;/p&gt;\n              &lt;div class=&quot;social-links mt-3&quot;&gt;\n                &lt;a href=&quot;#&quot; class=&quot;twitter&quot;&gt;&lt;i class=&quot;bx bxl-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;facebook&quot;&gt;&lt;i class=&quot;bx bxl-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;instagram&quot;&gt;&lt;i class=&quot;bx bxl-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;google-plus&quot;&gt;&lt;i class=&quot;bx bxl-skype&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;linkedin&quot;&gt;&lt;i class=&quot;bx bxl-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n              &lt;/div&gt;\n            &lt;/div&gt;\n          &lt;/div&gt;\n\n          &lt;div class=&quot;col-lg-2 col-md-6 footer-links&quot;&gt;\n            &lt;h4&gt;Useful Links&lt;/h4&gt;\n            &lt;ul&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;About us&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Terms of service&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Privacy policy&lt;/a&gt;&lt;/li&gt;\n            &lt;/ul&gt;\n          &lt;/div&gt;\n\n          &lt;div class=&quot;col-lg-2 col-md-6 footer-links&quot;&gt;\n            &lt;h4&gt;Our Services&lt;/h4&gt;\n            &lt;ul&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Web Design&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Web Development&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Product Management&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Marketing&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Graphic Design&lt;/a&gt;&lt;/li&gt;\n            &lt;/ul&gt;\n          &lt;/div&gt;\n\n          &lt;div class=&quot;col-lg-4 col-md-6 footer-newsletter&quot;&gt;\n            &lt;h4&gt;Our Newsletter&lt;/h4&gt;\n            &lt;p&gt;Tamen quem nulla quae legam multos aute sint culpa legam noster magna&lt;/p&gt;\n            &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;\n              &lt;input type=&quot;email&quot; name=&quot;email&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Subscribe&quot;&gt;\n            &lt;/form&gt;\n\n          &lt;/div&gt;\n\n        &lt;/div&gt;\n      &lt;/div&gt;\n    &lt;/div&gt; --><div class=\"container\"><div class=\"copyright\"> © Copyright <strong><span>Sindicato Art. 123</span></strong>. All Rights Reserved </div><div class=\"credits\"><!-- All the links in the footer should remain intact. --><!-- You can delete the links only if you purchased the pro version. --><!-- Licensing information: https://bootstrapmade.com/license/ --><!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/day-multipurpose-html-template-for-free/ --> Desarrollado por <a href=\"http://impulzo.com.mx/\" target=\"_blank\">Impulzo S.A.S</a></div></div></footer>", 1);
 
-var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<footer id=\"footer\"><!-- &lt;div class=&quot;footer-top&quot;&gt;\n      &lt;div class=&quot;container&quot;&gt;\n        &lt;div class=&quot;row&quot;&gt;\n\n          &lt;div class=&quot;col-lg-4 col-md-6&quot;&gt;\n            &lt;div class=&quot;footer-info&quot;&gt;\n              &lt;h3&gt;Day&lt;/h3&gt;\n              &lt;p&gt;\n                A108 Adam Street &lt;br&gt;\n                NY 535022, USA&lt;br&gt;&lt;br&gt;\n                &lt;strong&gt;Phone:&lt;/strong&gt; +1 5589 55488 55&lt;br&gt;\n                &lt;strong&gt;Email:&lt;/strong&gt; info@example.com&lt;br&gt;\n              &lt;/p&gt;\n              &lt;div class=&quot;social-links mt-3&quot;&gt;\n                &lt;a href=&quot;#&quot; class=&quot;twitter&quot;&gt;&lt;i class=&quot;bx bxl-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;facebook&quot;&gt;&lt;i class=&quot;bx bxl-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;instagram&quot;&gt;&lt;i class=&quot;bx bxl-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;google-plus&quot;&gt;&lt;i class=&quot;bx bxl-skype&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n                &lt;a href=&quot;#&quot; class=&quot;linkedin&quot;&gt;&lt;i class=&quot;bx bxl-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt;\n              &lt;/div&gt;\n            &lt;/div&gt;\n          &lt;/div&gt;\n\n          &lt;div class=&quot;col-lg-2 col-md-6 footer-links&quot;&gt;\n            &lt;h4&gt;Useful Links&lt;/h4&gt;\n            &lt;ul&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;About us&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Terms of service&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Privacy policy&lt;/a&gt;&lt;/li&gt;\n            &lt;/ul&gt;\n          &lt;/div&gt;\n\n          &lt;div class=&quot;col-lg-2 col-md-6 footer-links&quot;&gt;\n            &lt;h4&gt;Our Services&lt;/h4&gt;\n            &lt;ul&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Web Design&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Web Development&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Product Management&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Marketing&lt;/a&gt;&lt;/li&gt;\n              &lt;li&gt;&lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Graphic Design&lt;/a&gt;&lt;/li&gt;\n            &lt;/ul&gt;\n          &lt;/div&gt;\n\n          &lt;div class=&quot;col-lg-4 col-md-6 footer-newsletter&quot;&gt;\n            &lt;h4&gt;Our Newsletter&lt;/h4&gt;\n            &lt;p&gt;Tamen quem nulla quae legam multos aute sint culpa legam noster magna&lt;/p&gt;\n            &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;\n              &lt;input type=&quot;email&quot; name=&quot;email&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Subscribe&quot;&gt;\n            &lt;/form&gt;\n\n          &lt;/div&gt;\n\n        &lt;/div&gt;\n      &lt;/div&gt;\n    &lt;/div&gt; --><div class=\"container\"><div class=\"copyright\"> © Copyright <strong><span>Sindicato Art. 123</span></strong>. All Rights Reserved </div><div class=\"credits\"><!-- All the links in the footer should remain intact. --><!-- You can delete the links only if you purchased the pro version. --><!-- Licensing information: https://bootstrapmade.com/license/ --><!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/day-multipurpose-html-template-for-free/ --> Desarrollado por <a href=\"http://impulzo.com.mx/\" target=\"_blank\">Impulzo S.A.S</a></div></div></footer>", 1);
-
-var _hoisted_28 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
   href: "#",
   "class": "back-to-top"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
@@ -20313,7 +20336,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* PROPS */
   , ["component"])])], 512
   /* NEED_PATCH */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Team Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Contact Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_25, [_hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_footer_contact, {
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Team Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Contact Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_footer_contact, {
     component: $options.getComponentId('contact_footer')
   }, null, 8
   /* PROPS */
@@ -20323,7 +20346,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* PROPS */
   , ["component"])])], 512
   /* NEED_PATCH */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Contact Section ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End #main "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Footer ======= "), _hoisted_27, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Footer "), _hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div id=\"preloader\"></div> ")]);
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Contact Section ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End #main "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Footer ======= "), _hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Footer "), _hoisted_27, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div id=\"preloader\"></div> ")]);
 }
 
 /***/ }),

@@ -130,16 +130,8 @@
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact" ref="contact">
       <div class="container">
-
-        <div class="section-title">
-          <span>Contacto</span>
-          <h2>Contacto</h2>
-          <!-- <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p> -->
-        </div>
-
         <footer-contact :component="getComponentId('contact_footer')"></footer-contact>
         <map-frame :component="getComponentId('map')"></map-frame>
-        
       </div>
     </section><!-- End Contact Section -->
 
