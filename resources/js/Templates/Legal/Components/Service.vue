@@ -1,11 +1,9 @@
 <template>
     <div v-if="component.name === 'services' && component.isActive == true" >
-        <div v-for="text in texts" v-bind:key="text.id">
-            <div class="section-title">
-                <span v-if="text.key==='title'">{{text.value}}</span>
-                <h2 v-if="text.key==='title'">{{text.value}}</h2>
-                <p v-if="text.key==='description'">{{text.value}}</p>
-            </div>
+        <div v-for="text in texts" v-bind:key="text.id" class="section-title">
+            <span v-if="text.key==='title'">{{text.value}}</span>
+            <h2 v-if="text.key==='title'">{{text.value}}</h2>
+            <p v-if="text.key==='description'">{{text.value}}</p>
         </div>
         <div v-for="item in items" v-bind:key="item.id">
             <div class="row">
