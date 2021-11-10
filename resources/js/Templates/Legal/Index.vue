@@ -122,11 +122,6 @@
     <!-- ======= Team Section ======= -->
     <section id="team" class="team" ref="team">
       <div class="container">
-        <div class="section-title">
-          <span>Equipo</span>
-          <h2>Equipo</h2>
-          <p>Ninguno de nosotros es tan bueno como todos nosotros juntos. Ray Kroc.</p>
-        </div>
         <team :component="getComponentId('team')" ></team>
       </div>
     </section>
