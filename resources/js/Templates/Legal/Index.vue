@@ -89,12 +89,6 @@
     <!-- ======= Services Section ======= -->
     <section id="services" class="services" ref="services">
       <div class="container">
-
-        <div class="section-title">
-          <span>Servicios</span>
-          <h2>Servicios</h2>
-          <p>“Dale al cliente siempre más de lo que espera”.&nbsp;&nbsp;&nbsp; Nelson Boswell.</p>
-        </div>
         <service :component="getComponentId('services')" ></service>
       </div>
     </section>
