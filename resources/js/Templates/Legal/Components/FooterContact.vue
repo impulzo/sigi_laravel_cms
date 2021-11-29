@@ -1,5 +1,10 @@
 <template>
     <div v-if="component.name==='contact_footer' && component.isActive == true">
+        <div v-for="text in texts" v-bind:key="text.id" class="section-title">
+            <span v-if="text.key === 'title'">{{text.value}}</span>
+            <h2 v-if="text.key === 'title'">{{text.value}}</h2>
+            <p v-if="text.key === 'description'">{{text.value}}</p>
+        </div>
         <div v-for="item in items" v-bind:key="item.id" class="row" data-aos="fade-up">
             <div class="col-lg-4">
                 <div class="info-box mb-4">
@@ -34,7 +39,8 @@ export default {
     props: ['component'],
     data: function(){
         return{
-            items:null
+            items:null,
+            texts:null,
         }
     },
     mounted(){
@@ -42,7 +48,9 @@ export default {
             axios.get(BASE_URL + '/api/components/' + this.component.id)
             .then(response=>{
                 if(response.data.status == 200){
-                    this.items = response.data.data.component.items
+                    this.items = response.data.data.component.items.filter(item => item.typeItem.name === 'json')
+                    this.texts = response.data.data.component.items.filter(item => item.typeItem.name === 'text')
+                    console.log(this.texts);
                 }
             })
 

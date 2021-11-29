@@ -89,12 +89,6 @@
     <!-- ======= Services Section ======= -->
     <section id="services" class="services" ref="services">
       <div class="container">
-
-        <div class="section-title">
-          <span>Servicios</span>
-          <h2>Servicios</h2>
-          <p>“Dale al cliente siempre más de lo que espera”.&nbsp;&nbsp;&nbsp; Nelson Boswell.</p>
-        </div>
         <service :component="getComponentId('services')" ></service>
       </div>
     </section>
@@ -111,12 +105,6 @@
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container">
-
-        <div class="section-title">
-          <span>Portfolio</span>
-          <h2>Portfolio</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
-        </div>
         <portfolio :component="getComponentId('portfolio')"></portfolio>
         
       </div>
@@ -126,11 +114,6 @@
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing">
       <div class="container">
-        <div class="section-title">
-          <span>Pricing</span>
-          <h2>Pricing</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
-        </div>
         <package :component="getComponentId('packages')"></package>
       </div>
     </section>
@@ -139,11 +122,6 @@
     <!-- ======= Team Section ======= -->
     <section id="team" class="team" ref="team">
       <div class="container">
-        <div class="section-title">
-          <span>Equipo</span>
-          <h2>Equipo</h2>
-          <p>Ninguno de nosotros es tan bueno como todos nosotros juntos. Ray Kroc.</p>
-        </div>
         <team :component="getComponentId('team')" ></team>
       </div>
     </section>
@@ -152,16 +130,8 @@
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact" ref="contact">
       <div class="container">
-
-        <div class="section-title">
-          <span>Contacto</span>
-          <h2>Contacto</h2>
-          <!-- <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p> -->
-        </div>
-
         <footer-contact :component="getComponentId('contact_footer')"></footer-contact>
         <map-frame :component="getComponentId('map')"></map-frame>
-        
       </div>
     </section><!-- End Contact Section -->
 
